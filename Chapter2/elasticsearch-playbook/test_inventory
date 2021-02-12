@@ -1,0 +1,13 @@
+[node1]
+node1-ip
+
+[node2]
+node2-ip
+
+[node3]
+node3-ip
+
+[elasticsearch:children]
+node1
+node2
+node3

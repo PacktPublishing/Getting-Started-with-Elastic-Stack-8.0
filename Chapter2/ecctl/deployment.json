@@ -1,0 +1,56 @@
+{
+    "name": "my-first-api-deployment",
+    "resources": {
+      "elasticsearch": [
+        {
+          "region": "ece-region", 
+          "ref_id": "main-elasticsearch",
+          "plan": {
+            "cluster_topology": [
+              {
+                "node_type": {
+                  "data": true,
+                  "master": true,
+                  "ingest": true
+                },
+                "instance_configuration_id": "data.default", 
+                "zone_count": 2, 
+                "size": {
+                  "resource": "memory",
+                  "value": 4096
+                }
+              }
+            ],
+            "elasticsearch": {
+              "version": "7.10.0"
+            },
+            "deployment_template": {
+              "id": "default"
+            }
+          }
+        }
+      ],
+      "kibana": [
+        {
+          "region": "ece-region",
+          "elasticsearch_cluster_ref_id": "main-elasticsearch",
+          "ref_id": "main-kibana",
+          "plan": {
+            "cluster_topology": [
+              {
+                "instance_configuration_id": "kibana",
+                "zone_count": 1, 
+                "size": {
+                  "resource": "memory",
+                  "value": 1024
+                }
+              }
+            ],
+            "kibana": {
+              "version": "7.10.0"
+            }
+          }
+        }
+      ]
+    }
+  }

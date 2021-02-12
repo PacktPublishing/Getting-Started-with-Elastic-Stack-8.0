@@ -1,0 +1,31 @@
+- name: Bootstrap node
+  hosts: node1
+  roles:
+    - role: ansible-elasticsearch
+  vars:
+    es_data_dirs:
+      - "/opt/elasticsearch/data"
+    es_log_dir: "/opt/elasticsearch/logs"
+    es_config:
+      cluster.name: "test-cluster"
+      cluster.initial_master_nodes: ["node1-ip", "node2-ip", "node3-ip"]
+      discovery.seed_hosts: ["node1-ip:9300", "node2-ip:9300", "node3-ip:9300"]
+      bootstrap.memory_lock: true
+      network.host: "0.0.0.0"
+    es_heap_size: 4g
+
+- name: Node 2 and 3
+  hosts: [node2, node3]
+  roles:
+    - role: ansible-elasticsearch
+  vars:
+    es_data_dirs:
+      - "/opt/elasticsearch/data"
+    es_log_dir: "/opt/elasticsearch/logs"
+    es_config:
+      cluster.name: "test-cluster"
+      cluster.initial_master_nodes: ["node1-ip", "node2-ip", "node3-ip"]
+      discovery.seed_hosts: ["node1-ip:9300", "node2-ip:9300", "node3-ip:9300"]
+      bootstrap.memory_lock: true
+      network.host: "0.0.0.0"
+    es_heap_size: 4g

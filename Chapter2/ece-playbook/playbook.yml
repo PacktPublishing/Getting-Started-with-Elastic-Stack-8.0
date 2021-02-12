@@ -1,0 +1,30 @@
+---
+- hosts: primary
+  become: yes
+  gather_facts: true
+  roles:
+    - ansible-ece
+  vars:
+    ece_primary: true
+    elastic_authorized_keys_file: "<my-ssh-key>"
+    availability_zone: "zone-1"
+
+- hosts: secondary
+  become: yes
+  gather_facts: true
+  roles:
+    - ansible-ece
+  vars:
+    ece_roles: [director, coordinator, proxy, allocator]
+    elastic_authorized_keys_file: "<my-ssh-key>"
+    availability_zone: "zone-2"
+
+- hosts: tertiary
+  become: yes
+  gather_facts: true
+  roles:
+    - ansible-ece
+  vars:
+    ece_roles: [director, coordinator, proxy, allocator]
+    elastic_authorized_keys_file: "<my-ssh-key>"
+    availability_zone: "zone-3"

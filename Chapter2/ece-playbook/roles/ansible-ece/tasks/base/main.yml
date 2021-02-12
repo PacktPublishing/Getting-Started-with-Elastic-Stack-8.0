@@ -1,0 +1,43 @@
+---
+- name: Include OS specific vars
+  include_vars: "{{ item }}"
+  with_first_found:
+  - os_{{ ansible_distribution }}_{{ ansible_distribution_major_version }}.yml
+  - unsupported.yml
+
+- name: Check that OS is supported
+  fail:
+    msg: "ERROR: OS {{ ansible_distribution }} {{ ansible_distribution_major_version}} is not supported!"
+  when: unsupported_version is defined and unsupported_version
+
+- name: Set docker version
+  set_fact:
+    docker_version: "{{ docker_version | default(docker_version_map.keys()|list|last) }}"
+
+- name: Assert docker version is supported
+  assert:
+    that: "docker_version in docker_version_map.keys()"
+    msg: "Docker version must be one of {{ docker_version_map.keys() }}"
+
+- include_tasks: general/dependencies.yml
+
+- name: execute os specific tasks
+  include_tasks: "{{ ansible_distribution }}-{{ ansible_distribution_major_version}}/main.yml"
+
+- include_tasks: general/make_user.yml
+- include_tasks: general/set_limits.yml
+  tags: [setup_filesystem, destructive]
+  when: ansible_lvm['vgs']['lxc'] is not defined or force_xfc == true
+- include_tasks: general/update_grub_docker.yml
+  tags: [setup_filesystem, destructive]
+- include_tasks: general/configure_docker.yml
+  tags: [install_docker, destructive]
+- include_tasks: general/sysctl_scripts.yml
+- include_tasks: general/kernel_modules.yml
+
+- name: skip automatic ephemeral mount
+  copy:
+    dest: /etc/cloud/cloud.cfg.d/01-mounts.cfg
+    content: |
+      mounts:
+        - [ ephemeral0, null ]

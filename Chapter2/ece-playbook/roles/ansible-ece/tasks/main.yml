@@ -1,0 +1,15 @@
+---
+- import_tasks: base/main.yml
+  tags: [base]
+
+- import_tasks: vmimage/main.yml
+  tags: [never, vmimage]
+
+- import_tasks: direct-install/main.yml
+  tags: [ece]
+
+- import_tasks: ece-bootstrap/main.yml
+  tags: [ece, bootstrap]
+
+- import_tasks: diagnostics/main.yml
+  when: fetch_diagnostics == true

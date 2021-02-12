@@ -1,0 +1,13 @@
+[primary]
+host1-ip
+
+[secondary]
+host2-ip
+
+[tertiary]
+host3-ip
+
+[ece:children]
+primary
+secondary
+tertiary

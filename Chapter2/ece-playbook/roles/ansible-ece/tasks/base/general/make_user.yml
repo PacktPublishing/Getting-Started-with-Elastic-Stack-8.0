@@ -1,0 +1,70 @@
+---
+- name: Determine Available groups
+  getent:
+    database: group
+
+- name: Is there an elastic User
+  getent:
+    key: "elastic"
+    database: passwd
+    fail_key: false
+
+- name: Add group elastic
+  group:
+    name:  "{{ item }}"
+    state: present
+  when: item not in ansible_facts.getent_group
+  with_items:
+      - docker
+      - elastic
+
+- name: Add user elastic
+  user:
+    name: elastic
+    group: elastic
+    groups: docker
+    append: yes
+    state: present
+    generate_ssh_key: true
+  when: getent_passwd["elastic"] == none
+
+- name: Modify user elastic to be included in groups
+  user:
+    name: elastic
+    groups: docker
+    append: yes
+  when: getent_passwd["elastic"] != none
+
+- name: Check for user elastic's authorized_keys file
+  stat:
+    path: ~elastic/.ssh/authorized_keys
+  register: es_authorized_keys
+
+# If elastic_authorized_keys_file is not set, copy the authorized keys from default ansible user
+- name: Copy keys from default user to elastic user
+  copy:
+    src: "~{{ ansible_ssh_user }}/.ssh/authorized_keys"
+    dest: ~elastic/.ssh/
+    remote_src: yes
+  when: es_authorized_keys.stat.exists == false and elastic_authorized_keys_file is not defined
+
+# If elastic_authorized_keys_file is defined, use that (local) path to copy the keys from
+- name: Copy local keys to elastic user
+  copy:
+    src: "{{elastic_authorized_keys_file}}"
+    dest: ~elastic/.ssh/
+  when: elastic_authorized_keys_file is defined
+
+- name: Set pwd policy
+  lineinfile:
+    path: /etc/sudoers.d/99-ece-users
+    line: 'elastic ALL=(ALL) NOPASSWD:ALL'
+    state: present
+    create: true
+
+- name: set boot user
+  template:
+    src: elastic.cfg.j2
+    dest: /etc/cloud/cloud.cfg.d/00-elastic.cfg
+  vars:
+    image_user: elastic

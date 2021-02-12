@@ -1,0 +1,44 @@
+---
+- name: Download ece installer
+  get_url:
+    url: "{{ ece_installer_url }}"
+    dest: /home/elastic/elastic-cloud-enterprise.sh
+    mode: 0755
+
+- name: Ensure ~/.docker is present
+  file:
+    path: /home/elastic/.docker/
+    state: directory
+    owner: elastic
+
+- name: Copy local docker config
+  copy:
+    src: "{{ docker_config }}"
+    dest: /home/elastic/.docker/config.json
+    owner: elastic
+  when: docker_config != ""
+
+- name: Check if an installation or upgrade should be performed
+  shell: docker ps -a -f name=frc-runners-runner --format {%raw%}"{{.Image}}"{%endraw%}
+  register: existing_runner
+
+- name: Create memory settings
+  set_fact:
+    memory_settings: ' {"runner":{"xms":"{{memory.runner}}","xmx":"{{memory.runner}}"},"proxy":{"xms":"{{memory.proxy}}","xmx":"{{memory.proxy}}"},"zookeeper":{"xms":"{{memory.zookeeper}}","xmx":"{{memory.zookeeper}}"},"director":{"xms":"{{memory.director}}","xmx":"{{memory.director}}"},"constructor":{"xms":"{{memory.constructor}}","xmx":"{{memory.constructor}}"},"admin-console":{"xms":"{{memory.adminconsole}}","xmx":"{{memory.adminconsole}}"}}'
+
+- name: Install Elastic Cloud Enterprise
+  block:
+    - include_tasks: primary/main.yml
+      when: ece_primary is defined and ece_primary
+
+    - include_tasks: secondary/main.yml
+      when: ece_primary is undefined or not ece_primary
+
+    - debug:
+        msg: "Adminconsole is reachable at: https://{{ primary_hostname }}:12443"
+    - debug:
+        msg: "Adminconsole password is: {{ adminconsole_root_password }}"
+  when: existing_runner.stdout == ""
+
+- include_tasks: upgrade.yml
+  when: existing_runner.stdout != ""
