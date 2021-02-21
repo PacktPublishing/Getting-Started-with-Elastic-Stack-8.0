@@ -1,0 +1,176 @@
+{
+    "_id" : "watch-1_da65c25f-49fc-4ba3-b2e4-39235757def0-2021-02-20T05:58:00.425526518Z",
+    "watch_record" : {
+      "watch_id" : "watch-1",
+      "node" : "vws8w8neQiCSRPGbmMvevA",
+      "state" : "executed",
+      "user" : "295916864",
+      "status" : {
+        "state" : {
+          "active" : true,
+          "timestamp" : "2021-02-20T05:57:58.274Z"
+        },
+        "last_checked" : "2021-02-20T05:58:00.425Z",
+        "last_met_condition" : "2021-02-20T05:58:00.425Z",
+        "actions" : {
+          "index_action" : {
+            "ack" : {
+              "timestamp" : "2021-02-20T05:58:00.425Z",
+              "state" : "ackable"
+            },
+            "last_execution" : {
+              "timestamp" : "2021-02-20T05:58:00.425Z",
+              "successful" : true
+            },
+            "last_successful_execution" : {
+              "timestamp" : "2021-02-20T05:58:00.425Z",
+              "successful" : true
+            }
+          }
+        },
+        "execution_state" : "executed",
+        "version" : 11
+      },
+      "trigger_event" : {
+        "type" : "manual",
+        "triggered_time" : "2021-02-20T05:58:00.425Z",
+        "manual" : {
+          "schedule" : {
+            "scheduled_time" : "2021-02-20T05:58:00.425Z"
+          }
+        }
+      },
+      "input" : {
+        "search" : {
+          "request" : {
+            "search_type" : "query_then_fetch",
+            "indices" : [
+              "web-logs"
+            ],
+            "rest_total_hits_as_int" : true,
+            "body" : {
+              "size" : 0,
+              "query" : {
+                "bool" : {
+                  "must" : [
+                    {
+                      "range" : {
+                        "@timestamp" : {
+                          "gte" : "now-2m"
+                        }
+                      }
+                    },
+                    {
+                      "match" : {
+                        "http.response.status_code" : "500"
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      },
+      "condition" : {
+        "compare" : {
+          "ctx.payload.hits.total" : {
+            "gt" : 10
+          }
+        }
+      },
+      "metadata" : {
+        "watcher-name" : "http-500-threshold"
+      },
+      "result" : {
+        "execution_time" : "2021-02-20T05:58:00.425Z",
+        "execution_duration" : 806,
+        "input" : {
+          "type" : "search",
+          "status" : "success",
+          "payload" : {
+            "_shards" : {
+              "total" : 1,
+              "failed" : 0,
+              "successful" : 1,
+              "skipped" : 0
+            },
+            "hits" : {
+              "hits" : [ ],
+              "total" : 14,
+              "max_score" : null
+            },
+            "took" : 558,
+            "timed_out" : false
+          },
+          "search" : {
+            "request" : {
+              "search_type" : "query_then_fetch",
+              "indices" : [
+                "web-logs"
+              ],
+              "rest_total_hits_as_int" : true,
+              "body" : {
+                "size" : 0,
+                "query" : {
+                  "bool" : {
+                    "must" : [
+                      {
+                        "range" : {
+                          "@timestamp" : {
+                            "gte" : "now-2m"
+                          }
+                        }
+                      },
+                      {
+                        "match" : {
+                          "http.response.status_code" : "500"
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        },
+        "condition" : {
+          "type" : "compare",
+          "status" : "success",
+          "met" : true,
+          "compare" : {
+            "resolved_values" : {
+              "ctx.payload.hits.total" : 14
+            }
+          }
+        },
+        "actions" : [
+          {
+            "id" : "index_action",
+            "type" : "index",
+            "status" : "success",
+            "transform" : {
+              "type" : "script",
+              "status" : "success",
+              "payload" : {
+                "@timestamp" : "2021-02-20T05:58:00.425510618Z",
+                "alert.message" : "14 HTTP 500 events found"
+              }
+            },
+            "index" : {
+              "response" : {
+                "created" : true,
+                "result" : "created",
+                "id" : "ADsEvncB7RgTI14mLvR8",
+                "version" : 1,
+                "type" : "_doc",
+                "index" : "test-watcher-alerts"
+              }
+            }
+          }
+        ]
+      },
+      "messages" : [ ]
+    }
+  }
+  

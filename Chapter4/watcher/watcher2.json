@@ -1,0 +1,62 @@
+PUT _watcher/watch/watch-2
+{
+  "metadata": {
+    "watcher-name": "http-response-size-alert"
+  },
+  "trigger": {
+    "schedule": {
+      "interval": "2m"
+    }
+  },
+  "input": {
+    "search": {
+      "request": {
+        "indices": "web-logs",
+        "body": {
+          "size": 0,
+          "query": {
+            "bool": {
+              "must": [
+                {
+                  "range": {
+                    "@timestamp": {
+                      "gte": "now-2m"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "aggs": {
+            "avg_bytes": {
+              "avg": {
+                "field": "http.response.body.bytes"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "condition": {
+    "compare": {
+      "ctx.payload.aggregations.avg_bytes.value": {
+        "gt": 200
+      }
+    }
+  },
+  "actions": {
+    "index_action": {
+      "transform": {
+        "script": """
+      return [ "@timestamp" : ctx.trigger.triggered_time, "alert.message": "Average response bytes in the last 2 minutes was " + ctx.payload.aggregations.avg_bytes.value]; 
+      """
+      },
+      "index": {
+        "index": "test-watcher-alerts"
+      }
+    }
+  }
+}
+
+POST _watcher/watch/watch-2/_execute

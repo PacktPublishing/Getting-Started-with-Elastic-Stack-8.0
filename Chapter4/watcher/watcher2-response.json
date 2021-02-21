@@ -1,0 +1,185 @@
+{
+    "_id" : "watch-2_787fccdc-3248-41d3-9b0a-82d6f3aa926d-2021-02-20T23:46:37.910913026Z",
+    "watch_record" : {
+      "watch_id" : "watch-2",
+      "node" : "vws8w8neQiCSRPGbmMvevA",
+      "state" : "executed",
+      "user" : "295916864",
+      "status" : {
+        "state" : {
+          "active" : true,
+          "timestamp" : "2021-02-20T23:46:34.355Z"
+        },
+        "last_checked" : "2021-02-20T23:46:37.910Z",
+        "last_met_condition" : "2021-02-20T23:46:37.910Z",
+        "actions" : {
+          "index_action" : {
+            "ack" : {
+              "timestamp" : "2021-02-20T23:46:37.910Z",
+              "state" : "ackable"
+            },
+            "last_execution" : {
+              "timestamp" : "2021-02-20T23:46:37.910Z",
+              "successful" : true
+            },
+            "last_successful_execution" : {
+              "timestamp" : "2021-02-20T23:46:37.910Z",
+              "successful" : true
+            }
+          }
+        },
+        "execution_state" : "executed",
+        "version" : 6
+      },
+      "trigger_event" : {
+        "type" : "manual",
+        "triggered_time" : "2021-02-20T23:46:37.910Z",
+        "manual" : {
+          "schedule" : {
+            "scheduled_time" : "2021-02-20T23:46:37.910Z"
+          }
+        }
+      },
+      "input" : {
+        "search" : {
+          "request" : {
+            "search_type" : "query_then_fetch",
+            "indices" : [
+              "web-logs"
+            ],
+            "rest_total_hits_as_int" : true,
+            "body" : {
+              "size" : 0,
+              "query" : {
+                "bool" : {
+                  "must" : [
+                    {
+                      "range" : {
+                        "@timestamp" : {
+                          "gte" : "now-2m"
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "aggs" : {
+                "avg_bytes" : {
+                  "avg" : {
+                    "field" : "http.response.body.bytes"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "condition" : {
+        "compare" : {
+          "ctx.payload.aggregations.avg_bytes.value" : {
+            "gt" : 200
+          }
+        }
+      },
+      "metadata" : {
+        "watcher-name" : "http-response-size-alert"
+      },
+      "result" : {
+        "execution_time" : "2021-02-20T23:46:37.910Z",
+        "execution_duration" : 6,
+        "input" : {
+          "type" : "search",
+          "status" : "success",
+          "payload" : {
+            "_shards" : {
+              "total" : 1,
+              "failed" : 0,
+              "successful" : 1,
+              "skipped" : 0
+            },
+            "hits" : {
+              "hits" : [ ],
+              "total" : 19,
+              "max_score" : null
+            },
+            "took" : 1,
+            "timed_out" : false,
+            "aggregations" : {
+              "avg_bytes" : {
+                "value" : 253.68421052631578
+              }
+            }
+          },
+          "search" : {
+            "request" : {
+              "search_type" : "query_then_fetch",
+              "indices" : [
+                "web-logs"
+              ],
+              "rest_total_hits_as_int" : true,
+              "body" : {
+                "size" : 0,
+                "query" : {
+                  "bool" : {
+                    "must" : [
+                      {
+                        "range" : {
+                          "@timestamp" : {
+                            "gte" : "now-2m"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                },
+                "aggs" : {
+                  "avg_bytes" : {
+                    "avg" : {
+                      "field" : "http.response.body.bytes"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "condition" : {
+          "type" : "compare",
+          "status" : "success",
+          "met" : true,
+          "compare" : {
+            "resolved_values" : {
+              "ctx.payload.aggregations.avg_bytes.value" : 253.68421052631578
+            }
+          }
+        },
+        "actions" : [
+          {
+            "id" : "index_action",
+            "type" : "index",
+            "status" : "success",
+            "transform" : {
+              "type" : "script",
+              "status" : "success",
+              "payload" : {
+                "@timestamp" : "2021-02-20T23:46:37.910900425Z",
+                "alert.message" : "Average response bytes in the last 2 minutes was 253.68421052631578"
+              }
+            },
+            "index" : {
+              "response" : {
+                "created" : true,
+                "result" : "created",
+                "id" : "AjvWwXcB7RgTI14mhvfa",
+                "version" : 1,
+                "type" : "_doc",
+                "index" : "test-watcher-alerts"
+              }
+            }
+          }
+        ]
+      },
+      "messages" : [ ]
+    }
+  }
+  

@@ -1,0 +1,70 @@
+PUT _watcher/watch/watch-3
+{
+  "metadata": {
+    "watcher-name": "http-referrer-amazon"
+  },
+  "trigger": {
+    "schedule": {
+      "interval": "2m"
+    }
+  },
+  "input": {
+    "search": {
+      "request": {
+        "indices": "web-logs",
+        "body": {
+          "size": 10000,
+          "query": {
+            "bool": {
+              "must": [
+                {
+                  "range": {
+                    "@timestamp": {
+                      "gte": "now-2m"
+                    }
+                  }
+                },
+                {
+                  "wildcard": {
+                    "http.request.referrer": "*amazon.com*"
+                  }
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "condition": {
+    "compare": {
+      "ctx.payload.hits.total": {
+        "gt": 0
+      }
+    }
+  },
+  "actions": {
+    "index_action": {
+      "transform": {
+        "script": """
+        //define new list of alert documents
+        def documents = [];
+        for (def i: ctx.payload.hits.hits){
+          //put search hit into alert body
+          def alert = i._source;
+          //add alert specific fields
+          alert['@timestamp'] = ctx.trigger.triggered_time;
+          alert['alert.message'] = "HTTP referrer *amazon.com* detected";
+          //collect all alerts in a list for indexing
+          documents.add(alert);
+        }
+      return [ "_doc" : documents];
+      """
+      },
+      "index": {
+        "index": "test-watcher-alerts"
+      }
+    }
+  }
+}
+POST _watcher/watch/watch-3/_execute

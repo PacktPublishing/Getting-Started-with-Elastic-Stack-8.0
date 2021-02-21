@@ -1,0 +1,11 @@
+PUT _ingest/pipeline/current-time
+{
+  "processors": [
+    {
+      "set": {
+        "field": "@timestamp",
+        "value": "{{_ingest.timestamp}}"
+      }
+    }
+  ]
+}

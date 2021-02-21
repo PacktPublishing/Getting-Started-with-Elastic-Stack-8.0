@@ -1,0 +1,60 @@
+PUT _watcher/watch/watch-1
+{
+  "metadata": {
+    "watcher-name": "http-500-threshold"
+  },
+  "trigger": {
+    "schedule": {
+      "interval": "2m"
+    }
+  },
+  "input": {
+    "search": {
+      "request": {
+        "indices": "web-logs",
+        "body": {
+          "size": 0,
+          "query": {
+            "bool": {
+              "must": [
+                {
+                  "range": {
+                    "@timestamp": {
+                      "gte": "now-2m"
+                    }
+                  }
+                },
+                {
+                  "match": {
+                    "http.response.status_code": "500"
+                  }
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "condition": {
+    "compare": {
+      "ctx.payload.hits.total": {
+        "gt": 10
+      }
+    }
+  },
+  "actions": {
+    "index_action": {
+      "transform": {
+        "script": """
+      return [ "@timestamp" : ctx.trigger.triggered_time, "alert.message": ctx.payload.hits.total + " HTTP 500 events found"]; 
+      """
+      },
+      "index": {
+        "index": "test-watcher-alerts"
+      }
+    }
+  }
+}
+
+POST _watcher/watch/watch-1/_execute

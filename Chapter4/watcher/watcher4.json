@@ -1,0 +1,124 @@
+PUT _watcher/watch/watch-4
+{
+  "metadata": {
+    "watcher-name": "usage-quota-report",
+    "threshold_count": 45
+  },
+  "trigger": {
+    "schedule": {
+      "interval": "2m"
+    }
+  },
+  "input": {
+    "search": {
+      "request": {
+        "indices": "web-logs",
+        "body": {
+          "size": 0,
+          "query": {
+            "bool": {
+              "must": [
+                {
+                  "range": {
+                    "@timestamp": {
+                      "gte": "now-2m"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "aggs": {
+            "interval": {
+              "date_histogram": {
+                "field": "@timestamp",
+                "interval": "2m"
+              },
+              "aggs": {
+                "users": {
+                  "terms": {
+                    "field": "user.name",
+                    "size": 100
+                  },
+                  "aggs": {
+                    "bytes": {
+                      "sum": {
+                        "field": "http.response.body.bytes"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "condition": {
+    "script": {
+      "source": """
+      ctx.payload.size = ctx.payload.aggregations.interval.buckets.size();
+      if (ctx.payload.aggregations.interval.buckets.size() == 0){
+        return false;
+      } else {
+        return true;
+      }
+      """
+    }
+  },
+  "transform": {
+    "script": """
+        //define new list of alert documents
+        def documents = [];
+        
+        for (def i: ctx.payload.aggregations.interval.buckets){
+          for (def j: i.users.buckets){
+            if (j.doc_count > ctx.metadata.threshold_count){
+              def alert = new HashMap();
+              alert['@timestamp'] = ctx.trigger.triggered_time;
+              alert['time_interval_string'] = i.key_as_string;
+              alert['time_interval'] = i.key;
+              alert['user.name'] = j.key;
+              alert['request_count'] = j.doc_count;
+              alert['http.response.body.bytes'] = j.bytes.value;
+              documents.add(alert);
+            }
+          }
+        }
+        
+      return [ "_doc" : documents];
+      """
+  },
+  "actions": {
+    "index_action": {
+      "index": {
+        "index": "test-watcher-alerts"
+      }
+    },
+    "email_action": {
+      "email": {
+        "to": "admin@email.com",
+        "subject": "Watcher Notification",
+        "body": {
+          "html": """
+        <h1>Usage quota report for web-logs</h1>
+        <br/>
+        {{#ctx.payload._doc}}
+        <b>User name</b>: {{user.name}} <br/>
+        <b>Sum of bytes received</b>: {{http.response.body.bytes}} <br/>
+        <b>Number of requests</b>: {{request_count}} <br/>
+        <b>Time interval</b>: {{time_interval_string}} <br/>
+        <b>Time generated</b>: {{@timestamp}} <br/>
+        **********************
+        <br/>
+        
+        {{/ctx.payload._doc}}
+        """
+        }
+      }
+    }
+  }
+}
+
+POST _watcher/watch/watch-4/_execute

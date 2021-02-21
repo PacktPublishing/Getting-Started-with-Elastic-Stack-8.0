@@ -1,0 +1,306 @@
+{
+    "_id" : "watch-4_9c3d2196-6622-45e0-9639-39ce3fd957b4-2021-02-21T06:17:11.336673133Z",
+    "watch_record" : {
+      "watch_id" : "watch-4",
+      "node" : "Qzog8p_7SOGzGvU7AvJ0Fg",
+      "state" : "executed",
+      "user" : "295916864",
+      "status" : {
+        "state" : {
+          "active" : true,
+          "timestamp" : "2021-02-21T06:16:36.791Z"
+        },
+        "last_checked" : "2021-02-21T06:17:11.336Z",
+        "last_met_condition" : "2021-02-21T06:17:11.336Z",
+        "actions" : {
+          "email_action" : {
+            "ack" : {
+              "timestamp" : "2021-02-21T06:17:11.336Z",
+              "state" : "ackable"
+            },
+            "last_execution" : {
+              "timestamp" : "2021-02-21T06:17:11.336Z",
+              "successful" : true
+            },
+            "last_successful_execution" : {
+              "timestamp" : "2021-02-21T06:17:11.336Z",
+              "successful" : true
+            }
+          },
+          "index_action" : {
+            "ack" : {
+              "timestamp" : "2021-02-21T06:17:11.336Z",
+              "state" : "ackable"
+            },
+            "last_execution" : {
+              "timestamp" : "2021-02-21T06:17:11.336Z",
+              "successful" : true
+            },
+            "last_successful_execution" : {
+              "timestamp" : "2021-02-21T06:17:11.336Z",
+              "successful" : true
+            }
+          }
+        },
+        "execution_state" : "executed",
+        "version" : 33
+      },
+      "trigger_event" : {
+        "type" : "manual",
+        "triggered_time" : "2021-02-21T06:17:11.336Z",
+        "manual" : {
+          "schedule" : {
+            "scheduled_time" : "2021-02-21T06:17:11.336Z"
+          }
+        }
+      },
+      "input" : {
+        "search" : {
+          "request" : {
+            "search_type" : "query_then_fetch",
+            "indices" : [
+              "web-logs"
+            ],
+            "rest_total_hits_as_int" : true,
+            "body" : {
+              "size" : 0,
+              "query" : {
+                "bool" : {
+                  "must" : [
+                    {
+                      "range" : {
+                        "@timestamp" : {
+                          "gte" : "now-2m"
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "aggs" : {
+                "interval" : {
+                  "date_histogram" : {
+                    "field" : "@timestamp",
+                    "interval" : "2m"
+                  },
+                  "aggs" : {
+                    "users" : {
+                      "terms" : {
+                        "field" : "user.name",
+                        "size" : 100
+                      },
+                      "aggs" : {
+                        "bytes" : {
+                          "sum" : {
+                            "field" : "http.response.body.bytes"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "condition" : {
+        "script" : {
+          "source" : "\n      ctx.payload.size = ctx.payload.aggregations.interval.buckets.size();\n      if (ctx.payload.aggregations.interval.buckets.size() == 0){\n        return false;\n      } else {\n        return true;\n      }\n      ",
+          "lang" : "painless"
+        }
+      },
+      "metadata" : {
+        "watcher-name" : "usage-quota-report",
+        "threshold_count" : 45
+      },
+      "result" : {
+        "execution_time" : "2021-02-21T06:17:11.336Z",
+        "execution_duration" : 132,
+        "input" : {
+          "type" : "search",
+          "status" : "success",
+          "payload" : {
+            "_shards" : {
+              "total" : 1,
+              "failed" : 0,
+              "successful" : 1,
+              "skipped" : 0
+            },
+            "hits" : {
+              "hits" : [ ],
+              "total" : 117,
+              "max_score" : null
+            },
+            "took" : 3,
+            "size" : 1,
+            "timed_out" : false,
+            "aggregations" : {
+              "interval" : {
+                "buckets" : [
+                  {
+                    "key_as_string" : "2021-02-21T06:16:00.000Z",
+                    "doc_count" : 117,
+                    "key" : 1613888160000,
+                    "users" : {
+                      "doc_count_error_upper_bound" : 0,
+                      "sum_other_doc_count" : 0,
+                      "buckets" : [
+                        {
+                          "doc_count" : 64,
+                          "bytes" : {
+                            "value" : 960.0
+                          },
+                          "key" : "u11200"
+                        },
+                        {
+                          "doc_count" : 48,
+                          "bytes" : {
+                            "value" : 720.0
+                          },
+                          "key" : "u11980"
+                        },
+                        {
+                          "doc_count" : 5,
+                          "bytes" : {
+                            "value" : 75.0
+                          },
+                          "key" : "u11300"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "search" : {
+            "request" : {
+              "search_type" : "query_then_fetch",
+              "indices" : [
+                "web-logs"
+              ],
+              "rest_total_hits_as_int" : true,
+              "body" : {
+                "size" : 0,
+                "query" : {
+                  "bool" : {
+                    "must" : [
+                      {
+                        "range" : {
+                          "@timestamp" : {
+                            "gte" : "now-2m"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                },
+                "aggs" : {
+                  "interval" : {
+                    "date_histogram" : {
+                      "field" : "@timestamp",
+                      "interval" : "2m"
+                    },
+                    "aggs" : {
+                      "users" : {
+                        "terms" : {
+                          "field" : "user.name",
+                          "size" : 100
+                        },
+                        "aggs" : {
+                          "bytes" : {
+                            "sum" : {
+                              "field" : "http.response.body.bytes"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "condition" : {
+          "type" : "script",
+          "status" : "success",
+          "met" : true
+        },
+        "transform" : {
+          "type" : "script",
+          "status" : "success",
+          "payload" : {
+            "_doc" : [
+              {
+                "@timestamp" : "2021-02-21T06:17:11.336644132Z",
+                "time_interval_string" : "2021-02-21T06:16:00.000Z",
+                "user.name" : "u11200",
+                "time_interval" : 1613888160000,
+                "request_count" : 64,
+                "http.response.body.bytes" : 960.0
+              },
+              {
+                "@timestamp" : "2021-02-21T06:17:11.336644132Z",
+                "time_interval_string" : "2021-02-21T06:16:00.000Z",
+                "user.name" : "u11980",
+                "time_interval" : 1613888160000,
+                "request_count" : 48,
+                "http.response.body.bytes" : 720.0
+              }
+            ]
+          }
+        },
+        "actions" : [
+          {
+            "id" : "email_action",
+            "type" : "email",
+            "status" : "success",
+            "email" : {
+              "account" : "work",
+              "message" : {
+                "id" : "email_action_watch-4_9c3d2196-6622-45e0-9639-39ce3fd957b4-2021-02-21T06:17:11.336673133Z_3",
+                "from" : "Watcher Alert <noreply@watcheralert.found.io>",
+                "sent_date" : "2021-02-21T06:17:11.352261046Z",
+                "to" : [
+                  "admin@email.com"
+                ],
+                "subject" : "Watcher Notification",
+                "body" : {
+                  "html" : "\n        <h1>Usage quota report for web-logs</h1>\n        <br />\n        <b>User name</b>: u11200 <br />\n        <b>Sum of bytes received</b>: 960.0 <br />\n        <b>Number of requests</b>: 64 <br />\n        <b>Time interval</b>: 2021-02-21T06:16:00.000Z <br />\n        <b>Time generated</b>: 2021-02-21T06:17:11.336644132Z <br />\n        **********************\n        <br />\n        \n        <b>User name</b>: u11980 <br />\n        <b>Sum of bytes received</b>: 720.0 <br />\n        <b>Number of requests</b>: 48 <br />\n        <b>Time interval</b>: 2021-02-21T06:16:00.000Z <br />\n        <b>Time generated</b>: 2021-02-21T06:17:11.336644132Z <br />\n        **********************\n        <br />\n        \n        "
+                }
+              }
+            }
+          },
+          {
+            "id" : "index_action",
+            "type" : "index",
+            "status" : "success",
+            "index" : {
+              "response" : [
+                {
+                  "created" : true,
+                  "result" : "created",
+                  "id" : "AFE8w3cBTxXXWlhyFwKw",
+                  "version" : 1,
+                  "type" : "_doc",
+                  "index" : "test-watcher-alerts"
+                },
+                {
+                  "created" : true,
+                  "result" : "created",
+                  "id" : "AVE8w3cBTxXXWlhyFwKw",
+                  "version" : 1,
+                  "type" : "_doc",
+                  "index" : "test-watcher-alerts"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "messages" : [ ]
+    }
+  }
+  
