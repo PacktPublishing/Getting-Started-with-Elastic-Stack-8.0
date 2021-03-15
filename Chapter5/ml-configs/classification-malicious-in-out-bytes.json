@@ -1,0 +1,37 @@
+{
+    "description": "",
+    "source": {
+      "index": "webapp-tagged",
+      "query": {
+        "match_all": {}
+      }
+    },
+    "dest": {
+      "index": "cl-malicious-in-out-bytes",
+      "results_field": "ml"
+    },
+    "analyzed_fields": {
+      "includes": [
+        "event.action",
+        "event.dataset",
+        "event.kind",
+        "http.request.bytes",
+        "http.request.method",
+        "http.response.bytes",
+        "http.response.status_code",
+        "malicious"
+      ]
+    },
+    "analysis": {
+      "classification": {
+        "dependent_variable": "malicious",
+        "num_top_feature_importance_values": 0,
+        "training_percent": 85,
+        "prediction_field_name": "malicious_prediction",
+        "randomize_seed": -9117515273248984000,
+        "num_top_classes": -1
+      }
+    },
+    "model_memory_limit": "25mb",
+    "max_num_threads": 1
+  }

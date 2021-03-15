@@ -1,0 +1,803 @@
+{
+    "docs" : [
+      {
+        "doc" : {
+          "_index" : "webapp",
+          "_type" : "_doc",
+          "_id" : "Yed0MngBVgrfkQdcHl3S",
+          "_source" : {
+            "user.name" : "u110191",
+            "source" : {
+              "geo" : {
+                "continent_name" : "North America",
+                "country_name" : "United States",
+                "location" : {
+                  "lon" : -97.822,
+                  "lat" : 37.751
+                },
+                "country_iso_code" : "US"
+              },
+              "ip" : "64.213.79.243"
+            },
+            "url" : {
+              "path" : "user/manage.php",
+              "scheme" : "https",
+              "domain" : "host-systems.net",
+              "full" : "https://host-systems.net/user/manage.php"
+            },
+            "http.request.bytes" : "132",
+            "event.action" : "view",
+            "@timestamp" : "2021-03-15T10:20:00.000Z",
+            "http.request.method" : "POST",
+            "http.response.bytes" : "1417",
+            "event.kind" : "request",
+            "http.response.status_code" : "200",
+            "event.dataset" : "weblogs",
+            "user_agent" : {
+              "name" : "Chrome",
+              "original" : "Mozilla/5.0 (X11; CrOS x86_64 13597.94.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.186 Safari/537.185",
+              "os" : {
+                "name" : "Chrome OS",
+                "version" : "13597.94.0",
+                "full" : "Chrome OS 13597.94.0"
+              },
+              "device" : {
+                "name" : "Other"
+              },
+              "version" : "88.0.4324.186"
+            },
+            "ml" : {
+              "inference" : {
+                "prediction" : false,
+                "prediction_score" : 0.6191689087412237,
+                "model_id" : "classification-request-payloads-1615680927179",
+                "probabilities" : [
+                  {
+                    "class_name" : false,
+                    "class_probability" : 0.9979443153851425,
+                    "class_score" : 0.6191689087412237
+                  },
+                  {
+                    "class_name" : true,
+                    "class_probability" : 0.002055684614857533,
+                    "class_score" : 0.002055684614857533
+                  }
+                ],
+                "prediction_probability" : 0.9979443153851425
+              }
+            }
+          },
+          "_ingest" : {
+            "timestamp" : "2021-03-14T20:46:37.264420872Z"
+          }
+        }
+      },
+      {
+        "doc" : {
+          "_index" : "webapp",
+          "_type" : "_doc",
+          "_id" : "Yud0MngBVgrfkQdcHl3S",
+          "_source" : {
+            "user.name" : "u110999",
+            "source" : {
+              "geo" : {
+                "continent_name" : "Oceania",
+                "region_iso_code" : "AU-VIC",
+                "city_name" : "Dandenong North",
+                "country_iso_code" : "AU",
+                "country_name" : "Australia",
+                "region_name" : "Victoria",
+                "location" : {
+                  "lon" : 145.2111,
+                  "lat" : -37.9566
+                }
+              },
+              "ip" : "101.161.219.38"
+            },
+            "url" : {
+              "path" : "user/customer.php",
+              "scheme" : "https",
+              "domain" : "host-systems.net",
+              "full" : "https://host-systems.net/user/customer.php"
+            },
+            "http.request.bytes" : "126",
+            "event.action" : "view",
+            "@timestamp" : "2021-03-15T10:50:00.000Z",
+            "http.request.method" : "POST",
+            "http.response.bytes" : "1097",
+            "event.kind" : "request",
+            "http.response.status_code" : "200",
+            "event.dataset" : "weblogs",
+            "user_agent" : {
+              "name" : "Chrome",
+              "original" : "Mozilla/5.0 (X11; CrOS x86_64 13597.94.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.186 Safari/537.200",
+              "os" : {
+                "name" : "Chrome OS",
+                "version" : "13597.94.0",
+                "full" : "Chrome OS 13597.94.0"
+              },
+              "device" : {
+                "name" : "Other"
+              },
+              "version" : "88.0.4324.186"
+            },
+            "ml" : {
+              "inference" : {
+                "prediction" : false,
+                "prediction_score" : 0.6191689087412237,
+                "model_id" : "classification-request-payloads-1615680927179",
+                "probabilities" : [
+                  {
+                    "class_name" : false,
+                    "class_probability" : 0.9979443153851425,
+                    "class_score" : 0.6191689087412237
+                  },
+                  {
+                    "class_name" : true,
+                    "class_probability" : 0.002055684614857533,
+                    "class_score" : 0.002055684614857533
+                  }
+                ],
+                "prediction_probability" : 0.9979443153851425
+              }
+            }
+          },
+          "_ingest" : {
+            "timestamp" : "2021-03-14T20:46:37.264432173Z"
+          }
+        }
+      },
+      {
+        "doc" : {
+          "_index" : "webapp",
+          "_type" : "_doc",
+          "_id" : "Y-d0MngBVgrfkQdcHl3S",
+          "_source" : {
+            "user.name" : "u110003",
+            "source" : {
+              "geo" : {
+                "continent_name" : "Oceania",
+                "region_iso_code" : "AU-VIC",
+                "city_name" : "Dandenong North",
+                "country_iso_code" : "AU",
+                "country_name" : "Australia",
+                "region_name" : "Victoria",
+                "location" : {
+                  "lon" : 145.2111,
+                  "lat" : -37.9566
+                }
+              },
+              "ip" : "101.161.219.38"
+            },
+            "url" : {
+              "path" : "user/stats.php",
+              "scheme" : "https",
+              "domain" : "host-systems.net",
+              "full" : "https://host-systems.net/user/stats.php"
+            },
+            "http.request.bytes" : "15",
+            "event.action" : "view",
+            "@timestamp" : "2021-03-15T11:20:00.000Z",
+            "http.request.method" : "GET",
+            "http.response.bytes" : "534",
+            "event.kind" : "request",
+            "http.response.status_code" : "200",
+            "event.dataset" : "weblogs",
+            "user_agent" : {
+              "name" : "Chrome",
+              "original" : "Mozilla/5.0 (X11; CrOS x86_64 13597.94.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.186 Safari/537.215",
+              "os" : {
+                "name" : "Chrome OS",
+                "version" : "13597.94.0",
+                "full" : "Chrome OS 13597.94.0"
+              },
+              "device" : {
+                "name" : "Other"
+              },
+              "version" : "88.0.4324.186"
+            },
+            "ml" : {
+              "inference" : {
+                "prediction" : false,
+                "prediction_score" : 0.6191689087412237,
+                "model_id" : "classification-request-payloads-1615680927179",
+                "probabilities" : [
+                  {
+                    "class_name" : false,
+                    "class_probability" : 0.9979443153851425,
+                    "class_score" : 0.6191689087412237
+                  },
+                  {
+                    "class_name" : true,
+                    "class_probability" : 0.002055684614857533,
+                    "class_score" : 0.002055684614857533
+                  }
+                ],
+                "prediction_probability" : 0.9979443153851425
+              }
+            }
+          },
+          "_ingest" : {
+            "timestamp" : "2021-03-14T20:46:37.264437573Z"
+          }
+        }
+      },
+      {
+        "doc" : {
+          "_index" : "webapp",
+          "_type" : "_doc",
+          "_id" : "ZOd0MngBVgrfkQdcHl3S",
+          "_source" : {
+            "user.name" : "u110191",
+            "source" : {
+              "geo" : {
+                "continent_name" : "North America",
+                "country_name" : "United States",
+                "location" : {
+                  "lon" : -97.822,
+                  "lat" : 37.751
+                },
+                "country_iso_code" : "US"
+              },
+              "ip" : "205.196.99.0"
+            },
+            "url" : {
+              "path" : "user/order.php",
+              "scheme" : "https",
+              "domain" : "host-systems.net",
+              "full" : "https://host-systems.net/user/order.php"
+            },
+            "http.request.bytes" : "9",
+            "event.action" : "view",
+            "@timestamp" : "2021-03-15T11:50:00.000Z",
+            "http.request.method" : "POST",
+            "http.response.bytes" : "675",
+            "event.kind" : "request",
+            "http.response.status_code" : "404",
+            "event.dataset" : "weblogs",
+            "user_agent" : {
+              "name" : "Chrome",
+              "original" : "Mozilla/5.0 (X11; CrOS x86_64 13597.94.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.186 Safari/537.230",
+              "os" : {
+                "name" : "Chrome OS",
+                "version" : "13597.94.0",
+                "full" : "Chrome OS 13597.94.0"
+              },
+              "device" : {
+                "name" : "Other"
+              },
+              "version" : "88.0.4324.186"
+            },
+            "ml" : {
+              "inference" : {
+                "prediction" : false,
+                "prediction_score" : 0.6191689087412237,
+                "model_id" : "classification-request-payloads-1615680927179",
+                "probabilities" : [
+                  {
+                    "class_name" : false,
+                    "class_probability" : 0.9979443153851425,
+                    "class_score" : 0.6191689087412237
+                  },
+                  {
+                    "class_name" : true,
+                    "class_probability" : 0.002055684614857533,
+                    "class_score" : 0.002055684614857533
+                  }
+                ],
+                "prediction_probability" : 0.9979443153851425
+              }
+            }
+          },
+          "_ingest" : {
+            "timestamp" : "2021-03-14T20:46:37.264442873Z"
+          }
+        }
+      },
+      {
+        "doc" : {
+          "_index" : "webapp",
+          "_type" : "_doc",
+          "_id" : "Zed0MngBVgrfkQdcHl3S",
+          "_source" : {
+            "user.name" : "u119041",
+            "source" : {
+              "geo" : {
+                "continent_name" : "North America",
+                "country_name" : "United States",
+                "location" : {
+                  "lon" : -97.822,
+                  "lat" : 37.751
+                },
+                "country_iso_code" : "US"
+              },
+              "ip" : "205.196.99.0"
+            },
+            "url" : {
+              "path" : "user/login.php",
+              "scheme" : "https",
+              "domain" : "host-systems.net",
+              "full" : "https://host-systems.net/user/login.php"
+            },
+            "http.request.bytes" : "13",
+            "event.action" : "view",
+            "@timestamp" : "2021-03-15T12:20:00.000Z",
+            "http.request.method" : "POST",
+            "http.response.bytes" : "1507",
+            "event.kind" : "request",
+            "http.response.status_code" : "403",
+            "event.dataset" : "weblogs",
+            "user_agent" : {
+              "name" : "Chrome",
+              "original" : "Mozilla/5.0 (X11; CrOS x86_64 13597.94.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.186 Safari/537.245",
+              "os" : {
+                "name" : "Chrome OS",
+                "version" : "13597.94.0",
+                "full" : "Chrome OS 13597.94.0"
+              },
+              "device" : {
+                "name" : "Other"
+              },
+              "version" : "88.0.4324.186"
+            },
+            "ml" : {
+              "inference" : {
+                "prediction" : false,
+                "prediction_score" : 0.6191689087412237,
+                "model_id" : "classification-request-payloads-1615680927179",
+                "probabilities" : [
+                  {
+                    "class_name" : false,
+                    "class_probability" : 0.9979443153851425,
+                    "class_score" : 0.6191689087412237
+                  },
+                  {
+                    "class_name" : true,
+                    "class_probability" : 0.002055684614857533,
+                    "class_score" : 0.002055684614857533
+                  }
+                ],
+                "prediction_probability" : 0.9979443153851425
+              }
+            }
+          },
+          "_ingest" : {
+            "timestamp" : "2021-03-14T20:46:37.264448173Z"
+          }
+        }
+      },
+      {
+        "doc" : {
+          "_index" : "webapp",
+          "_type" : "_doc",
+          "_id" : "Zud0MngBVgrfkQdcHl3S",
+          "_source" : {
+            "user.name" : "u110241",
+            "source" : {
+              "geo" : {
+                "continent_name" : "North America",
+                "country_name" : "United States",
+                "location" : {
+                  "lon" : -97.822,
+                  "lat" : 37.751
+                },
+                "country_iso_code" : "US"
+              },
+              "ip" : "64.213.79.243"
+            },
+            "url" : {
+              "path" : "user/login.php",
+              "scheme" : "https",
+              "domain" : "host-systems.net",
+              "full" : "https://host-systems.net/user/login.php"
+            },
+            "http.request.bytes" : "125",
+            "event.action" : "view",
+            "@timestamp" : "2021-03-15T12:50:00.000Z",
+            "http.request.method" : "POST",
+            "http.response.bytes" : "727",
+            "event.kind" : "request",
+            "http.response.status_code" : "200",
+            "event.dataset" : "weblogs",
+            "user_agent" : {
+              "name" : "Chrome",
+              "original" : "Mozilla/5.0 (X11; CrOS x86_64 13597.94.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.186 Safari/537.260",
+              "os" : {
+                "name" : "Chrome OS",
+                "version" : "13597.94.0",
+                "full" : "Chrome OS 13597.94.0"
+              },
+              "device" : {
+                "name" : "Other"
+              },
+              "version" : "88.0.4324.186"
+            },
+            "ml" : {
+              "inference" : {
+                "prediction" : false,
+                "prediction_score" : 0.6191689087412237,
+                "model_id" : "classification-request-payloads-1615680927179",
+                "probabilities" : [
+                  {
+                    "class_name" : false,
+                    "class_probability" : 0.9979443153851425,
+                    "class_score" : 0.6191689087412237
+                  },
+                  {
+                    "class_name" : true,
+                    "class_probability" : 0.002055684614857533,
+                    "class_score" : 0.002055684614857533
+                  }
+                ],
+                "prediction_probability" : 0.9979443153851425
+              }
+            }
+          },
+          "_ingest" : {
+            "timestamp" : "2021-03-14T20:46:37.264452873Z"
+          }
+        }
+      },
+      {
+        "doc" : {
+          "_index" : "webapp",
+          "_type" : "_doc",
+          "_id" : "Z-d0MngBVgrfkQdcHl3S",
+          "_source" : {
+            "user.name" : "u110213",
+            "source" : {
+              "geo" : {
+                "continent_name" : "North America",
+                "country_name" : "United States",
+                "location" : {
+                  "lon" : -97.822,
+                  "lat" : 37.751
+                },
+                "country_iso_code" : "US"
+              },
+              "ip" : "64.213.163.75"
+            },
+            "url" : {
+              "path" : "user/manage.php",
+              "scheme" : "https",
+              "domain" : "host-systems.net",
+              "full" : "https://host-systems.net/user/manage.php"
+            },
+            "http.request.bytes" : "92",
+            "event.action" : "view",
+            "@timestamp" : "2021-03-15T13:20:00.000Z",
+            "http.request.method" : "GET",
+            "http.response.bytes" : "278",
+            "event.kind" : "request",
+            "http.response.status_code" : "201",
+            "event.dataset" : "weblogs",
+            "user_agent" : {
+              "name" : "Chrome",
+              "original" : "Mozilla/5.0 (X11; CrOS x86_64 13597.94.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.186 Safari/537.275",
+              "os" : {
+                "name" : "Chrome OS",
+                "version" : "13597.94.0",
+                "full" : "Chrome OS 13597.94.0"
+              },
+              "device" : {
+                "name" : "Other"
+              },
+              "version" : "88.0.4324.186"
+            },
+            "ml" : {
+              "inference" : {
+                "prediction" : false,
+                "prediction_score" : 0.6191689087412237,
+                "model_id" : "classification-request-payloads-1615680927179",
+                "probabilities" : [
+                  {
+                    "class_name" : false,
+                    "class_probability" : 0.9979443153851425,
+                    "class_score" : 0.6191689087412237
+                  },
+                  {
+                    "class_name" : true,
+                    "class_probability" : 0.002055684614857533,
+                    "class_score" : 0.002055684614857533
+                  }
+                ],
+                "prediction_probability" : 0.9979443153851425
+              }
+            }
+          },
+          "_ingest" : {
+            "timestamp" : "2021-03-14T20:46:37.264457673Z"
+          }
+        }
+      },
+      {
+        "doc" : {
+          "_index" : "webapp",
+          "_type" : "_doc",
+          "_id" : "aOd0MngBVgrfkQdcHl3S",
+          "_source" : {
+            "user.name" : "u110191",
+            "source" : {
+              "geo" : {
+                "continent_name" : "North America",
+                "country_name" : "United States",
+                "location" : {
+                  "lon" : -97.822,
+                  "lat" : 37.751
+                },
+                "country_iso_code" : "US"
+              },
+              "ip" : "205.196.99.0"
+            },
+            "url" : {
+              "path" : "user/stats.php",
+              "scheme" : "https",
+              "domain" : "host-systems.net",
+              "full" : "https://host-systems.net/user/stats.php"
+            },
+            "http.request.bytes" : "102",
+            "event.action" : "view",
+            "@timestamp" : "2021-03-15T13:50:01.000Z",
+            "http.request.method" : "POST",
+            "http.response.bytes" : "611",
+            "event.kind" : "request",
+            "http.response.status_code" : "200",
+            "event.dataset" : "weblogs",
+            "user_agent" : {
+              "name" : "Chrome",
+              "original" : "Mozilla/5.0 (X11; CrOS x86_64 13597.94.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.186 Safari/537.290",
+              "os" : {
+                "name" : "Chrome OS",
+                "version" : "13597.94.0",
+                "full" : "Chrome OS 13597.94.0"
+              },
+              "device" : {
+                "name" : "Other"
+              },
+              "version" : "88.0.4324.186"
+            },
+            "ml" : {
+              "inference" : {
+                "prediction" : false,
+                "prediction_score" : 0.6191689087412237,
+                "model_id" : "classification-request-payloads-1615680927179",
+                "probabilities" : [
+                  {
+                    "class_name" : false,
+                    "class_probability" : 0.9979443153851425,
+                    "class_score" : 0.6191689087412237
+                  },
+                  {
+                    "class_name" : true,
+                    "class_probability" : 0.002055684614857533,
+                    "class_score" : 0.002055684614857533
+                  }
+                ],
+                "prediction_probability" : 0.9979443153851425
+              }
+            }
+          },
+          "_ingest" : {
+            "timestamp" : "2021-03-14T20:46:37.264463074Z"
+          }
+        }
+      },
+      {
+        "doc" : {
+          "_index" : "webapp",
+          "_type" : "_doc",
+          "_id" : "aed0MngBVgrfkQdcHl3S",
+          "_source" : {
+            "user.name" : "u121931",
+            "source" : {
+              "geo" : {
+                "continent_name" : "North America",
+                "country_name" : "United States",
+                "location" : {
+                  "lon" : -97.822,
+                  "lat" : 37.751
+                },
+                "country_iso_code" : "US"
+              },
+              "ip" : "205.196.99.0"
+            },
+            "url" : {
+              "path" : "user/customer.php",
+              "scheme" : "https",
+              "domain" : "host-systems.net",
+              "full" : "https://host-systems.net/user/customer.php"
+            },
+            "http.request.bytes" : "85",
+            "event.action" : "view",
+            "@timestamp" : "2021-03-15T14:20:01.000Z",
+            "http.request.method" : "POST",
+            "http.response.bytes" : "177",
+            "event.kind" : "request",
+            "http.response.status_code" : "200",
+            "event.dataset" : "weblogs",
+            "user_agent" : {
+              "name" : "Chrome",
+              "original" : "Mozilla/5.0 (X11; CrOS x86_64 13597.94.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.186 Safari/537.305",
+              "os" : {
+                "name" : "Chrome OS",
+                "version" : "13597.94.0",
+                "full" : "Chrome OS 13597.94.0"
+              },
+              "device" : {
+                "name" : "Other"
+              },
+              "version" : "88.0.4324.186"
+            },
+            "ml" : {
+              "inference" : {
+                "prediction" : false,
+                "prediction_score" : 0.6191689087412237,
+                "model_id" : "classification-request-payloads-1615680927179",
+                "probabilities" : [
+                  {
+                    "class_name" : false,
+                    "class_probability" : 0.9979443153851425,
+                    "class_score" : 0.6191689087412237
+                  },
+                  {
+                    "class_name" : true,
+                    "class_probability" : 0.002055684614857533,
+                    "class_score" : 0.002055684614857533
+                  }
+                ],
+                "prediction_probability" : 0.9979443153851425
+              }
+            }
+          },
+          "_ingest" : {
+            "timestamp" : "2021-03-14T20:46:37.264467874Z"
+          }
+        }
+      },
+      {
+        "doc" : {
+          "_index" : "webapp",
+          "_type" : "_doc",
+          "_id" : "aud0MngBVgrfkQdcHl3S",
+          "_source" : {
+            "user.name" : "u110111",
+            "source" : {
+              "geo" : {
+                "continent_name" : "North America",
+                "country_name" : "United States",
+                "location" : {
+                  "lon" : -97.822,
+                  "lat" : 37.751
+                },
+                "country_iso_code" : "US"
+              },
+              "ip" : "64.213.163.75"
+            },
+            "url" : {
+              "path" : "user/settings.php",
+              "scheme" : "https",
+              "domain" : "host-systems.net",
+              "full" : "https://host-systems.net/user/settings.php"
+            },
+            "http.request.bytes" : "133",
+            "event.action" : "view",
+            "@timestamp" : "2021-03-15T14:50:01.000Z",
+            "http.request.method" : "GET",
+            "http.response.bytes" : "1734",
+            "event.kind" : "request",
+            "http.response.status_code" : "200",
+            "event.dataset" : "weblogs",
+            "user_agent" : {
+              "name" : "Chrome",
+              "original" : "Mozilla/5.0 (X11; CrOS x86_64 13597.94.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.186 Safari/537.320",
+              "os" : {
+                "name" : "Chrome OS",
+                "version" : "13597.94.0",
+                "full" : "Chrome OS 13597.94.0"
+              },
+              "device" : {
+                "name" : "Other"
+              },
+              "version" : "88.0.4324.186"
+            },
+            "ml" : {
+              "inference" : {
+                "prediction" : false,
+                "prediction_score" : 0.6191689087412237,
+                "model_id" : "classification-request-payloads-1615680927179",
+                "probabilities" : [
+                  {
+                    "class_name" : false,
+                    "class_probability" : 0.9979443153851425,
+                    "class_score" : 0.6191689087412237
+                  },
+                  {
+                    "class_name" : true,
+                    "class_probability" : 0.002055684614857533,
+                    "class_score" : 0.002055684614857533
+                  }
+                ],
+                "prediction_probability" : 0.9979443153851425
+              }
+            }
+          },
+          "_ingest" : {
+            "timestamp" : "2021-03-14T20:46:37.264472674Z"
+          }
+        }
+      },
+      {
+        "doc" : {
+          "_index" : "webapp",
+          "_type" : "_doc",
+          "_id" : "a-d0MngBVgrfkQdcHl3S",
+          "_source" : {
+            "user.name" : "u110111",
+            "source" : {
+              "geo" : {
+                "continent_name" : "North America",
+                "country_name" : "United States",
+                "location" : {
+                  "lon" : -97.822,
+                  "lat" : 37.751
+                },
+                "country_iso_code" : "US"
+              },
+              "ip" : "64.213.79.243"
+            },
+            "url" : {
+              "path" : "user/order.php",
+              "scheme" : "https",
+              "domain" : "host-systems.net",
+              "full" : "https://host-systems.net/user/order.php"
+            },
+            "http.request.bytes" : "22",
+            "event.action" : "view",
+            "@timestamp" : "2021-03-15T15:20:01.000Z",
+            "http.request.method" : "GET",
+            "http.response.bytes" : "401",
+            "event.kind" : "request",
+            "http.response.status_code" : "200",
+            "event.dataset" : "weblogs",
+            "user_agent" : {
+              "name" : "Chrome",
+              "original" : "Mozilla/5.0 (X11; CrOS x86_64 13597.94.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.186 Safari/537.335",
+              "os" : {
+                "name" : "Chrome OS",
+                "version" : "13597.94.0",
+                "full" : "Chrome OS 13597.94.0"
+              },
+              "device" : {
+                "name" : "Other"
+              },
+              "version" : "88.0.4324.186"
+            },
+            "ml" : {
+              "inference" : {
+                "prediction" : false,
+                "prediction_score" : 0.6191689087412237,
+                "model_id" : "classification-request-payloads-1615680927179",
+                "probabilities" : [
+                  {
+                    "class_name" : false,
+                    "class_probability" : 0.9979443153851425,
+                    "class_score" : 0.6191689087412237
+                  },
+                  {
+                    "class_name" : true,
+                    "class_probability" : 0.002055684614857533,
+                    "class_score" : 0.002055684614857533
+                  }
+                ],
+                "prediction_probability" : 0.9979443153851425
+              }
+            }
+          },
+          "_ingest" : {
+            "timestamp" : "2021-03-14T20:46:37.264477774Z"
+          }
+        }
+      }
+    ]
+  }
+  

@@ -1,0 +1,60 @@
+{
+    "processors": [
+      {
+        "date": {
+          "field": "timestamp",
+          "target_field": "@timestamp",
+          "formats": [
+            "dd/MM/yyyy HH:mm:ss",
+            "dd/M/yyyy HH:mm:ss",
+            "d/M/yyyy HH:mm:ss",
+            "d/MM/yyyy HH:mm:ss"
+          ],
+          "timezone": "Etc/UTC"
+        }
+      },
+      {
+        "dot_expander": {
+          "field": "user_agent.original"
+        }
+      },
+      {
+        "user_agent": {
+          "field": "user_agent.original"
+        }
+      },
+      {
+        "dot_expander": {
+          "field": "source.ip"
+        }
+      },
+      {
+        "geoip": {
+          "ignore_missing": true,
+          "field": "source.ip",
+          "target_field": "source.geo"
+        }
+      },
+      {
+        "dot_expander": {
+          "field": "url.full"
+        }
+      },
+      {
+        "dissect": {
+          "field": "url.full",
+          "pattern": "%{url.scheme}://%{url.domain}/%{url.path}"
+        }
+      },
+      {
+        "remove": {
+          "field": [
+            "timestamp",
+            "host",
+            "@version",
+            "message"
+          ]
+        }
+      }
+    ]
+  }

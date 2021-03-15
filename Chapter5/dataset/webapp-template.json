@@ -1,0 +1,168 @@
+{
+  "index_patterns": [
+    "webapp",
+    "webapp-tagged"
+  ],
+  "template": {
+    "mappings": {
+      "properties": {
+        "malicious": {
+          "type": "boolean"
+        },
+        "@timestamp": {
+          "type": "date"
+        },
+        "http": {
+          "properties": {
+            "request": {
+              "properties": {
+                "method": {
+                  "type": "keyword"
+                },
+                "bytes": {
+                  "type": "long"
+                }
+              }
+            },
+            "response": {
+              "properties": {
+                "status_code": {
+                  "type": "keyword"
+                },
+                "bytes": {
+                  "type": "long"
+                }
+              }
+            }
+          }
+        },
+        "source": {
+          "properties": {
+            "geo": {
+              "properties": {
+                "region_iso_code": {
+                  "ignore_above": 1024,
+                  "type": "keyword"
+                },
+                "continent_name": {
+                  "ignore_above": 1024,
+                  "type": "keyword"
+                },
+                "city_name": {
+                  "ignore_above": 1024,
+                  "type": "keyword"
+                },
+                "country_iso_code": {
+                  "ignore_above": 1024,
+                  "type": "keyword"
+                },
+                "name": {
+                  "ignore_above": 1024,
+                  "type": "keyword"
+                },
+                "country_name": {
+                  "ignore_above": 1024,
+                  "type": "keyword"
+                },
+                "region_name": {
+                  "ignore_above": 1024,
+                  "type": "keyword"
+                },
+                "location": {
+                  "type": "geo_point"
+                }
+              }
+            },
+            "ip": {
+              "type": "ip"
+            }
+          }
+        },
+        "event": {
+          "properties": {
+            "kind": {
+              "ignore_above": 1024,
+              "type": "keyword"
+            },
+            "action": {
+              "ignore_above": 1024,
+              "type": "keyword"
+            },
+            "dataset": {
+              "ignore_above": 1024,
+              "type": "keyword"
+            }
+          }
+        },
+        "user": {
+          "properties": {
+            "name": {
+              "type": "keyword"
+            }
+          }
+        },
+        "user_agent": {
+          "properties": {
+            "os": {
+              "properties": {
+                "name": {
+                  "ignore_above": 1024,
+                  "type": "keyword",
+                  "fields": {
+                    "text": {
+                      "norms": false,
+                      "type": "text"
+                    }
+                  }
+                }
+              }
+            },
+            "name": {
+              "ignore_above": 1024,
+              "type": "keyword"
+            },
+            "device": {
+              "properties": {
+                "name": {
+                  "ignore_above": 1024,
+                  "type": "keyword"
+                }
+              }
+            }
+          }
+        },
+        "url": {
+          "properties": {
+            "path": {
+              "ignore_above": 1024,
+              "type": "keyword"
+            },
+            "scheme": {
+              "ignore_above": 1024,
+              "type": "keyword"
+            },
+            "query": {
+              "ignore_above": 1024,
+              "type": "keyword"
+            },
+            "domain": {
+              "ignore_above": 1024,
+              "type": "keyword"
+            },
+            "full": {
+              "ignore_above": 1024,
+              "fields": {
+                "text": {
+                  "norms": false,
+                  "type": "text"
+                }
+              },
+              "type": "keyword"
+            }
+          }
+        }
+      }
+    }
+  },
+  "composed_of": []
+}

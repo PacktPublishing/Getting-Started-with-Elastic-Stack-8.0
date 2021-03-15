@@ -1,0 +1,16 @@
+{
+    "processors": [
+      {
+        "inference": {
+          "model_id": "classification-request-payloads-1615680927179",
+          "inference_config": {
+            "classification": {
+              "num_top_classes": 2,
+              "results_field": "prediction",
+              "top_classes_results_field": "probabilities"
+            }
+          }
+        }
+      }
+    ]
+  }

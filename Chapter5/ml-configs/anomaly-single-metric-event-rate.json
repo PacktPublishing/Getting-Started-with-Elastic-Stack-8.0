@@ -1,0 +1,155 @@
+{
+    "job_id": "event-rate-1m",
+    "job_type": "anomaly_detector",
+    "job_version": "7.11.1",
+    "create_time": 1615357685441,
+    "finished_time": 1615357723685,
+    "model_snapshot_id": "1615357721",
+    "custom_settings": {
+      "created_by": "single-metric-wizard"
+    },
+    "description": "",
+    "analysis_config": {
+      "bucket_span": "1m",
+      "summary_count_field_name": "doc_count",
+      "detectors": [
+        {
+          "detector_description": "count",
+          "function": "count",
+          "detector_index": 0
+        }
+      ],
+      "influencers": []
+    },
+    "analysis_limits": {
+      "model_memory_limit": "11mb",
+      "categorization_examples_limit": 4
+    },
+    "data_description": {
+      "time_field": "@timestamp",
+      "time_format": "epoch_ms"
+    },
+    "model_plot_config": {
+      "enabled": true,
+      "annotations_enabled": true
+    },
+    "model_snapshot_retention_days": 10,
+    "daily_model_snapshot_retention_after_days": 1,
+    "results_index_name": "shared",
+    "allow_lazy_open": false,
+    "data_counts": {
+      "job_id": "event-rate-1m",
+      "processed_record_count": 4905,
+      "processed_field_count": 4905,
+      "input_bytes": 210919,
+      "input_field_count": 4905,
+      "invalid_date_count": 0,
+      "missing_field_count": 0,
+      "out_of_order_timestamp_count": 0,
+      "empty_bucket_count": 2757,
+      "sparse_bucket_count": 0,
+      "bucket_count": 7661,
+      "earliest_record_timestamp": 1614988803000,
+      "latest_record_timestamp": 1615448501000,
+      "last_data_time": 1615357704175,
+      "latest_empty_bucket_timestamp": 1615448400000,
+      "input_record_count": 4905,
+      "log_time": 1615357704175,
+      "latest_bucket_timestamp": 1615448460000
+    },
+    "model_size_stats": {
+      "job_id": "event-rate-1m",
+      "result_type": "model_size_stats",
+      "model_bytes": 39290,
+      "peak_model_bytes": 101826,
+      "model_bytes_exceeded": 0,
+      "model_bytes_memory_limit": 11534336,
+      "total_by_field_count": 3,
+      "total_over_field_count": 0,
+      "total_partition_field_count": 2,
+      "bucket_allocation_failures_count": 0,
+      "memory_status": "ok",
+      "assignment_memory_basis": "current_model_bytes",
+      "categorized_doc_count": 0,
+      "total_category_count": 0,
+      "frequent_category_count": 0,
+      "rare_category_count": 0,
+      "dead_category_count": 0,
+      "failed_category_count": 0,
+      "categorization_status": "ok",
+      "log_time": 1615357721617,
+      "timestamp": 1615448400000
+    },
+    "forecasts_stats": {
+      "total": 0,
+      "forecasted_jobs": 0
+    },
+    "state": "closed",
+    "timing_stats": {
+      "job_id": "event-rate-1m",
+      "bucket_count": 7661,
+      "total_bucket_processing_time_ms": 3567.999999999998,
+      "minimum_bucket_processing_time_ms": 0,
+      "maximum_bucket_processing_time_ms": 200,
+      "average_bucket_processing_time_ms": 0.465735543662707,
+      "exponential_average_bucket_processing_time_ms": 0.8414490464945067,
+      "exponential_average_bucket_processing_time_per_hour_ms": 45.15475578761083
+    },
+    "datafeed_config": {
+      "datafeed_id": "datafeed-event-rate-1m",
+      "job_id": "event-rate-1m",
+      "query_delay": "103097ms",
+      "chunking_config": {
+        "mode": "manual",
+        "time_span": "60000000ms"
+      },
+      "indices_options": {
+        "expand_wildcards": [
+          "open"
+        ],
+        "ignore_unavailable": false,
+        "allow_no_indices": true,
+        "ignore_throttled": true
+      },
+      "query": {
+        "bool": {
+          "must": [
+            {
+              "match_all": {}
+            }
+          ]
+        }
+      },
+      "indices": [
+        "webapp"
+      ],
+      "aggregations": {
+        "buckets": {
+          "date_histogram": {
+            "field": "@timestamp",
+            "fixed_interval": "60000ms"
+          },
+          "aggregations": {
+            "@timestamp": {
+              "max": {
+                "field": "@timestamp"
+              }
+            }
+          }
+        }
+      },
+      "scroll_size": 1000,
+      "delayed_data_check_config": {
+        "enabled": true
+      },
+      "state": "stopped",
+      "timing_stats": {
+        "job_id": "event-rate-1m",
+        "search_count": 9,
+        "bucket_count": 7661,
+        "total_search_time_ms": 147,
+        "average_search_time_per_bucket_ms": 0.019188095548883958,
+        "exponential_average_search_time_per_hour_ms": 3.351012014867461
+      }
+    }
+  }

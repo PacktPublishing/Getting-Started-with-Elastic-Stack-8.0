@@ -1,0 +1,156 @@
+{
+    "job_id": "population-source-ip",
+    "job_type": "anomaly_detector",
+    "job_version": "7.11.1",
+    "create_time": 1615374167947,
+    "finished_time": 1615374180987,
+    "model_snapshot_id": "1615374178",
+    "custom_settings": {
+      "created_by": "population-wizard"
+    },
+    "description": "",
+    "analysis_config": {
+      "bucket_span": "15m",
+      "detectors": [
+        {
+          "detector_description": "count over \"source.ip\"",
+          "function": "count",
+          "over_field_name": "source.ip",
+          "detector_index": 0
+        },
+        {
+          "detector_description": "sum(\"http.request.bytes\") over \"source.ip\"",
+          "function": "sum",
+          "field_name": "http.request.bytes",
+          "over_field_name": "source.ip",
+          "detector_index": 1
+        },
+        {
+          "detector_description": "sum(\"http.response.bytes\") over \"source.ip\"",
+          "function": "sum",
+          "field_name": "http.response.bytes",
+          "over_field_name": "source.ip",
+          "detector_index": 2
+        }
+      ],
+      "influencers": [
+        "source.ip",
+        "source.geo.country_name"
+      ]
+    },
+    "analysis_limits": {
+      "model_memory_limit": "11mb",
+      "categorization_examples_limit": 4
+    },
+    "data_description": {
+      "time_field": "@timestamp",
+      "time_format": "epoch_ms"
+    },
+    "model_plot_config": {
+      "enabled": false,
+      "annotations_enabled": false
+    },
+    "model_snapshot_retention_days": 10,
+    "daily_model_snapshot_retention_after_days": 1,
+    "results_index_name": "shared",
+    "allow_lazy_open": false,
+    "data_counts": {
+      "job_id": "population-source-ip",
+      "processed_record_count": 7832,
+      "processed_field_count": 31328,
+      "input_bytes": 1159145,
+      "input_field_count": 31328,
+      "invalid_date_count": 0,
+      "missing_field_count": 0,
+      "out_of_order_timestamp_count": 0,
+      "empty_bucket_count": 0,
+      "sparse_bucket_count": 2,
+      "bucket_count": 510,
+      "earliest_record_timestamp": 1614988800000,
+      "latest_record_timestamp": 1615448621000,
+      "last_data_time": 1615374174579,
+      "latest_sparse_bucket_timestamp": 1615055400000,
+      "input_record_count": 7832,
+      "log_time": 1615374174579,
+      "latest_bucket_timestamp": 1615447800000
+    },
+    "model_size_stats": {
+      "job_id": "population-source-ip",
+      "result_type": "model_size_stats",
+      "model_bytes": 139738,
+      "peak_model_bytes": 163170,
+      "model_bytes_exceeded": 0,
+      "model_bytes_memory_limit": 11534336,
+      "total_by_field_count": 5,
+      "total_over_field_count": 18,
+      "total_partition_field_count": 4,
+      "bucket_allocation_failures_count": 0,
+      "memory_status": "ok",
+      "assignment_memory_basis": "current_model_bytes",
+      "categorized_doc_count": 0,
+      "total_category_count": 0,
+      "frequent_category_count": 0,
+      "rare_category_count": 0,
+      "dead_category_count": 0,
+      "failed_category_count": 0,
+      "categorization_status": "ok",
+      "log_time": 1615374178807,
+      "timestamp": 1615446900000
+    },
+    "forecasts_stats": {
+      "total": 0,
+      "forecasted_jobs": 0
+    },
+    "state": "closed",
+    "timing_stats": {
+      "job_id": "population-source-ip",
+      "bucket_count": 511,
+      "total_bucket_processing_time_ms": 696,
+      "minimum_bucket_processing_time_ms": 0,
+      "maximum_bucket_processing_time_ms": 20,
+      "average_bucket_processing_time_ms": 1.3620352250489236,
+      "exponential_average_bucket_processing_time_ms": 1.1298303708630228,
+      "exponential_average_bucket_processing_time_per_hour_ms": 3.59531572819105
+    },
+    "datafeed_config": {
+      "datafeed_id": "datafeed-population-source-ip",
+      "job_id": "population-source-ip",
+      "query_delay": "114039ms",
+      "chunking_config": {
+        "mode": "auto"
+      },
+      "indices_options": {
+        "expand_wildcards": [
+          "open"
+        ],
+        "ignore_unavailable": false,
+        "allow_no_indices": true,
+        "ignore_throttled": true
+      },
+      "query": {
+        "bool": {
+          "must": [
+            {
+              "match_all": {}
+            }
+          ]
+        }
+      },
+      "indices": [
+        "webapp"
+      ],
+      "scroll_size": 1000,
+      "delayed_data_check_config": {
+        "enabled": true
+      },
+      "state": "stopped",
+      "timing_stats": {
+        "job_id": "population-source-ip",
+        "search_count": 10,
+        "bucket_count": 510,
+        "total_search_time_ms": 149,
+        "average_search_time_per_bucket_ms": 0.29215686274509806,
+        "exponential_average_search_time_per_hour_ms": 9.094016969143137
+      }
+    }
+  }

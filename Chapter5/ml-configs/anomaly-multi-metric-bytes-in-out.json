@@ -1,0 +1,151 @@
+{
+  "job_id": "bytes-in-out",
+  "job_type": "anomaly_detector",
+  "job_version": "7.11.2",
+  "create_time": 1615592383286,
+  "finished_time": 1615592396218,
+  "model_snapshot_id": "1615592393",
+  "custom_settings": {
+    "created_by": "multi-metric-wizard"
+  },
+  "description": "",
+  "analysis_config": {
+    "bucket_span": "2m",
+    "detectors": [
+      {
+        "detector_description": "mean(\"http.request.bytes\") partitionfield=\"url.path\"",
+        "function": "mean",
+        "field_name": "http.request.bytes",
+        "partition_field_name": "url.path",
+        "detector_index": 0
+      },
+      {
+        "detector_description": "mean(\"http.response.bytes\") partitionfield=\"url.path\"",
+        "function": "mean",
+        "field_name": "http.response.bytes",
+        "partition_field_name": "url.path",
+        "detector_index": 1
+      }
+    ],
+    "influencers": [
+      "url.path",
+      "source.ip",
+      "source.geo.country_name"
+    ]
+  },
+  "analysis_limits": {
+    "model_memory_limit": "11mb",
+    "categorization_examples_limit": 4
+  },
+  "data_description": {
+    "time_field": "@timestamp",
+    "time_format": "epoch_ms"
+  },
+  "model_plot_config": {
+    "enabled": false,
+    "annotations_enabled": false
+  },
+  "model_snapshot_retention_days": 10,
+  "daily_model_snapshot_retention_after_days": 1,
+  "results_index_name": "shared",
+  "allow_lazy_open": false,
+  "data_counts": {
+    "job_id": "bytes-in-out",
+    "processed_record_count": 7840,
+    "processed_field_count": 39200,
+    "input_bytes": 1391101,
+    "input_field_count": 39200,
+    "invalid_date_count": 0,
+    "missing_field_count": 0,
+    "out_of_order_timestamp_count": 0,
+    "empty_bucket_count": 0,
+    "sparse_bucket_count": 9,
+    "bucket_count": 3831,
+    "earliest_record_timestamp": 1614988800000,
+    "latest_record_timestamp": 1615448621000,
+    "last_data_time": 1615592392049,
+    "latest_sparse_bucket_timestamp": 1615056720000,
+    "input_record_count": 7840,
+    "log_time": 1615592392049,
+    "latest_bucket_timestamp": 1615448520000
+  },
+  "model_size_stats": {
+    "job_id": "bytes-in-out",
+    "result_type": "model_size_stats",
+    "model_bytes": 639828,
+    "peak_model_bytes": 660622,
+    "model_bytes_exceeded": 0,
+    "model_bytes_memory_limit": 11534336,
+    "total_by_field_count": 18,
+    "total_over_field_count": 0,
+    "total_partition_field_count": 17,
+    "bucket_allocation_failures_count": 0,
+    "memory_status": "ok",
+    "assignment_memory_basis": "current_model_bytes",
+    "categorized_doc_count": 0,
+    "total_category_count": 0,
+    "frequent_category_count": 0,
+    "rare_category_count": 0,
+    "dead_category_count": 0,
+    "failed_category_count": 0,
+    "categorization_status": "ok",
+    "log_time": 1615592393839,
+    "timestamp": 1615448400000
+  },
+  "forecasts_stats": {
+    "total": 0,
+    "forecasted_jobs": 0
+  },
+  "state": "closed",
+  "timing_stats": {
+    "job_id": "bytes-in-out",
+    "bucket_count": 3832,
+    "total_bucket_processing_time_ms": 4048.000000000003,
+    "minimum_bucket_processing_time_ms": 0,
+    "maximum_bucket_processing_time_ms": 28,
+    "average_bucket_processing_time_ms": 1.056367432150314,
+    "exponential_average_bucket_processing_time_ms": 0.7614126653344577,
+    "exponential_average_bucket_processing_time_per_hour_ms": 18.137060083204183
+  },
+  "datafeed_config": {
+    "datafeed_id": "datafeed-bytes-in-out",
+    "job_id": "bytes-in-out",
+    "query_delay": "86386ms",
+    "chunking_config": {
+      "mode": "auto"
+    },
+    "indices_options": {
+      "expand_wildcards": [
+        "open"
+      ],
+      "ignore_unavailable": false,
+      "allow_no_indices": true,
+      "ignore_throttled": true
+    },
+    "query": {
+      "bool": {
+        "must": [
+          {
+            "match_all": {}
+          }
+        ]
+      }
+    },
+    "indices": [
+      "webapp"
+    ],
+    "scroll_size": 1000,
+    "delayed_data_check_config": {
+      "enabled": true
+    },
+    "state": "stopped",
+    "timing_stats": {
+      "job_id": "bytes-in-out",
+      "search_count": 10,
+      "bucket_count": 3831,
+      "total_search_time_ms": 185,
+      "average_search_time_per_bucket_ms": 0.04829026363873662,
+      "exponential_average_search_time_per_hour_ms": 12.375407740514321
+    }
+  }
+}
