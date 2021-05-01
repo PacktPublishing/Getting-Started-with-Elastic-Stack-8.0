@@ -1,0 +1,34 @@
+#---Heartbeat Monitors---
+heartbeat.config.monitors:
+  # Directory + glob pattern to search for configuration files
+  path: ${path.config}/monitors.d/*.yml
+  # If enabled, heartbeat will periodically check the config.monitors path for changes
+  reload.enabled: false
+  # How often to check for changes
+  reload.period: 5s
+
+
+# ---------------------------- Elasticsearch Output ----------------------------
+output.elasticsearch:
+  # Array of hosts to connect to.
+  hosts: ["localhost:9200"]
+
+  # Protocol - either `http` (default) or `https`.
+  #protocol: "https"
+
+  username: "elastic"
+  password: "changeme"
+
+
+# ================================= Processors =================================
+
+processors:
+  - add_observer_metadata:
+      # Optional, but recommended geo settings for the location Heartbeat is running in
+      geo:
+        # Token describing this location
+        name: on-premise-datacentre
+        # Lat, Lon "
+        location: "33.8688, 151.2093"
+  - add_host_metadata: ~
+  - add_cloud_metadata: ~

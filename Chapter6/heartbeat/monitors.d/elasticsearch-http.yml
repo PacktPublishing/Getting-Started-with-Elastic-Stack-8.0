@@ -1,0 +1,32 @@
+- type: http # monitor type `http`. Connect via HTTP an optionally verify response
+  # ID used to uniquely identify this monitor in elasticsearch even if the config changes
+  id: elasticsearch-http
+
+  # Human readable display name for this service in Uptime UI and elsewhere
+  name: Dev Elasticsearch deployment
+
+  # Configure task schedule
+  schedule: '@every 5s' # every 5 seconds from start of beat
+
+  # Configure URLs to ping
+  hosts: ["http://localhost:9200/_cluster/health"]
+
+  # Optional Authentication Credentials
+  username: 'elastic'
+  password: 'changeme'
+
+  # Configure HTTP method to use. Only 'HEAD', 'GET' and 'POST' methods are allowed.
+  method: "GET"
+
+  # Expected response settings
+  check.response:
+    # Expected status code. If not configured or set to 0 any status code not
+    # being 404 is accepted.
+    status: 200
+
+    # Parses the body as JSON, then checks against the given condition expression
+    json:
+    - description: Checks if cluster health status is green
+      condition:
+        equals:
+          status: green

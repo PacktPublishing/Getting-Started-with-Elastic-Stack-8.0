@@ -1,0 +1,38 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Recipe Search Service</title>
+    <meta name="description" content="This page implements high speed array.find(), right in the browser, for all your search needs.">
+    <meta name="author" content="Asjad Athick">
+
+    <!--   google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <!-- External Stylesheet.  -->
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    </link>
+    <!--   font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <body id="body" onload="generateImage()">
+        <h1>Recipe Search Service</h1>
+        <p id="intro">Welcome to Recipe Search Service.<br>Search through 10s of tried and test culinary classics, right here in your browser. <br> Recipe Search Service is powered by <span>JavaScript Array.find()</span> for performant and relevant search results.
+        </p>
+        <h2 id="recipe-banner"></h2>
+
+        <input id="recipesearch" type="text" placeholder="Search for 'Burrito' here..." onkeyup="search()">
+
+        <p id='results'></p>
+    </body>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

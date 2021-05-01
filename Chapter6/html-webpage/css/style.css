@@ -1,0 +1,58 @@
+/* style sheet for the entire page */
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 0.1rem;
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    background-color: lightslategrey;
+    font-style: italic;
+    font-size: 52px;
+    color: whitesmoke;
+}
+
+p#intro {
+    margin: 80px;
+    background-color: whitesmoke;
+    padding: 10px;
+    line-height: 25px;
+}
+
+span {
+    background-color: grey;
+    color: white;
+    font-family: monospace;
+    font-size: 18px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+h2#recipe-banner {
+    background-color: darkblue;
+    width: 70%;
+    font-weight: lighter;
+    font-style: italic;
+    font-size: 40px;
+    margin-left: 15%;
+    color: whitesmoke;
+    padding: 10px;
+}
+
+input#recipesearch {
+    width: 60%;
+    font-weight: lighter;
+    font-style: italic;
+    font-size: 30px;
+    color: whitesmoke;
+    position: relative;
+    padding: 10px;
+    border: none;
+    text-align: center;
+    color: black;
+}

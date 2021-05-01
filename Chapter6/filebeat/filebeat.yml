@@ -1,0 +1,22 @@
+# ============================== Filebeat modules ==============================
+
+filebeat.config.modules:
+  # Glob pattern for configuration loading
+  path: ${path.config}/modules.d/*.yml
+
+# ---------------------------- Elasticsearch Output ----------------------------
+output.elasticsearch:
+  # Array of hosts to connect to.
+  hosts: ["localhost:9200"]
+
+  # Protocol - either `http` (default) or `https`.
+  #protocol: "https"
+
+  username: "elastic"
+  password: "changeme"
+
+# ================================= Processors =================================
+
+processors:
+  - add_host_metadata: ~
+  - add_cloud_metadata: ~

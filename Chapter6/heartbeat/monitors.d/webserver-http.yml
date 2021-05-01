@@ -1,0 +1,9 @@
+- type: http  
+  id: webserver-1-http
+
+  # Human readable display name for this service in Uptime UI and elsewhere
+  name: Webserver 1
+  schedule: '@every 5s'
+
+  # Configure URLs to ping
+  hosts: ["http://localhost"]
