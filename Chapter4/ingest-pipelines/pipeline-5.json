@@ -1,0 +1,26 @@
+POST _ingest/pipeline/_simulate
+{
+  "docs": [
+    {
+      "_source": {
+        "message": "Customer A1121 paid with 5555555555554444"
+      }
+    },
+    {
+      "_source": {
+        "message": "Customer A1122 paid with 378282246310005"
+      }
+    }
+    ], 
+  "pipeline": {
+    "processors": [
+      {
+        "gsub": {
+          "field": "message",
+          "pattern": "\\b(?:3[47]\\d|(?:4\\d|5[1-5]|65)\\d{2}|6011)\\d{12}\\b",
+          "replacement": "xxxx-xxxx-xxxx-xxxx"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+POST _ingest/pipeline/_simulate 
+{ 
+  "docs": [ 
+    { 
+      "_source": { 
+        "environment": "production", 
+        "application": "apache" 
+      } 
+    }, 
+    { 
+      "_source": { 
+        "environment": "dev", 
+        "application": "apache" 
+      } 
+    } 
+    ],  
+  "pipeline": { 
+    "processors": [ 
+      { 
+        "set": { 
+          "field": "_index", 
+          "value": "{{application}}-{{environment}}" 
+        } 
+      } 
+    ] 
+  } 
+} 

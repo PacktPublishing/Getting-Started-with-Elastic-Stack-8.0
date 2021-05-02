@@ -1,0 +1,70 @@
+PUT sensors
+{
+  "mappings": {
+    "properties": {
+      "sensor.id": {
+        "type": "keyword"
+      },
+      "sensor.type":{
+        "type": "keyword"
+      },
+      "sensor.location": {
+        "type": "geo_point"
+      }
+    }
+  }
+}
+
+POST sensors/_doc/
+{
+  "sensor.id": "ANZ3431",
+  "sensor.type": "humidity",
+  "sensor.location": "-37.938009, 144.923652"
+}
+
+POST sensors/_doc/
+{
+  "sensor.id": "ANZ3231",
+  "sensor.type": "temperature",
+  "sensor.location": "-35.409301, 131.196086"
+}
+
+PUT _enrich/policy/sensors-lookup
+{
+  "match": {
+    "indices": "sensors",
+    "match_field": "sensor.id",
+    "enrich_fields": ["sensor.type", "sensor.location"]
+  }
+}
+
+POST _enrich/policy/sensors-lookup/_execute
+
+POST _ingest/pipeline/_simulate
+{
+  "docs": [
+    { "_source": {
+        "@timestamp": "2019-01-23T00:00:00.000Z",
+        "sensor": {
+          "id": "ANZ3431",
+          "reading": "120"
+        }
+      }},
+    { "_source": {
+        "@timestamp": "2019-01-23T00:00:00.000Z",
+        "sensor": {
+          "id": "AMR1211",
+          "reading": "110"
+        }
+      }}
+  ],
+  "pipeline": { "processors": [
+      {
+        "enrich": {
+          "policy_name": "sensors-lookup",
+          "field": "sensor.id",
+          "target_field": "sensor"
+        }
+      }
+    ]
+  }}

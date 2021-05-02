@@ -1,0 +1,38 @@
+POST _ingest/pipeline/_simulate
+{
+  "docs": [
+    {
+      "_source": {
+        "environment": "production",
+        "subnet": "CTS-01",
+        "event_code": "AS-32"
+      }
+    },
+    {
+      "_source": {
+        "environment": "production",
+        "subnet": "ATT-01",
+        "event_code": "AS-29"
+      }
+    }
+    ], 
+  "pipeline": {
+    "processors": [
+      {
+        "script": {
+          "source": """
+          def disallowedCodes = ["AS-29", "BA-23", "BA-24"];
+          if (disallowedCodes.contains(ctx.event_code)){
+            ctx.tag = "drop";
+          }
+          """
+        }
+      },
+      {
+        "drop": {
+          "if": "ctx.tag == 'drop'"
+        }
+      }
+    ]
+  }
+}

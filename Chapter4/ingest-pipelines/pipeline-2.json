@@ -1,0 +1,30 @@
+POST _ingest/pipeline/_simulate
+{
+  "docs": [
+    {
+      "_source": {
+        "environment": "production",
+        "subnet": "CTS-01",
+        "classification": "secret"
+      }
+    },
+    {
+      "_source": {
+        "environment": "production",
+        "subnet": "ATT-01",
+        "classification": "unclassified"
+      }
+    }
+    ], 
+  "pipeline": {
+    "processors": [
+      {
+        "set": {
+          "if": "ctx.classification=='secret' && ctx.subnet=='CTS-01'", 
+          "field": "tag",
+          "value": "protected"
+        }
+      }
+    ]
+  }
+}

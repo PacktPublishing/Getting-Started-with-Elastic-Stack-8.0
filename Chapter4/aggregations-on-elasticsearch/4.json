@@ -1,0 +1,27 @@
+GET web-logs/_search?size=0
+{
+  "query": {
+    "range": {
+      "@timestamp": {
+        "gte": "2019-01-23T00:00:00.000Z",
+        "lt": "2019-01-25T00:00:00.000Z"
+      }
+    }
+  },
+  "aggs": {
+    "hourly": {
+        "date_histogram": {
+          "field": "@timestamp",
+          "interval": "hour"
+        },
+      "aggs": {
+        "bytes_served": {
+          "sum": {
+            "field": "http.response.body.bytes",
+            "script": { "source": "_value/(1024)" }
+          }
+        }
+      }
+    }
+  }
+}

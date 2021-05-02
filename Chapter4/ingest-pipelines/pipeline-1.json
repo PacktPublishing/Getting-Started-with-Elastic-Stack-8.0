@@ -1,0 +1,35 @@
+POST _ingest/pipeline/_simulate
+{
+  "docs": [
+    {
+      "_source": {
+        "message": "10:12:05 HTTP Monitor production is in GREEN state"
+      }
+    },
+    {
+      "_source": {
+        "message": "10:12:05 HTTP Monitor production is in RED state"
+      }
+    }
+    ], 
+  "pipeline": {
+    "processors": [
+      {
+        "dissect": {
+          "field": "message",
+          "pattern": "%{time} HTTP Monitor %{monitor.name} is in %{monitor.state} state"
+        }
+      },
+      {
+        "lowercase": {
+          "field": "monitor.state"
+        }
+      },
+      {
+        "remove": {
+          "field": "message"
+        }
+      }
+    ]
+  }
+}
