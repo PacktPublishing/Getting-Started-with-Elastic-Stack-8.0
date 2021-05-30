@@ -1,0 +1,7 @@
+filebeat.inputs:
+- type: log
+  paths:
+    - /Users/asjadathick/Documents/Repos/getting_started_with_elastic_stack_8/Chapter7/code/logs-filebeat-logstash/access.log
+
+output.logstash:
+  hosts: ["127.0.0.1:5044"]

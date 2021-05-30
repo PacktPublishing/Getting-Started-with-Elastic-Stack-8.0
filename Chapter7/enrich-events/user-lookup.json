@@ -1,0 +1,79 @@
+{
+    "u881001": {
+       "name": "Jim Mar",
+       "department": "Marketing",
+       "email": "Jim.Mar@corp.com",
+       "login_country": "Australia",
+       "using_vpn": true
+    },
+    "u992001": {
+       "name": "Tom Blair",
+       "department": "IT",
+       "email": "Tom.Blair@corp.com",
+       "login_country": "Singapore",
+       "using_vpn": false
+    },
+    "u443001": {
+       "name": "Sam Smith",
+       "department": "Finance",
+       "email": "Sam.Smith@corp.com",
+       "login_country": "Canada",
+       "using_vpn": true
+    },
+    "u884219": {
+       "name": "Jane Smith",
+       "department": "HR",
+       "email": "Jane.Smith@corp.com",
+       "login_country": "USA",
+       "using_vpn": false
+    },
+    "u140192": {
+       "name": "Chris Brown",
+       "department": "Marketing",
+       "email": "Chris.Brown@corp.com",
+       "login_country": "Australia",
+       "using_vpn": true
+    },
+    "u809323": {
+       "name": "Izzy Miller",
+       "department": "IT",
+       "email": "Izzy.Miller@corp.com",
+       "login_country": "Singapore",
+       "using_vpn": false
+    },
+    "u112349": {
+       "name": "David Garcia",
+       "department": "Finance",
+       "email": "David.Garcia@corp.com",
+       "login_country": "Canada",
+       "using_vpn": true
+    },
+    "u329012": {
+       "name": "Bob Anderson",
+       "department": "HR",
+       "email": "Bob.Anderson@corp.com",
+       "login_country": "USA",
+       "using_vpn": false
+    },
+    "u120823": {
+       "name": "Jonathan Grey",
+       "department": "Marketing",
+       "email": "Jonathan.Grey@corp.com",
+       "login_country": "Australia",
+       "using_vpn": true
+    },
+    "u210820": {
+       "name": "Bob Williams",
+       "department": "IT",
+       "email": "Bob.Williams@corp.com",
+       "login_country": "Singapore",
+       "using_vpn": false
+    },
+    "u120392": {
+       "name": "David Johnson",
+       "department": "Finance",
+       "email": "David.Johnson@corp.com",
+       "login_country": "Canada",
+       "using_vpn": true
+    }
+ }
