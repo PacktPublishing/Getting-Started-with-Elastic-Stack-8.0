@@ -1,0 +1,33 @@
+{
+    "index_patterns": [
+      "trips"
+    ],
+    "template": {
+      "mappings": {
+        "dynamic_templates": [
+          {
+            "strings_as_keywords": {
+              "match_mapping_type": "string",
+              "mapping": {
+                "type": "keyword"
+              }
+            }
+          }
+        ],
+        "properties": {
+          "EndAirportGeo": {
+            "type": "geo_point"
+          },
+          "StartAirportGeo": {
+            "type": "geo_point"
+          },
+          "DistanceKM": {
+            "type": "integer"
+          },
+          "ActivityCostAUD": {
+            "type": "integer"
+          }
+        }
+      }
+    }
+  }

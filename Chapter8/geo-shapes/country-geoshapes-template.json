@@ -1,0 +1,13 @@
+PUT country-geoshapes
+{
+  "mappings": {
+    "properties": {
+      "country": {
+        "type": "keyword"
+      },
+      "shape": {
+        "type": "geo_shape"
+      }
+    }
+  }
+}
