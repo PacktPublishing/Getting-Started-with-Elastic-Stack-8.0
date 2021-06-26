@@ -1,3170 +1,2211 @@
 [
     {
-      "_index" : "webapp",
-      "_type" : "_doc",
-      "_id" : "SeeIMngBVgrfkQdcKGHW",
-      "_score" : 1.0,
-      "_source" : {
-        "user.name" : "administrator",
-        "source" : {
-          "geo" : {
-            "continent_name" : "Europe",
-            "country_iso_code" : "SE",
-            "country_name" : "Sweden",
-            "location" : {
-              "lon" : 18.056,
-              "lat" : 59.3247
+      "_index": "webapp",
+      "_type": "_doc",
+      "_id": "SeeIMngBVgrfkQdcKGHW",
+      "_score": 1,
+      "_source": {
+        "user.name": "administrator",
+        "source": {
+          "geo": {
+            "continent_name": "Europe",
+            "country_iso_code": "SE",
+            "country_name": "Sweden",
+            "location": {
+              "lon": 18.056,
+              "lat": 59.3247
             }
           },
-          "ip" : "5.254.192.11"
+          "ip": "5.254.192.11"
         },
-        "url" : {
-          "path" : "admin/login.php",
-          "scheme" : "https",
-          "domain" : "host-systems.net",
-          "full" : "https://host-systems.net/admin/login.php"
+        "url": {
+          "path": "admin/login.php",
+          "scheme": "https",
+          "domain": "host-systems.net",
+          "full": "https://host-systems.net/admin/login.php"
         },
-        "http.request.bytes" : "208",
-        "event.action" : "authenticate",
-        "@timestamp" : "2021-03-13T13:10:15.000Z",
-        "http.request.method" : "POST",
-        "http.response.bytes" : "10",
-        "http.response.status_code" : "403",
-        "event.kind" : "request",
-        "event.dataset" : "weblogs",
-        "user_agent" : {
-          "original" : "Mozilla/5.0 (X11; U; Linux i686; de; rv:1.8.0.5) Gecko/20060731 Ubuntu/dapper-security Firefox/1.5.0.5",
-          "os" : {
-            "name" : "Ubuntu"
+        "http.request.bytes": "208",
+        "event.action": "authenticate",
+        "@timestamp": "2021-03-13T13:10:15.000Z",
+        "http.request.method": "POST",
+        "http.response.bytes": "10",
+        "http.response.status_code": "403",
+        "event.kind": "request",
+        "event.dataset": "weblogs",
+        "user_agent": {
+          "original": "Mozilla/5.0 (X11; U; Linux i686; de; rv:1.8.0.5) Gecko/20060731 Ubuntu/dapper-security Firefox/1.5.0.5",
+          "os": {
+            "name": "Ubuntu"
           },
-          "name" : "Firefox",
-          "device" : {
-            "name" : "Other"
+          "name": "Firefox",
+          "device": {
+            "name": "Other"
           },
-          "version" : "1.5.0"
-        },
-        "ml" : {
-          "inference" : {
-            "prediction" : true,
-            "probabilities" : [
-              {
-                "class_name" : true,
-                "class_probability" : 0.9816143914173593,
-                "class_score" : 0.9816143914173593
-              },
-              {
-                "class_name" : false,
-                "class_probability" : 0.01838560858264071,
-                "class_score" : 0.011407246904616626
-              }
-            ],
-            "prediction_probability" : 0.9816143914173593,
-            "prediction_score" : 0.9816143914173593,
-            "model_id" : "classification-request-payloads-1615680927179"
-          }
+          "version": "1.5.0"
         }
       }
     },
     {
-      "_index" : "webapp",
-      "_type" : "_doc",
-      "_id" : "SueIMngBVgrfkQdcKGHW",
-      "_score" : 1.0,
-      "_source" : {
-        "user.name" : "administrator",
-        "source" : {
-          "geo" : {
-            "continent_name" : "Europe",
-            "country_iso_code" : "SE",
-            "country_name" : "Sweden",
-            "location" : {
-              "lon" : 18.056,
-              "lat" : 59.3247
+      "_index": "webapp",
+      "_type": "_doc",
+      "_id": "SueIMngBVgrfkQdcKGHW",
+      "_score": 1,
+      "_source": {
+        "user.name": "administrator",
+        "source": {
+          "geo": {
+            "continent_name": "Europe",
+            "country_iso_code": "SE",
+            "country_name": "Sweden",
+            "location": {
+              "lon": 18.056,
+              "lat": 59.3247
             }
           },
-          "ip" : "5.254.192.10"
+          "ip": "5.254.192.10"
         },
-        "url" : {
-          "path" : "admin/login.php",
-          "scheme" : "https",
-          "domain" : "host-systems.net",
-          "full" : "https://host-systems.net/admin/login.php"
+        "url": {
+          "path": "admin/login.php",
+          "scheme": "https",
+          "domain": "host-systems.net",
+          "full": "https://host-systems.net/admin/login.php"
         },
-        "http.request.bytes" : "210",
-        "event.action" : "authenticate",
-        "@timestamp" : "2021-03-13T13:10:30.000Z",
-        "http.request.method" : "POST",
-        "http.response.bytes" : "10",
-        "http.response.status_code" : "403",
-        "event.kind" : "request",
-        "event.dataset" : "weblogs",
-        "user_agent" : {
-          "original" : "Mozilla/5.0 (X11; U; Linux i686; de; rv:1.8.0.5) Gecko/20060731 Ubuntu/dapper-security Firefox/1.5.0.5",
-          "os" : {
-            "name" : "Ubuntu"
+        "http.request.bytes": "210",
+        "event.action": "authenticate",
+        "@timestamp": "2021-03-13T13:10:30.000Z",
+        "http.request.method": "POST",
+        "http.response.bytes": "10",
+        "http.response.status_code": "403",
+        "event.kind": "request",
+        "event.dataset": "weblogs",
+        "user_agent": {
+          "original": "Mozilla/5.0 (X11; U; Linux i686; de; rv:1.8.0.5) Gecko/20060731 Ubuntu/dapper-security Firefox/1.5.0.5",
+          "os": {
+            "name": "Ubuntu"
           },
-          "name" : "Firefox",
-          "device" : {
-            "name" : "Other"
+          "name": "Firefox",
+          "device": {
+            "name": "Other"
           },
-          "version" : "1.5.0"
-        },
-        "ml" : {
-          "inference" : {
-            "prediction" : true,
-            "probabilities" : [
-              {
-                "class_name" : true,
-                "class_probability" : 0.9816143914173593,
-                "class_score" : 0.9816143914173593
-              },
-              {
-                "class_name" : false,
-                "class_probability" : 0.01838560858264071,
-                "class_score" : 0.011407246904616626
-              }
-            ],
-            "prediction_probability" : 0.9816143914173593,
-            "prediction_score" : 0.9816143914173593,
-            "model_id" : "classification-request-payloads-1615680927179"
-          }
+          "version": "1.5.0"
         }
       }
     },
     {
-      "_index" : "webapp",
-      "_type" : "_doc",
-      "_id" : "SOeIMngBVgrfkQdcKGHV",
-      "_score" : 1.0,
-      "_source" : {
-        "user.name" : "administrator",
-        "source" : {
-          "geo" : {
-            "continent_name" : "Europe",
-            "country_iso_code" : "SE",
-            "country_name" : "Sweden",
-            "location" : {
-              "lon" : 18.056,
-              "lat" : 59.3247
+      "_index": "webapp",
+      "_type": "_doc",
+      "_id": "SOeIMngBVgrfkQdcKGHV",
+      "_score": 1,
+      "_source": {
+        "user.name": "administrator",
+        "source": {
+          "geo": {
+            "continent_name": "Europe",
+            "country_iso_code": "SE",
+            "country_name": "Sweden",
+            "location": {
+              "lon": 18.056,
+              "lat": 59.3247
             }
           },
-          "ip" : "5.254.192.10"
+          "ip": "5.254.192.10"
         },
-        "url" : {
-          "path" : "admin/login.php",
-          "scheme" : "https",
-          "domain" : "host-systems.net",
-          "full" : "https://host-systems.net/admin/login.php"
+        "url": {
+          "path": "admin/login.php",
+          "scheme": "https",
+          "domain": "host-systems.net",
+          "full": "https://host-systems.net/admin/login.php"
         },
-        "http.request.bytes" : "209",
-        "event.action" : "authenticate",
-        "@timestamp" : "2021-03-13T13:10:48.000Z",
-        "http.request.method" : "POST",
-        "http.response.bytes" : "10",
-        "http.response.status_code" : "403",
-        "event.kind" : "request",
-        "event.dataset" : "weblogs",
-        "user_agent" : {
-          "original" : "Mozilla/5.0 (X11; U; Linux i686; de; rv:1.8.0.5) Gecko/20060731 Ubuntu/dapper-security Firefox/1.5.0.5",
-          "os" : {
-            "name" : "Ubuntu"
+        "http.request.bytes": "209",
+        "event.action": "authenticate",
+        "@timestamp": "2021-03-13T13:10:48.000Z",
+        "http.request.method": "POST",
+        "http.response.bytes": "10",
+        "http.response.status_code": "403",
+        "event.kind": "request",
+        "event.dataset": "weblogs",
+        "user_agent": {
+          "original": "Mozilla/5.0 (X11; U; Linux i686; de; rv:1.8.0.5) Gecko/20060731 Ubuntu/dapper-security Firefox/1.5.0.5",
+          "os": {
+            "name": "Ubuntu"
           },
-          "name" : "Firefox",
-          "device" : {
-            "name" : "Other"
+          "name": "Firefox",
+          "device": {
+            "name": "Other"
           },
-          "version" : "1.5.0"
-        },
-        "ml" : {
-          "inference" : {
-            "prediction" : true,
-            "probabilities" : [
-              {
-                "class_name" : true,
-                "class_probability" : 0.9816143914173593,
-                "class_score" : 0.9816143914173593
-              },
-              {
-                "class_name" : false,
-                "class_probability" : 0.01838560858264071,
-                "class_score" : 0.011407246904616626
-              }
-            ],
-            "prediction_probability" : 0.9816143914173593,
-            "prediction_score" : 0.9816143914173593,
-            "model_id" : "classification-request-payloads-1615680927179"
-          }
+          "version": "1.5.0"
         }
       }
     },
     {
-      "_index" : "webapp",
-      "_type" : "_doc",
-      "_id" : "RueIMngBVgrfkQdcKGHV",
-      "_score" : 1.0,
-      "_source" : {
-        "user.name" : "administrator",
-        "source" : {
-          "geo" : {
-            "continent_name" : "Europe",
-            "country_iso_code" : "SE",
-            "country_name" : "Sweden",
-            "location" : {
-              "lon" : 18.056,
-              "lat" : 59.3247
+      "_index": "webapp",
+      "_type": "_doc",
+      "_id": "RueIMngBVgrfkQdcKGHV",
+      "_score": 1,
+      "_source": {
+        "user.name": "administrator",
+        "source": {
+          "geo": {
+            "continent_name": "Europe",
+            "country_iso_code": "SE",
+            "country_name": "Sweden",
+            "location": {
+              "lon": 18.056,
+              "lat": 59.3247
             }
           },
-          "ip" : "5.254.192.10"
+          "ip": "5.254.192.10"
         },
-        "url" : {
-          "path" : "admin/login.php",
-          "scheme" : "https",
-          "domain" : "host-systems.net",
-          "full" : "https://host-systems.net/admin/login.php"
+        "url": {
+          "path": "admin/login.php",
+          "scheme": "https",
+          "domain": "host-systems.net",
+          "full": "https://host-systems.net/admin/login.php"
         },
-        "http.request.bytes" : "207",
-        "event.action" : "authenticate",
-        "@timestamp" : "2021-03-13T13:10:18.000Z",
-        "http.request.method" : "POST",
-        "http.response.bytes" : "10",
-        "http.response.status_code" : "403",
-        "event.kind" : "request",
-        "event.dataset" : "weblogs",
-        "user_agent" : {
-          "original" : "Mozilla/5.0 (X11; U; Linux i686; de; rv:1.8.0.5) Gecko/20060731 Ubuntu/dapper-security Firefox/1.5.0.5",
-          "os" : {
-            "name" : "Ubuntu"
+        "http.request.bytes": "207",
+        "event.action": "authenticate",
+        "@timestamp": "2021-03-13T13:10:18.000Z",
+        "http.request.method": "POST",
+        "http.response.bytes": "10",
+        "http.response.status_code": "403",
+        "event.kind": "request",
+        "event.dataset": "weblogs",
+        "user_agent": {
+          "original": "Mozilla/5.0 (X11; U; Linux i686; de; rv:1.8.0.5) Gecko/20060731 Ubuntu/dapper-security Firefox/1.5.0.5",
+          "os": {
+            "name": "Ubuntu"
           },
-          "name" : "Firefox",
-          "device" : {
-            "name" : "Other"
+          "name": "Firefox",
+          "device": {
+            "name": "Other"
           },
-          "version" : "1.5.0"
-        },
-        "ml" : {
-          "inference" : {
-            "prediction" : true,
-            "probabilities" : [
-              {
-                "class_name" : true,
-                "class_probability" : 0.9816143914173593,
-                "class_score" : 0.9816143914173593
-              },
-              {
-                "class_name" : false,
-                "class_probability" : 0.01838560858264071,
-                "class_score" : 0.011407246904616626
-              }
-            ],
-            "prediction_probability" : 0.9816143914173593,
-            "prediction_score" : 0.9816143914173593,
-            "model_id" : "classification-request-payloads-1615680927179"
-          }
+          "version": "1.5.0"
         }
       }
     },
     {
-      "_index" : "webapp",
-      "_type" : "_doc",
-      "_id" : "R-eIMngBVgrfkQdcKGHV",
-      "_score" : 1.0,
-      "_source" : {
-        "user.name" : "administrator",
-        "source" : {
-          "geo" : {
-            "continent_name" : "Europe",
-            "country_iso_code" : "SE",
-            "country_name" : "Sweden",
-            "location" : {
-              "lon" : 18.056,
-              "lat" : 59.3247
+      "_index": "webapp",
+      "_type": "_doc",
+      "_id": "R-eIMngBVgrfkQdcKGHV",
+      "_score": 1,
+      "_source": {
+        "user.name": "administrator",
+        "source": {
+          "geo": {
+            "continent_name": "Europe",
+            "country_iso_code": "SE",
+            "country_name": "Sweden",
+            "location": {
+              "lon": 18.056,
+              "lat": 59.3247
             }
           },
-          "ip" : "5.254.192.11"
+          "ip": "5.254.192.11"
         },
-        "url" : {
-          "path" : "admin/login.php",
-          "scheme" : "https",
-          "domain" : "host-systems.net",
-          "full" : "https://host-systems.net/admin/login.php"
+        "url": {
+          "path": "admin/login.php",
+          "scheme": "https",
+          "domain": "host-systems.net",
+          "full": "https://host-systems.net/admin/login.php"
         },
-        "http.request.bytes" : "202",
-        "event.action" : "authenticate",
-        "@timestamp" : "2021-03-13T13:10:33.000Z",
-        "http.request.method" : "POST",
-        "http.response.bytes" : "10",
-        "http.response.status_code" : "403",
-        "event.kind" : "request",
-        "event.dataset" : "weblogs",
-        "user_agent" : {
-          "original" : "Mozilla/5.0 (X11; U; Linux i686; de; rv:1.8.0.5) Gecko/20060731 Ubuntu/dapper-security Firefox/1.5.0.5",
-          "os" : {
-            "name" : "Ubuntu"
+        "http.request.bytes": "202",
+        "event.action": "authenticate",
+        "@timestamp": "2021-03-13T13:10:33.000Z",
+        "http.request.method": "POST",
+        "http.response.bytes": "10",
+        "http.response.status_code": "403",
+        "event.kind": "request",
+        "event.dataset": "weblogs",
+        "user_agent": {
+          "original": "Mozilla/5.0 (X11; U; Linux i686; de; rv:1.8.0.5) Gecko/20060731 Ubuntu/dapper-security Firefox/1.5.0.5",
+          "os": {
+            "name": "Ubuntu"
           },
-          "name" : "Firefox",
-          "device" : {
-            "name" : "Other"
+          "name": "Firefox",
+          "device": {
+            "name": "Other"
           },
-          "version" : "1.5.0"
-        },
-        "ml" : {
-          "inference" : {
-            "prediction" : true,
-            "probabilities" : [
-              {
-                "class_name" : true,
-                "class_probability" : 0.9816143914173593,
-                "class_score" : 0.9816143914173593
-              },
-              {
-                "class_name" : false,
-                "class_probability" : 0.01838560858264071,
-                "class_score" : 0.011407246904616626
-              }
-            ],
-            "prediction_probability" : 0.9816143914173593,
-            "prediction_score" : 0.9816143914173593,
-            "model_id" : "classification-request-payloads-1615680927179"
-          }
+          "version": "1.5.0"
         }
       }
     },
     {
-      "_index" : "webapp",
-      "_type" : "_doc",
-      "_id" : "S-eIMngBVgrfkQdcKGHW",
-      "_score" : 1.0,
-      "_source" : {
-        "user.name" : "administrator",
-        "source" : {
-          "geo" : {
-            "continent_name" : "Europe",
-            "country_iso_code" : "SE",
-            "country_name" : "Sweden",
-            "location" : {
-              "lon" : 18.056,
-              "lat" : 59.3247
+      "_index": "webapp",
+      "_type": "_doc",
+      "_id": "S-eIMngBVgrfkQdcKGHW",
+      "_score": 1,
+      "_source": {
+        "user.name": "administrator",
+        "source": {
+          "geo": {
+            "continent_name": "Europe",
+            "country_iso_code": "SE",
+            "country_name": "Sweden",
+            "location": {
+              "lon": 18.056,
+              "lat": 59.3247
             }
           },
-          "ip" : "5.254.192.11"
+          "ip": "5.254.192.11"
         },
-        "url" : {
-          "path" : "admin/login.php",
-          "scheme" : "https",
-          "domain" : "host-systems.net",
-          "full" : "https://host-systems.net/admin/login.php"
+        "url": {
+          "path": "admin/login.php",
+          "scheme": "https",
+          "domain": "host-systems.net",
+          "full": "https://host-systems.net/admin/login.php"
         },
-        "http.request.bytes" : "200",
-        "event.action" : "authenticate",
-        "@timestamp" : "2021-03-13T13:10:45.000Z",
-        "http.request.method" : "POST",
-        "http.response.bytes" : "10",
-        "http.response.status_code" : "403",
-        "event.kind" : "request",
-        "event.dataset" : "weblogs",
-        "user_agent" : {
-          "original" : "Mozilla/5.0 (X11; U; Linux i686; de; rv:1.8.0.5) Gecko/20060731 Ubuntu/dapper-security Firefox/1.5.0.5",
-          "os" : {
-            "name" : "Ubuntu"
+        "http.request.bytes": "200",
+        "event.action": "authenticate",
+        "@timestamp": "2021-03-13T13:10:45.000Z",
+        "http.request.method": "POST",
+        "http.response.bytes": "10",
+        "http.response.status_code": "403",
+        "event.kind": "request",
+        "event.dataset": "weblogs",
+        "user_agent": {
+          "original": "Mozilla/5.0 (X11; U; Linux i686; de; rv:1.8.0.5) Gecko/20060731 Ubuntu/dapper-security Firefox/1.5.0.5",
+          "os": {
+            "name": "Ubuntu"
           },
-          "name" : "Firefox",
-          "device" : {
-            "name" : "Other"
+          "name": "Firefox",
+          "device": {
+            "name": "Other"
           },
-          "version" : "1.5.0"
-        },
-        "ml" : {
-          "inference" : {
-            "prediction" : true,
-            "probabilities" : [
-              {
-                "class_name" : true,
-                "class_probability" : 0.9816143914173593,
-                "class_score" : 0.9816143914173593
-              },
-              {
-                "class_name" : false,
-                "class_probability" : 0.01838560858264071,
-                "class_score" : 0.011407246904616626
-              }
-            ],
-            "prediction_probability" : 0.9816143914173593,
-            "prediction_score" : 0.9816143914173593,
-            "model_id" : "classification-request-payloads-1615680927179"
-          }
+          "version": "1.5.0"
         }
       }
     },
     {
-      "_index" : "webapp",
-      "_type" : "_doc",
-      "_id" : "TOeIMngBVgrfkQdcKGHW",
-      "_score" : 1.0,
-      "_source" : {
-        "user.name" : "administrator",
-        "source" : {
-          "geo" : {
-            "continent_name" : "Europe",
-            "country_iso_code" : "SE",
-            "country_name" : "Sweden",
-            "location" : {
-              "lon" : 18.056,
-              "lat" : 59.3247
+      "_index": "webapp",
+      "_type": "_doc",
+      "_id": "TOeIMngBVgrfkQdcKGHW",
+      "_score": 1,
+      "_source": {
+        "user.name": "administrator",
+        "source": {
+          "geo": {
+            "continent_name": "Europe",
+            "country_iso_code": "SE",
+            "country_name": "Sweden",
+            "location": {
+              "lon": 18.056,
+              "lat": 59.3247
             }
           },
-          "ip" : "5.254.192.10"
+          "ip": "5.254.192.10"
         },
-        "url" : {
-          "path" : "admin/login.php",
-          "scheme" : "https",
-          "domain" : "host-systems.net",
-          "full" : "https://host-systems.net/admin/login.php"
+        "url": {
+          "path": "admin/login.php",
+          "scheme": "https",
+          "domain": "host-systems.net",
+          "full": "https://host-systems.net/admin/login.php"
         },
-        "http.request.bytes" : "214",
-        "event.action" : "authenticate",
-        "@timestamp" : "2021-03-13T13:11:00.000Z",
-        "http.request.method" : "POST",
-        "http.response.bytes" : "10",
-        "http.response.status_code" : "403",
-        "event.kind" : "request",
-        "event.dataset" : "weblogs",
-        "user_agent" : {
-          "original" : "Mozilla/5.0 (X11; U; Linux i686; de; rv:1.8.0.5) Gecko/20060731 Ubuntu/dapper-security Firefox/1.5.0.5",
-          "os" : {
-            "name" : "Ubuntu"
+        "http.request.bytes": "214",
+        "event.action": "authenticate",
+        "@timestamp": "2021-03-13T13:11:00.000Z",
+        "http.request.method": "POST",
+        "http.response.bytes": "10",
+        "http.response.status_code": "403",
+        "event.kind": "request",
+        "event.dataset": "weblogs",
+        "user_agent": {
+          "original": "Mozilla/5.0 (X11; U; Linux i686; de; rv:1.8.0.5) Gecko/20060731 Ubuntu/dapper-security Firefox/1.5.0.5",
+          "os": {
+            "name": "Ubuntu"
           },
-          "name" : "Firefox",
-          "device" : {
-            "name" : "Other"
+          "name": "Firefox",
+          "device": {
+            "name": "Other"
           },
-          "version" : "1.5.0"
-        },
-        "ml" : {
-          "inference" : {
-            "prediction" : true,
-            "probabilities" : [
-              {
-                "class_name" : true,
-                "class_probability" : 0.9816143914173593,
-                "class_score" : 0.9816143914173593
-              },
-              {
-                "class_name" : false,
-                "class_probability" : 0.01838560858264071,
-                "class_score" : 0.011407246904616626
-              }
-            ],
-            "prediction_probability" : 0.9816143914173593,
-            "prediction_score" : 0.9816143914173593,
-            "model_id" : "classification-request-payloads-1615680927179"
-          }
+          "version": "1.5.0"
         }
       }
     },
     {
-      "_index" : "webapp",
-      "_type" : "_doc",
-      "_id" : "TeeIMngBVgrfkQdcKGHW",
-      "_score" : 1.0,
-      "_source" : {
-        "user.name" : "administrator",
-        "source" : {
-          "geo" : {
-            "continent_name" : "Europe",
-            "country_iso_code" : "SE",
-            "country_name" : "Sweden",
-            "location" : {
-              "lon" : 18.056,
-              "lat" : 59.3247
+      "_index": "webapp",
+      "_type": "_doc",
+      "_id": "TeeIMngBVgrfkQdcKGHW",
+      "_score": 1,
+      "_source": {
+        "user.name": "administrator",
+        "source": {
+          "geo": {
+            "continent_name": "Europe",
+            "country_iso_code": "SE",
+            "country_name": "Sweden",
+            "location": {
+              "lon": 18.056,
+              "lat": 59.3247
             }
           },
-          "ip" : "5.254.192.10"
+          "ip": "5.254.192.10"
         },
-        "url" : {
-          "path" : "admin/login.php",
-          "scheme" : "https",
-          "domain" : "host-systems.net",
-          "full" : "https://host-systems.net/admin/login.php"
+        "url": {
+          "path": "admin/login.php",
+          "scheme": "https",
+          "domain": "host-systems.net",
+          "full": "https://host-systems.net/admin/login.php"
         },
-        "http.request.bytes" : "214",
-        "event.action" : "authenticate",
-        "@timestamp" : "2021-03-13T13:10:20.000Z",
-        "http.request.method" : "POST",
-        "http.response.bytes" : "10",
-        "http.response.status_code" : "403",
-        "event.kind" : "request",
-        "event.dataset" : "weblogs",
-        "user_agent" : {
-          "original" : "Mozilla/5.0 (X11; U; Linux i686; de; rv:1.8.0.5) Gecko/20060731 Ubuntu/dapper-security Firefox/1.5.0.5",
-          "os" : {
-            "name" : "Ubuntu"
+        "http.request.bytes": "214",
+        "event.action": "authenticate",
+        "@timestamp": "2021-03-13T13:10:20.000Z",
+        "http.request.method": "POST",
+        "http.response.bytes": "10",
+        "http.response.status_code": "403",
+        "event.kind": "request",
+        "event.dataset": "weblogs",
+        "user_agent": {
+          "original": "Mozilla/5.0 (X11; U; Linux i686; de; rv:1.8.0.5) Gecko/20060731 Ubuntu/dapper-security Firefox/1.5.0.5",
+          "os": {
+            "name": "Ubuntu"
           },
-          "name" : "Firefox",
-          "device" : {
-            "name" : "Other"
+          "name": "Firefox",
+          "device": {
+            "name": "Other"
           },
-          "version" : "1.5.0"
-        },
-        "ml" : {
-          "inference" : {
-            "prediction" : true,
-            "probabilities" : [
-              {
-                "class_name" : true,
-                "class_probability" : 0.9816143914173593,
-                "class_score" : 0.9816143914173593
-              },
-              {
-                "class_name" : false,
-                "class_probability" : 0.01838560858264071,
-                "class_score" : 0.011407246904616626
-              }
-            ],
-            "prediction_probability" : 0.9816143914173593,
-            "prediction_score" : 0.9816143914173593,
-            "model_id" : "classification-request-payloads-1615680927179"
-          }
+          "version": "1.5.0"
         }
       }
     },
     {
-      "_index" : "webapp",
-      "_type" : "_doc",
-      "_id" : "TueIMngBVgrfkQdcKGHW",
-      "_score" : 1.0,
-      "_source" : {
-        "user.name" : "administrator",
-        "source" : {
-          "geo" : {
-            "continent_name" : "Europe",
-            "country_iso_code" : "SE",
-            "country_name" : "Sweden",
-            "location" : {
-              "lon" : 18.056,
-              "lat" : 59.3247
+      "_index": "webapp",
+      "_type": "_doc",
+      "_id": "TueIMngBVgrfkQdcKGHW",
+      "_score": 1,
+      "_source": {
+        "user.name": "administrator",
+        "source": {
+          "geo": {
+            "continent_name": "Europe",
+            "country_iso_code": "SE",
+            "country_name": "Sweden",
+            "location": {
+              "lon": 18.056,
+              "lat": 59.3247
             }
           },
-          "ip" : "5.254.192.11"
+          "ip": "5.254.192.11"
         },
-        "url" : {
-          "path" : "admin/login.php",
-          "scheme" : "https",
-          "domain" : "host-systems.net",
-          "full" : "https://host-systems.net/admin/login.php"
+        "url": {
+          "path": "admin/login.php",
+          "scheme": "https",
+          "domain": "host-systems.net",
+          "full": "https://host-systems.net/admin/login.php"
         },
-        "http.request.bytes" : "215",
-        "event.action" : "authenticate",
-        "@timestamp" : "2021-03-13T13:10:35.000Z",
-        "http.request.method" : "POST",
-        "http.response.bytes" : "10",
-        "http.response.status_code" : "403",
-        "event.kind" : "request",
-        "event.dataset" : "weblogs",
-        "user_agent" : {
-          "original" : "Mozilla/5.0 (X11; U; Linux i686; de; rv:1.8.0.5) Gecko/20060731 Ubuntu/dapper-security Firefox/1.5.0.5",
-          "os" : {
-            "name" : "Ubuntu"
+        "http.request.bytes": "215",
+        "event.action": "authenticate",
+        "@timestamp": "2021-03-13T13:10:35.000Z",
+        "http.request.method": "POST",
+        "http.response.bytes": "10",
+        "http.response.status_code": "403",
+        "event.kind": "request",
+        "event.dataset": "weblogs",
+        "user_agent": {
+          "original": "Mozilla/5.0 (X11; U; Linux i686; de; rv:1.8.0.5) Gecko/20060731 Ubuntu/dapper-security Firefox/1.5.0.5",
+          "os": {
+            "name": "Ubuntu"
           },
-          "name" : "Firefox",
-          "device" : {
-            "name" : "Other"
+          "name": "Firefox",
+          "device": {
+            "name": "Other"
           },
-          "version" : "1.5.0"
-        },
-        "ml" : {
-          "inference" : {
-            "prediction" : true,
-            "probabilities" : [
-              {
-                "class_name" : true,
-                "class_probability" : 0.9816143914173593,
-                "class_score" : 0.9816143914173593
-              },
-              {
-                "class_name" : false,
-                "class_probability" : 0.01838560858264071,
-                "class_score" : 0.011407246904616626
-              }
-            ],
-            "prediction_probability" : 0.9816143914173593,
-            "prediction_score" : 0.9816143914173593,
-            "model_id" : "classification-request-payloads-1615680927179"
-          }
+          "version": "1.5.0"
         }
       }
     },
     {
-      "_index" : "webapp",
-      "_type" : "_doc",
-      "_id" : "T-eIMngBVgrfkQdcKGHW",
-      "_score" : 1.0,
-      "_source" : {
-        "user.name" : "administrator",
-        "source" : {
-          "geo" : {
-            "continent_name" : "Europe",
-            "country_iso_code" : "SE",
-            "country_name" : "Sweden",
-            "location" : {
-              "lon" : 18.056,
-              "lat" : 59.3247
+      "_index": "webapp",
+      "_type": "_doc",
+      "_id": "T-eIMngBVgrfkQdcKGHW",
+      "_score": 1,
+      "_source": {
+        "user.name": "administrator",
+        "source": {
+          "geo": {
+            "continent_name": "Europe",
+            "country_iso_code": "SE",
+            "country_name": "Sweden",
+            "location": {
+              "lon": 18.056,
+              "lat": 59.3247
             }
           },
-          "ip" : "5.254.192.10"
+          "ip": "5.254.192.10"
         },
-        "url" : {
-          "path" : "admin/login.php",
-          "scheme" : "https",
-          "domain" : "host-systems.net",
-          "full" : "https://host-systems.net/admin/login.php"
+        "url": {
+          "path": "admin/login.php",
+          "scheme": "https",
+          "domain": "host-systems.net",
+          "full": "https://host-systems.net/admin/login.php"
         },
-        "http.request.bytes" : "208",
-        "event.action" : "authenticate",
-        "@timestamp" : "2021-03-13T13:10:50.000Z",
-        "http.request.method" : "POST",
-        "http.response.bytes" : "10",
-        "http.response.status_code" : "403",
-        "event.kind" : "request",
-        "event.dataset" : "weblogs",
-        "user_agent" : {
-          "original" : "Mozilla/5.0 (X11; U; Linux i686; de; rv:1.8.0.5) Gecko/20060731 Ubuntu/dapper-security Firefox/1.5.0.5",
-          "os" : {
-            "name" : "Ubuntu"
+        "http.request.bytes": "208",
+        "event.action": "authenticate",
+        "@timestamp": "2021-03-13T13:10:50.000Z",
+        "http.request.method": "POST",
+        "http.response.bytes": "10",
+        "http.response.status_code": "403",
+        "event.kind": "request",
+        "event.dataset": "weblogs",
+        "user_agent": {
+          "original": "Mozilla/5.0 (X11; U; Linux i686; de; rv:1.8.0.5) Gecko/20060731 Ubuntu/dapper-security Firefox/1.5.0.5",
+          "os": {
+            "name": "Ubuntu"
           },
-          "name" : "Firefox",
-          "device" : {
-            "name" : "Other"
+          "name": "Firefox",
+          "device": {
+            "name": "Other"
           },
-          "version" : "1.5.0"
-        },
-        "ml" : {
-          "inference" : {
-            "prediction" : true,
-            "probabilities" : [
-              {
-                "class_name" : true,
-                "class_probability" : 0.9816143914173593,
-                "class_score" : 0.9816143914173593
-              },
-              {
-                "class_name" : false,
-                "class_probability" : 0.01838560858264071,
-                "class_score" : 0.011407246904616626
-              }
-            ],
-            "prediction_probability" : 0.9816143914173593,
-            "prediction_score" : 0.9816143914173593,
-            "model_id" : "classification-request-payloads-1615680927179"
-          }
+          "version": "1.5.0"
         }
       }
     },
     {
-      "_index" : "webapp",
-      "_type" : "_doc",
-      "_id" : "UOeIMngBVgrfkQdcKGHX",
-      "_score" : 1.0,
-      "_source" : {
-        "user.name" : "administrator",
-        "source" : {
-          "geo" : {
-            "continent_name" : "Europe",
-            "country_iso_code" : "SE",
-            "country_name" : "Sweden",
-            "location" : {
-              "lon" : 18.056,
-              "lat" : 59.3247
+      "_index": "webapp",
+      "_type": "_doc",
+      "_id": "UOeIMngBVgrfkQdcKGHX",
+      "_score": 1,
+      "_source": {
+        "user.name": "administrator",
+        "source": {
+          "geo": {
+            "continent_name": "Europe",
+            "country_iso_code": "SE",
+            "country_name": "Sweden",
+            "location": {
+              "lon": 18.056,
+              "lat": 59.3247
             }
           },
-          "ip" : "5.254.192.10"
+          "ip": "5.254.192.10"
         },
-        "url" : {
-          "path" : "admin/login.php",
-          "scheme" : "https",
-          "domain" : "host-systems.net",
-          "full" : "https://host-systems.net/admin/login.php"
+        "url": {
+          "path": "admin/login.php",
+          "scheme": "https",
+          "domain": "host-systems.net",
+          "full": "https://host-systems.net/admin/login.php"
         },
-        "http.request.bytes" : "212",
-        "event.action" : "authenticate",
-        "@timestamp" : "2021-03-13T13:10:22.000Z",
-        "http.request.method" : "POST",
-        "http.response.bytes" : "10",
-        "http.response.status_code" : "403",
-        "event.kind" : "request",
-        "event.dataset" : "weblogs",
-        "user_agent" : {
-          "original" : "Mozilla/5.0 (X11; U; Linux i686; de; rv:1.8.0.5) Gecko/20060731 Ubuntu/dapper-security Firefox/1.5.0.5",
-          "os" : {
-            "name" : "Ubuntu"
+        "http.request.bytes": "212",
+        "event.action": "authenticate",
+        "@timestamp": "2021-03-13T13:10:22.000Z",
+        "http.request.method": "POST",
+        "http.response.bytes": "10",
+        "http.response.status_code": "403",
+        "event.kind": "request",
+        "event.dataset": "weblogs",
+        "user_agent": {
+          "original": "Mozilla/5.0 (X11; U; Linux i686; de; rv:1.8.0.5) Gecko/20060731 Ubuntu/dapper-security Firefox/1.5.0.5",
+          "os": {
+            "name": "Ubuntu"
           },
-          "name" : "Firefox",
-          "device" : {
-            "name" : "Other"
+          "name": "Firefox",
+          "device": {
+            "name": "Other"
           },
-          "version" : "1.5.0"
-        },
-        "ml" : {
-          "inference" : {
-            "prediction" : true,
-            "probabilities" : [
-              {
-                "class_name" : true,
-                "class_probability" : 0.9816143914173593,
-                "class_score" : 0.9816143914173593
-              },
-              {
-                "class_name" : false,
-                "class_probability" : 0.01838560858264071,
-                "class_score" : 0.011407246904616626
-              }
-            ],
-            "prediction_probability" : 0.9816143914173593,
-            "prediction_score" : 0.9816143914173593,
-            "model_id" : "classification-request-payloads-1615680927179"
-          }
+          "version": "1.5.0"
         }
       }
     },
     {
-      "_index" : "webapp",
-      "_type" : "_doc",
-      "_id" : "UeeIMngBVgrfkQdcKGHX",
-      "_score" : 1.0,
-      "_source" : {
-        "user.name" : "administrator",
-        "source" : {
-          "geo" : {
-            "continent_name" : "Europe",
-            "country_iso_code" : "SE",
-            "country_name" : "Sweden",
-            "location" : {
-              "lon" : 18.056,
-              "lat" : 59.3247
+      "_index": "webapp",
+      "_type": "_doc",
+      "_id": "UeeIMngBVgrfkQdcKGHX",
+      "_score": 1,
+      "_source": {
+        "user.name": "administrator",
+        "source": {
+          "geo": {
+            "continent_name": "Europe",
+            "country_iso_code": "SE",
+            "country_name": "Sweden",
+            "location": {
+              "lon": 18.056,
+              "lat": 59.3247
             }
           },
-          "ip" : "5.254.192.11"
+          "ip": "5.254.192.11"
         },
-        "url" : {
-          "path" : "admin/login.php",
-          "scheme" : "https",
-          "domain" : "host-systems.net",
-          "full" : "https://host-systems.net/admin/login.php"
+        "url": {
+          "path": "admin/login.php",
+          "scheme": "https",
+          "domain": "host-systems.net",
+          "full": "https://host-systems.net/admin/login.php"
         },
-        "http.request.bytes" : "214",
-        "event.action" : "authenticate",
-        "@timestamp" : "2021-03-13T13:10:37.000Z",
-        "http.request.method" : "POST",
-        "http.response.bytes" : "10",
-        "http.response.status_code" : "403",
-        "event.kind" : "request",
-        "event.dataset" : "weblogs",
-        "user_agent" : {
-          "original" : "Mozilla/5.0 (X11; U; Linux i686; de; rv:1.8.0.5) Gecko/20060731 Ubuntu/dapper-security Firefox/1.5.0.5",
-          "os" : {
-            "name" : "Ubuntu"
+        "http.request.bytes": "214",
+        "event.action": "authenticate",
+        "@timestamp": "2021-03-13T13:10:37.000Z",
+        "http.request.method": "POST",
+        "http.response.bytes": "10",
+        "http.response.status_code": "403",
+        "event.kind": "request",
+        "event.dataset": "weblogs",
+        "user_agent": {
+          "original": "Mozilla/5.0 (X11; U; Linux i686; de; rv:1.8.0.5) Gecko/20060731 Ubuntu/dapper-security Firefox/1.5.0.5",
+          "os": {
+            "name": "Ubuntu"
           },
-          "name" : "Firefox",
-          "device" : {
-            "name" : "Other"
+          "name": "Firefox",
+          "device": {
+            "name": "Other"
           },
-          "version" : "1.5.0"
-        },
-        "ml" : {
-          "inference" : {
-            "prediction" : true,
-            "probabilities" : [
-              {
-                "class_name" : true,
-                "class_probability" : 0.9816143914173593,
-                "class_score" : 0.9816143914173593
-              },
-              {
-                "class_name" : false,
-                "class_probability" : 0.01838560858264071,
-                "class_score" : 0.011407246904616626
-              }
-            ],
-            "prediction_probability" : 0.9816143914173593,
-            "prediction_score" : 0.9816143914173593,
-            "model_id" : "classification-request-payloads-1615680927179"
-          }
+          "version": "1.5.0"
         }
       }
     },
     {
-      "_index" : "webapp",
-      "_type" : "_doc",
-      "_id" : "UueIMngBVgrfkQdcKGHX",
-      "_score" : 1.0,
-      "_source" : {
-        "user.name" : "administrator",
-        "source" : {
-          "geo" : {
-            "continent_name" : "Europe",
-            "country_iso_code" : "SE",
-            "country_name" : "Sweden",
-            "location" : {
-              "lon" : 18.056,
-              "lat" : 59.3247
+      "_index": "webapp",
+      "_type": "_doc",
+      "_id": "UueIMngBVgrfkQdcKGHX",
+      "_score": 1,
+      "_source": {
+        "user.name": "administrator",
+        "source": {
+          "geo": {
+            "continent_name": "Europe",
+            "country_iso_code": "SE",
+            "country_name": "Sweden",
+            "location": {
+              "lon": 18.056,
+              "lat": 59.3247
             }
           },
-          "ip" : "5.254.192.10"
+          "ip": "5.254.192.10"
         },
-        "url" : {
-          "path" : "admin/login.php",
-          "scheme" : "https",
-          "domain" : "host-systems.net",
-          "full" : "https://host-systems.net/admin/login.php"
+        "url": {
+          "path": "admin/login.php",
+          "scheme": "https",
+          "domain": "host-systems.net",
+          "full": "https://host-systems.net/admin/login.php"
         },
-        "http.request.bytes" : "201",
-        "event.action" : "authenticate",
-        "@timestamp" : "2021-03-13T13:10:52.000Z",
-        "http.request.method" : "POST",
-        "http.response.bytes" : "10",
-        "http.response.status_code" : "403",
-        "event.kind" : "request",
-        "event.dataset" : "weblogs",
-        "user_agent" : {
-          "original" : "Mozilla/5.0 (X11; U; Linux i686; de; rv:1.8.0.5) Gecko/20060731 Ubuntu/dapper-security Firefox/1.5.0.5",
-          "os" : {
-            "name" : "Ubuntu"
+        "http.request.bytes": "201",
+        "event.action": "authenticate",
+        "@timestamp": "2021-03-13T13:10:52.000Z",
+        "http.request.method": "POST",
+        "http.response.bytes": "10",
+        "http.response.status_code": "403",
+        "event.kind": "request",
+        "event.dataset": "weblogs",
+        "user_agent": {
+          "original": "Mozilla/5.0 (X11; U; Linux i686; de; rv:1.8.0.5) Gecko/20060731 Ubuntu/dapper-security Firefox/1.5.0.5",
+          "os": {
+            "name": "Ubuntu"
           },
-          "name" : "Firefox",
-          "device" : {
-            "name" : "Other"
+          "name": "Firefox",
+          "device": {
+            "name": "Other"
           },
-          "version" : "1.5.0"
-        },
-        "ml" : {
-          "inference" : {
-            "prediction" : true,
-            "probabilities" : [
-              {
-                "class_name" : true,
-                "class_probability" : 0.9816143914173593,
-                "class_score" : 0.9816143914173593
-              },
-              {
-                "class_name" : false,
-                "class_probability" : 0.01838560858264071,
-                "class_score" : 0.011407246904616626
-              }
-            ],
-            "prediction_probability" : 0.9816143914173593,
-            "prediction_score" : 0.9816143914173593,
-            "model_id" : "classification-request-payloads-1615680927179"
-          }
+          "version": "1.5.0"
         }
       }
     },
     {
-      "_index" : "webapp",
-      "_type" : "_doc",
-      "_id" : "U-eIMngBVgrfkQdcKGHX",
-      "_score" : 1.0,
-      "_source" : {
-        "user.name" : "administrator",
-        "source" : {
-          "geo" : {
-            "continent_name" : "Europe",
-            "country_iso_code" : "SE",
-            "country_name" : "Sweden",
-            "location" : {
-              "lon" : 18.056,
-              "lat" : 59.3247
+      "_index": "webapp",
+      "_type": "_doc",
+      "_id": "U-eIMngBVgrfkQdcKGHX",
+      "_score": 1,
+      "_source": {
+        "user.name": "administrator",
+        "source": {
+          "geo": {
+            "continent_name": "Europe",
+            "country_iso_code": "SE",
+            "country_name": "Sweden",
+            "location": {
+              "lon": 18.056,
+              "lat": 59.3247
             }
           },
-          "ip" : "5.254.192.10"
+          "ip": "5.254.192.10"
         },
-        "url" : {
-          "path" : "admin/login.php",
-          "scheme" : "https",
-          "domain" : "host-systems.net",
-          "full" : "https://host-systems.net/admin/login.php"
+        "url": {
+          "path": "admin/login.php",
+          "scheme": "https",
+          "domain": "host-systems.net",
+          "full": "https://host-systems.net/admin/login.php"
         },
-        "http.request.bytes" : "219",
-        "event.action" : "authenticate",
-        "@timestamp" : "2021-03-13T13:10:16.000Z",
-        "http.request.method" : "POST",
-        "http.response.bytes" : "10",
-        "http.response.status_code" : "403",
-        "event.kind" : "request",
-        "event.dataset" : "weblogs",
-        "user_agent" : {
-          "original" : "Mozilla/5.0 (X11; U; Linux i686; de; rv:1.8.0.5) Gecko/20060731 Ubuntu/dapper-security Firefox/1.5.0.5",
-          "os" : {
-            "name" : "Ubuntu"
+        "http.request.bytes": "219",
+        "event.action": "authenticate",
+        "@timestamp": "2021-03-13T13:10:16.000Z",
+        "http.request.method": "POST",
+        "http.response.bytes": "10",
+        "http.response.status_code": "403",
+        "event.kind": "request",
+        "event.dataset": "weblogs",
+        "user_agent": {
+          "original": "Mozilla/5.0 (X11; U; Linux i686; de; rv:1.8.0.5) Gecko/20060731 Ubuntu/dapper-security Firefox/1.5.0.5",
+          "os": {
+            "name": "Ubuntu"
           },
-          "name" : "Firefox",
-          "device" : {
-            "name" : "Other"
+          "name": "Firefox",
+          "device": {
+            "name": "Other"
           },
-          "version" : "1.5.0"
-        },
-        "ml" : {
-          "inference" : {
-            "prediction" : true,
-            "probabilities" : [
-              {
-                "class_name" : true,
-                "class_probability" : 0.9816143914173593,
-                "class_score" : 0.9816143914173593
-              },
-              {
-                "class_name" : false,
-                "class_probability" : 0.01838560858264071,
-                "class_score" : 0.011407246904616626
-              }
-            ],
-            "prediction_probability" : 0.9816143914173593,
-            "prediction_score" : 0.9816143914173593,
-            "model_id" : "classification-request-payloads-1615680927179"
-          }
+          "version": "1.5.0"
         }
       }
     },
     {
-      "_index" : "webapp",
-      "_type" : "_doc",
-      "_id" : "VOeIMngBVgrfkQdcKGHX",
-      "_score" : 1.0,
-      "_source" : {
-        "user.name" : "administrator",
-        "source" : {
-          "geo" : {
-            "continent_name" : "Europe",
-            "country_iso_code" : "SE",
-            "country_name" : "Sweden",
-            "location" : {
-              "lon" : 18.056,
-              "lat" : 59.3247
+      "_index": "webapp",
+      "_type": "_doc",
+      "_id": "VOeIMngBVgrfkQdcKGHX",
+      "_score": 1,
+      "_source": {
+        "user.name": "administrator",
+        "source": {
+          "geo": {
+            "continent_name": "Europe",
+            "country_iso_code": "SE",
+            "country_name": "Sweden",
+            "location": {
+              "lon": 18.056,
+              "lat": 59.3247
             }
           },
-          "ip" : "5.254.192.11"
+          "ip": "5.254.192.11"
         },
-        "url" : {
-          "path" : "admin/login.php",
-          "scheme" : "https",
-          "domain" : "host-systems.net",
-          "full" : "https://host-systems.net/admin/login.php"
+        "url": {
+          "path": "admin/login.php",
+          "scheme": "https",
+          "domain": "host-systems.net",
+          "full": "https://host-systems.net/admin/login.php"
         },
-        "http.request.bytes" : "208",
-        "event.action" : "authenticate",
-        "@timestamp" : "2021-03-13T13:10:31.000Z",
-        "http.request.method" : "POST",
-        "http.response.bytes" : "10",
-        "http.response.status_code" : "403",
-        "event.kind" : "request",
-        "event.dataset" : "weblogs",
-        "user_agent" : {
-          "original" : "Mozilla/5.0 (X11; U; Linux i686; de; rv:1.8.0.5) Gecko/20060731 Ubuntu/dapper-security Firefox/1.5.0.5",
-          "os" : {
-            "name" : "Ubuntu"
+        "http.request.bytes": "208",
+        "event.action": "authenticate",
+        "@timestamp": "2021-03-13T13:10:31.000Z",
+        "http.request.method": "POST",
+        "http.response.bytes": "10",
+        "http.response.status_code": "403",
+        "event.kind": "request",
+        "event.dataset": "weblogs",
+        "user_agent": {
+          "original": "Mozilla/5.0 (X11; U; Linux i686; de; rv:1.8.0.5) Gecko/20060731 Ubuntu/dapper-security Firefox/1.5.0.5",
+          "os": {
+            "name": "Ubuntu"
           },
-          "name" : "Firefox",
-          "device" : {
-            "name" : "Other"
+          "name": "Firefox",
+          "device": {
+            "name": "Other"
           },
-          "version" : "1.5.0"
-        },
-        "ml" : {
-          "inference" : {
-            "prediction" : true,
-            "probabilities" : [
-              {
-                "class_name" : true,
-                "class_probability" : 0.9816143914173593,
-                "class_score" : 0.9816143914173593
-              },
-              {
-                "class_name" : false,
-                "class_probability" : 0.01838560858264071,
-                "class_score" : 0.011407246904616626
-              }
-            ],
-            "prediction_probability" : 0.9816143914173593,
-            "prediction_score" : 0.9816143914173593,
-            "model_id" : "classification-request-payloads-1615680927179"
-          }
+          "version": "1.5.0"
         }
       }
     },
     {
-      "_index" : "webapp",
-      "_type" : "_doc",
-      "_id" : "VeeIMngBVgrfkQdcKGHX",
-      "_score" : 1.0,
-      "_source" : {
-        "user.name" : "administrator",
-        "source" : {
-          "geo" : {
-            "continent_name" : "Europe",
-            "country_iso_code" : "SE",
-            "country_name" : "Sweden",
-            "location" : {
-              "lon" : 18.056,
-              "lat" : 59.3247
+      "_index": "webapp",
+      "_type": "_doc",
+      "_id": "VeeIMngBVgrfkQdcKGHX",
+      "_score": 1,
+      "_source": {
+        "user.name": "administrator",
+        "source": {
+          "geo": {
+            "continent_name": "Europe",
+            "country_iso_code": "SE",
+            "country_name": "Sweden",
+            "location": {
+              "lon": 18.056,
+              "lat": 59.3247
             }
           },
-          "ip" : "5.254.192.10"
+          "ip": "5.254.192.10"
         },
-        "url" : {
-          "path" : "admin/login.php",
-          "scheme" : "https",
-          "domain" : "host-systems.net",
-          "full" : "https://host-systems.net/admin/login.php"
+        "url": {
+          "path": "admin/login.php",
+          "scheme": "https",
+          "domain": "host-systems.net",
+          "full": "https://host-systems.net/admin/login.php"
         },
-        "http.request.bytes" : "213",
-        "event.action" : "authenticate",
-        "@timestamp" : "2021-03-13T13:10:46.000Z",
-        "http.request.method" : "POST",
-        "http.response.bytes" : "10",
-        "http.response.status_code" : "403",
-        "event.kind" : "request",
-        "event.dataset" : "weblogs",
-        "user_agent" : {
-          "original" : "Mozilla/5.0 (X11; U; Linux i686; de; rv:1.8.0.5) Gecko/20060731 Ubuntu/dapper-security Firefox/1.5.0.5",
-          "os" : {
-            "name" : "Ubuntu"
+        "http.request.bytes": "213",
+        "event.action": "authenticate",
+        "@timestamp": "2021-03-13T13:10:46.000Z",
+        "http.request.method": "POST",
+        "http.response.bytes": "10",
+        "http.response.status_code": "403",
+        "event.kind": "request",
+        "event.dataset": "weblogs",
+        "user_agent": {
+          "original": "Mozilla/5.0 (X11; U; Linux i686; de; rv:1.8.0.5) Gecko/20060731 Ubuntu/dapper-security Firefox/1.5.0.5",
+          "os": {
+            "name": "Ubuntu"
           },
-          "name" : "Firefox",
-          "device" : {
-            "name" : "Other"
+          "name": "Firefox",
+          "device": {
+            "name": "Other"
           },
-          "version" : "1.5.0"
-        },
-        "ml" : {
-          "inference" : {
-            "prediction" : true,
-            "probabilities" : [
-              {
-                "class_name" : true,
-                "class_probability" : 0.9816143914173593,
-                "class_score" : 0.9816143914173593
-              },
-              {
-                "class_name" : false,
-                "class_probability" : 0.01838560858264071,
-                "class_score" : 0.011407246904616626
-              }
-            ],
-            "prediction_probability" : 0.9816143914173593,
-            "prediction_score" : 0.9816143914173593,
-            "model_id" : "classification-request-payloads-1615680927179"
-          }
+          "version": "1.5.0"
         }
       }
     },
     {
-      "_index" : "webapp",
-      "_type" : "_doc",
-      "_id" : "VueIMngBVgrfkQdcKGHX",
-      "_score" : 1.0,
-      "_source" : {
-        "user.name" : "administrator",
-        "source" : {
-          "geo" : {
-            "continent_name" : "Europe",
-            "country_iso_code" : "SE",
-            "country_name" : "Sweden",
-            "location" : {
-              "lon" : 18.056,
-              "lat" : 59.3247
+      "_index": "webapp",
+      "_type": "_doc",
+      "_id": "VueIMngBVgrfkQdcKGHX",
+      "_score": 1,
+      "_source": {
+        "user.name": "administrator",
+        "source": {
+          "geo": {
+            "continent_name": "Europe",
+            "country_iso_code": "SE",
+            "country_name": "Sweden",
+            "location": {
+              "lon": 18.056,
+              "lat": 59.3247
             }
           },
-          "ip" : "5.254.192.11"
+          "ip": "5.254.192.11"
         },
-        "url" : {
-          "path" : "admin/login.php",
-          "scheme" : "https",
-          "domain" : "host-systems.net",
-          "full" : "https://host-systems.net/admin/login.php"
+        "url": {
+          "path": "admin/login.php",
+          "scheme": "https",
+          "domain": "host-systems.net",
+          "full": "https://host-systems.net/admin/login.php"
         },
-        "http.request.bytes" : "214",
-        "event.action" : "authenticate",
-        "@timestamp" : "2021-03-13T13:11:01.000Z",
-        "http.request.method" : "POST",
-        "http.response.bytes" : "10",
-        "http.response.status_code" : "403",
-        "event.kind" : "request",
-        "event.dataset" : "weblogs",
-        "user_agent" : {
-          "original" : "Mozilla/5.0 (X11; U; Linux i686; de; rv:1.8.0.5) Gecko/20060731 Ubuntu/dapper-security Firefox/1.5.0.5",
-          "os" : {
-            "name" : "Ubuntu"
+        "http.request.bytes": "214",
+        "event.action": "authenticate",
+        "@timestamp": "2021-03-13T13:11:01.000Z",
+        "http.request.method": "POST",
+        "http.response.bytes": "10",
+        "http.response.status_code": "403",
+        "event.kind": "request",
+        "event.dataset": "weblogs",
+        "user_agent": {
+          "original": "Mozilla/5.0 (X11; U; Linux i686; de; rv:1.8.0.5) Gecko/20060731 Ubuntu/dapper-security Firefox/1.5.0.5",
+          "os": {
+            "name": "Ubuntu"
           },
-          "name" : "Firefox",
-          "device" : {
-            "name" : "Other"
+          "name": "Firefox",
+          "device": {
+            "name": "Other"
           },
-          "version" : "1.5.0"
-        },
-        "ml" : {
-          "inference" : {
-            "prediction" : true,
-            "probabilities" : [
-              {
-                "class_name" : true,
-                "class_probability" : 0.9816143914173593,
-                "class_score" : 0.9816143914173593
-              },
-              {
-                "class_name" : false,
-                "class_probability" : 0.01838560858264071,
-                "class_score" : 0.011407246904616626
-              }
-            ],
-            "prediction_probability" : 0.9816143914173593,
-            "prediction_score" : 0.9816143914173593,
-            "model_id" : "classification-request-payloads-1615680927179"
-          }
+          "version": "1.5.0"
         }
       }
     },
     {
-      "_index" : "webapp",
-      "_type" : "_doc",
-      "_id" : "V-eIMngBVgrfkQdcKGHv",
-      "_score" : 1.0,
-      "_source" : {
-        "user.name" : "administrator",
-        "source" : {
-          "geo" : {
-            "continent_name" : "Europe",
-            "country_iso_code" : "SE",
-            "country_name" : "Sweden",
-            "location" : {
-              "lon" : 18.056,
-              "lat" : 59.3247
+      "_index": "webapp",
+      "_type": "_doc",
+      "_id": "V-eIMngBVgrfkQdcKGHv",
+      "_score": 1,
+      "_source": {
+        "user.name": "administrator",
+        "source": {
+          "geo": {
+            "continent_name": "Europe",
+            "country_iso_code": "SE",
+            "country_name": "Sweden",
+            "location": {
+              "lon": 18.056,
+              "lat": 59.3247
             }
           },
-          "ip" : "5.254.192.10"
+          "ip": "5.254.192.10"
         },
-        "url" : {
-          "path" : "admin/login.php",
-          "scheme" : "https",
-          "domain" : "host-systems.net",
-          "full" : "https://host-systems.net/admin/login.php"
+        "url": {
+          "path": "admin/login.php",
+          "scheme": "https",
+          "domain": "host-systems.net",
+          "full": "https://host-systems.net/admin/login.php"
         },
-        "http.request.bytes" : "208",
-        "event.action" : "authenticate",
-        "@timestamp" : "2021-03-13T13:10:28.000Z",
-        "http.request.method" : "POST",
-        "http.response.bytes" : "10",
-        "http.response.status_code" : "403",
-        "event.kind" : "request",
-        "event.dataset" : "weblogs",
-        "user_agent" : {
-          "original" : "Mozilla/5.0 (X11; U; Linux i686; de; rv:1.8.0.5) Gecko/20060731 Ubuntu/dapper-security Firefox/1.5.0.5",
-          "os" : {
-            "name" : "Ubuntu"
+        "http.request.bytes": "208",
+        "event.action": "authenticate",
+        "@timestamp": "2021-03-13T13:10:28.000Z",
+        "http.request.method": "POST",
+        "http.response.bytes": "10",
+        "http.response.status_code": "403",
+        "event.kind": "request",
+        "event.dataset": "weblogs",
+        "user_agent": {
+          "original": "Mozilla/5.0 (X11; U; Linux i686; de; rv:1.8.0.5) Gecko/20060731 Ubuntu/dapper-security Firefox/1.5.0.5",
+          "os": {
+            "name": "Ubuntu"
           },
-          "name" : "Firefox",
-          "device" : {
-            "name" : "Other"
+          "name": "Firefox",
+          "device": {
+            "name": "Other"
           },
-          "version" : "1.5.0"
-        },
-        "ml" : {
-          "inference" : {
-            "prediction" : true,
-            "probabilities" : [
-              {
-                "class_name" : true,
-                "class_probability" : 0.9816143914173593,
-                "class_score" : 0.9816143914173593
-              },
-              {
-                "class_name" : false,
-                "class_probability" : 0.01838560858264071,
-                "class_score" : 0.011407246904616626
-              }
-            ],
-            "prediction_probability" : 0.9816143914173593,
-            "prediction_score" : 0.9816143914173593,
-            "model_id" : "classification-request-payloads-1615680927179"
-          }
+          "version": "1.5.0"
         }
       }
     },
     {
-      "_index" : "webapp",
-      "_type" : "_doc",
-      "_id" : "WOeIMngBVgrfkQdcKGHv",
-      "_score" : 1.0,
-      "_source" : {
-        "user.name" : "administrator",
-        "source" : {
-          "geo" : {
-            "continent_name" : "Europe",
-            "country_iso_code" : "SE",
-            "country_name" : "Sweden",
-            "location" : {
-              "lon" : 18.056,
-              "lat" : 59.3247
+      "_index": "webapp",
+      "_type": "_doc",
+      "_id": "WOeIMngBVgrfkQdcKGHv",
+      "_score": 1,
+      "_source": {
+        "user.name": "administrator",
+        "source": {
+          "geo": {
+            "continent_name": "Europe",
+            "country_iso_code": "SE",
+            "country_name": "Sweden",
+            "location": {
+              "lon": 18.056,
+              "lat": 59.3247
             }
           },
-          "ip" : "5.254.192.11"
+          "ip": "5.254.192.11"
         },
-        "url" : {
-          "path" : "admin/login.php",
-          "scheme" : "https",
-          "domain" : "host-systems.net",
-          "full" : "https://host-systems.net/admin/login.php"
+        "url": {
+          "path": "admin/login.php",
+          "scheme": "https",
+          "domain": "host-systems.net",
+          "full": "https://host-systems.net/admin/login.php"
         },
-        "http.request.bytes" : "217",
-        "event.action" : "authenticate",
-        "@timestamp" : "2021-03-13T13:10:43.000Z",
-        "http.request.method" : "POST",
-        "http.response.bytes" : "10",
-        "http.response.status_code" : "403",
-        "event.kind" : "request",
-        "event.dataset" : "weblogs",
-        "user_agent" : {
-          "original" : "Mozilla/5.0 (X11; U; Linux i686; de; rv:1.8.0.5) Gecko/20060731 Ubuntu/dapper-security Firefox/1.5.0.5",
-          "os" : {
-            "name" : "Ubuntu"
+        "http.request.bytes": "217",
+        "event.action": "authenticate",
+        "@timestamp": "2021-03-13T13:10:43.000Z",
+        "http.request.method": "POST",
+        "http.response.bytes": "10",
+        "http.response.status_code": "403",
+        "event.kind": "request",
+        "event.dataset": "weblogs",
+        "user_agent": {
+          "original": "Mozilla/5.0 (X11; U; Linux i686; de; rv:1.8.0.5) Gecko/20060731 Ubuntu/dapper-security Firefox/1.5.0.5",
+          "os": {
+            "name": "Ubuntu"
           },
-          "name" : "Firefox",
-          "device" : {
-            "name" : "Other"
+          "name": "Firefox",
+          "device": {
+            "name": "Other"
           },
-          "version" : "1.5.0"
-        },
-        "ml" : {
-          "inference" : {
-            "prediction" : true,
-            "probabilities" : [
-              {
-                "class_name" : true,
-                "class_probability" : 0.9816143914173593,
-                "class_score" : 0.9816143914173593
-              },
-              {
-                "class_name" : false,
-                "class_probability" : 0.01838560858264071,
-                "class_score" : 0.011407246904616626
-              }
-            ],
-            "prediction_probability" : 0.9816143914173593,
-            "prediction_score" : 0.9816143914173593,
-            "model_id" : "classification-request-payloads-1615680927179"
-          }
+          "version": "1.5.0"
         }
       }
     },
     {
-      "_index" : "webapp",
-      "_type" : "_doc",
-      "_id" : "WeeIMngBVgrfkQdcKGHv",
-      "_score" : 1.0,
-      "_source" : {
-        "user.name" : "administrator",
-        "source" : {
-          "geo" : {
-            "continent_name" : "Europe",
-            "country_iso_code" : "SE",
-            "country_name" : "Sweden",
-            "location" : {
-              "lon" : 18.056,
-              "lat" : 59.3247
+      "_index": "webapp",
+      "_type": "_doc",
+      "_id": "WeeIMngBVgrfkQdcKGHv",
+      "_score": 1,
+      "_source": {
+        "user.name": "administrator",
+        "source": {
+          "geo": {
+            "continent_name": "Europe",
+            "country_iso_code": "SE",
+            "country_name": "Sweden",
+            "location": {
+              "lon": 18.056,
+              "lat": 59.3247
             }
           },
-          "ip" : "5.254.192.10"
+          "ip": "5.254.192.10"
         },
-        "url" : {
-          "path" : "admin/login.php",
-          "scheme" : "https",
-          "domain" : "host-systems.net",
-          "full" : "https://host-systems.net/admin/login.php"
+        "url": {
+          "path": "admin/login.php",
+          "scheme": "https",
+          "domain": "host-systems.net",
+          "full": "https://host-systems.net/admin/login.php"
         },
-        "http.request.bytes" : "214",
-        "event.action" : "authenticate",
-        "@timestamp" : "2021-03-13T13:10:58.000Z",
-        "http.request.method" : "POST",
-        "http.response.bytes" : "10",
-        "http.response.status_code" : "403",
-        "event.kind" : "request",
-        "event.dataset" : "weblogs",
-        "user_agent" : {
-          "original" : "Mozilla/5.0 (X11; U; Linux i686; de; rv:1.8.0.5) Gecko/20060731 Ubuntu/dapper-security Firefox/1.5.0.5",
-          "os" : {
-            "name" : "Ubuntu"
+        "http.request.bytes": "214",
+        "event.action": "authenticate",
+        "@timestamp": "2021-03-13T13:10:58.000Z",
+        "http.request.method": "POST",
+        "http.response.bytes": "10",
+        "http.response.status_code": "403",
+        "event.kind": "request",
+        "event.dataset": "weblogs",
+        "user_agent": {
+          "original": "Mozilla/5.0 (X11; U; Linux i686; de; rv:1.8.0.5) Gecko/20060731 Ubuntu/dapper-security Firefox/1.5.0.5",
+          "os": {
+            "name": "Ubuntu"
           },
-          "name" : "Firefox",
-          "device" : {
-            "name" : "Other"
+          "name": "Firefox",
+          "device": {
+            "name": "Other"
           },
-          "version" : "1.5.0"
-        },
-        "ml" : {
-          "inference" : {
-            "prediction" : true,
-            "probabilities" : [
-              {
-                "class_name" : true,
-                "class_probability" : 0.9816143914173593,
-                "class_score" : 0.9816143914173593
-              },
-              {
-                "class_name" : false,
-                "class_probability" : 0.01838560858264071,
-                "class_score" : 0.011407246904616626
-              }
-            ],
-            "prediction_probability" : 0.9816143914173593,
-            "prediction_score" : 0.9816143914173593,
-            "model_id" : "classification-request-payloads-1615680927179"
-          }
+          "version": "1.5.0"
         }
       }
     },
     {
-      "_index" : "webapp",
-      "_type" : "_doc",
-      "_id" : "WueIMngBVgrfkQdcKGH1",
-      "_score" : 1.0,
-      "_source" : {
-        "user.name" : "administrator",
-        "source" : {
-          "geo" : {
-            "continent_name" : "Europe",
-            "country_iso_code" : "SE",
-            "country_name" : "Sweden",
-            "location" : {
-              "lon" : 18.056,
-              "lat" : 59.3247
+      "_index": "webapp",
+      "_type": "_doc",
+      "_id": "WueIMngBVgrfkQdcKGH1",
+      "_score": 1,
+      "_source": {
+        "user.name": "administrator",
+        "source": {
+          "geo": {
+            "continent_name": "Europe",
+            "country_iso_code": "SE",
+            "country_name": "Sweden",
+            "location": {
+              "lon": 18.056,
+              "lat": 59.3247
             }
           },
-          "ip" : "5.254.192.11"
+          "ip": "5.254.192.11"
         },
-        "url" : {
-          "path" : "admin/login.php",
-          "scheme" : "https",
-          "domain" : "host-systems.net",
-          "full" : "https://host-systems.net/admin/login.php"
+        "url": {
+          "path": "admin/login.php",
+          "scheme": "https",
+          "domain": "host-systems.net",
+          "full": "https://host-systems.net/admin/login.php"
         },
-        "http.request.bytes" : "214",
-        "event.action" : "authenticate",
-        "@timestamp" : "2021-03-13T13:10:21.000Z",
-        "http.request.method" : "POST",
-        "http.response.bytes" : "10",
-        "http.response.status_code" : "403",
-        "event.kind" : "request",
-        "event.dataset" : "weblogs",
-        "user_agent" : {
-          "original" : "Mozilla/5.0 (X11; U; Linux i686; de; rv:1.8.0.5) Gecko/20060731 Ubuntu/dapper-security Firefox/1.5.0.5",
-          "os" : {
-            "name" : "Ubuntu"
+        "http.request.bytes": "214",
+        "event.action": "authenticate",
+        "@timestamp": "2021-03-13T13:10:21.000Z",
+        "http.request.method": "POST",
+        "http.response.bytes": "10",
+        "http.response.status_code": "403",
+        "event.kind": "request",
+        "event.dataset": "weblogs",
+        "user_agent": {
+          "original": "Mozilla/5.0 (X11; U; Linux i686; de; rv:1.8.0.5) Gecko/20060731 Ubuntu/dapper-security Firefox/1.5.0.5",
+          "os": {
+            "name": "Ubuntu"
           },
-          "name" : "Firefox",
-          "device" : {
-            "name" : "Other"
+          "name": "Firefox",
+          "device": {
+            "name": "Other"
           },
-          "version" : "1.5.0"
-        },
-        "ml" : {
-          "inference" : {
-            "prediction" : true,
-            "probabilities" : [
-              {
-                "class_name" : true,
-                "class_probability" : 0.9816143914173593,
-                "class_score" : 0.9816143914173593
-              },
-              {
-                "class_name" : false,
-                "class_probability" : 0.01838560858264071,
-                "class_score" : 0.011407246904616626
-              }
-            ],
-            "prediction_probability" : 0.9816143914173593,
-            "prediction_score" : 0.9816143914173593,
-            "model_id" : "classification-request-payloads-1615680927179"
-          }
+          "version": "1.5.0"
         }
       }
     },
     {
-      "_index" : "webapp",
-      "_type" : "_doc",
-      "_id" : "W-eIMngBVgrfkQdcKGH1",
-      "_score" : 1.0,
-      "_source" : {
-        "user.name" : "administrator",
-        "source" : {
-          "geo" : {
-            "continent_name" : "Europe",
-            "country_iso_code" : "SE",
-            "country_name" : "Sweden",
-            "location" : {
-              "lon" : 18.056,
-              "lat" : 59.3247
+      "_index": "webapp",
+      "_type": "_doc",
+      "_id": "W-eIMngBVgrfkQdcKGH1",
+      "_score": 1,
+      "_source": {
+        "user.name": "administrator",
+        "source": {
+          "geo": {
+            "continent_name": "Europe",
+            "country_iso_code": "SE",
+            "country_name": "Sweden",
+            "location": {
+              "lon": 18.056,
+              "lat": 59.3247
             }
           },
-          "ip" : "5.254.192.10"
+          "ip": "5.254.192.10"
         },
-        "url" : {
-          "path" : "admin/login.php",
-          "scheme" : "https",
-          "domain" : "host-systems.net",
-          "full" : "https://host-systems.net/admin/login.php"
+        "url": {
+          "path": "admin/login.php",
+          "scheme": "https",
+          "domain": "host-systems.net",
+          "full": "https://host-systems.net/admin/login.php"
         },
-        "http.request.bytes" : "220",
-        "event.action" : "authenticate",
-        "@timestamp" : "2021-03-13T13:10:36.000Z",
-        "http.request.method" : "POST",
-        "http.response.bytes" : "10",
-        "http.response.status_code" : "403",
-        "event.kind" : "request",
-        "event.dataset" : "weblogs",
-        "user_agent" : {
-          "original" : "Mozilla/5.0 (X11; U; Linux i686; de; rv:1.8.0.5) Gecko/20060731 Ubuntu/dapper-security Firefox/1.5.0.5",
-          "os" : {
-            "name" : "Ubuntu"
+        "http.request.bytes": "220",
+        "event.action": "authenticate",
+        "@timestamp": "2021-03-13T13:10:36.000Z",
+        "http.request.method": "POST",
+        "http.response.bytes": "10",
+        "http.response.status_code": "403",
+        "event.kind": "request",
+        "event.dataset": "weblogs",
+        "user_agent": {
+          "original": "Mozilla/5.0 (X11; U; Linux i686; de; rv:1.8.0.5) Gecko/20060731 Ubuntu/dapper-security Firefox/1.5.0.5",
+          "os": {
+            "name": "Ubuntu"
           },
-          "name" : "Firefox",
-          "device" : {
-            "name" : "Other"
+          "name": "Firefox",
+          "device": {
+            "name": "Other"
           },
-          "version" : "1.5.0"
-        },
-        "ml" : {
-          "inference" : {
-            "prediction" : true,
-            "probabilities" : [
-              {
-                "class_name" : true,
-                "class_probability" : 0.9816143914173593,
-                "class_score" : 0.9816143914173593
-              },
-              {
-                "class_name" : false,
-                "class_probability" : 0.01838560858264071,
-                "class_score" : 0.011407246904616626
-              }
-            ],
-            "prediction_probability" : 0.9816143914173593,
-            "prediction_score" : 0.9816143914173593,
-            "model_id" : "classification-request-payloads-1615680927179"
-          }
+          "version": "1.5.0"
         }
       }
     },
     {
-      "_index" : "webapp",
-      "_type" : "_doc",
-      "_id" : "XOeIMngBVgrfkQdcKGH1",
-      "_score" : 1.0,
-      "_source" : {
-        "user.name" : "administrator",
-        "source" : {
-          "geo" : {
-            "continent_name" : "Europe",
-            "country_iso_code" : "SE",
-            "country_name" : "Sweden",
-            "location" : {
-              "lon" : 18.056,
-              "lat" : 59.3247
+      "_index": "webapp",
+      "_type": "_doc",
+      "_id": "XOeIMngBVgrfkQdcKGH1",
+      "_score": 1,
+      "_source": {
+        "user.name": "administrator",
+        "source": {
+          "geo": {
+            "continent_name": "Europe",
+            "country_iso_code": "SE",
+            "country_name": "Sweden",
+            "location": {
+              "lon": 18.056,
+              "lat": 59.3247
             }
           },
-          "ip" : "5.254.192.11"
+          "ip": "5.254.192.11"
         },
-        "url" : {
-          "path" : "admin/login.php",
-          "scheme" : "https",
-          "domain" : "host-systems.net",
-          "full" : "https://host-systems.net/admin/login.php"
+        "url": {
+          "path": "admin/login.php",
+          "scheme": "https",
+          "domain": "host-systems.net",
+          "full": "https://host-systems.net/admin/login.php"
         },
-        "http.request.bytes" : "211",
-        "event.action" : "authenticate",
-        "@timestamp" : "2021-03-13T13:10:51.000Z",
-        "http.request.method" : "POST",
-        "http.response.bytes" : "10",
-        "http.response.status_code" : "403",
-        "event.kind" : "request",
-        "event.dataset" : "weblogs",
-        "user_agent" : {
-          "original" : "Mozilla/5.0 (X11; U; Linux i686; de; rv:1.8.0.5) Gecko/20060731 Ubuntu/dapper-security Firefox/1.5.0.5",
-          "os" : {
-            "name" : "Ubuntu"
+        "http.request.bytes": "211",
+        "event.action": "authenticate",
+        "@timestamp": "2021-03-13T13:10:51.000Z",
+        "http.request.method": "POST",
+        "http.response.bytes": "10",
+        "http.response.status_code": "403",
+        "event.kind": "request",
+        "event.dataset": "weblogs",
+        "user_agent": {
+          "original": "Mozilla/5.0 (X11; U; Linux i686; de; rv:1.8.0.5) Gecko/20060731 Ubuntu/dapper-security Firefox/1.5.0.5",
+          "os": {
+            "name": "Ubuntu"
           },
-          "name" : "Firefox",
-          "device" : {
-            "name" : "Other"
+          "name": "Firefox",
+          "device": {
+            "name": "Other"
           },
-          "version" : "1.5.0"
-        },
-        "ml" : {
-          "inference" : {
-            "prediction" : true,
-            "probabilities" : [
-              {
-                "class_name" : true,
-                "class_probability" : 0.9816143914173593,
-                "class_score" : 0.9816143914173593
-              },
-              {
-                "class_name" : false,
-                "class_probability" : 0.01838560858264071,
-                "class_score" : 0.011407246904616626
-              }
-            ],
-            "prediction_probability" : 0.9816143914173593,
-            "prediction_score" : 0.9816143914173593,
-            "model_id" : "classification-request-payloads-1615680927179"
-          }
+          "version": "1.5.0"
         }
       }
     },
     {
-      "_index" : "webapp",
-      "_type" : "_doc",
-      "_id" : "XeeIMngBVgrfkQdcKWEM",
-      "_score" : 1.0,
-      "_source" : {
-        "user.name" : "administrator",
-        "source" : {
-          "geo" : {
-            "continent_name" : "Europe",
-            "country_iso_code" : "SE",
-            "country_name" : "Sweden",
-            "location" : {
-              "lon" : 18.056,
-              "lat" : 59.3247
+      "_index": "webapp",
+      "_type": "_doc",
+      "_id": "XeeIMngBVgrfkQdcKWEM",
+      "_score": 1,
+      "_source": {
+        "user.name": "administrator",
+        "source": {
+          "geo": {
+            "continent_name": "Europe",
+            "country_iso_code": "SE",
+            "country_name": "Sweden",
+            "location": {
+              "lon": 18.056,
+              "lat": 59.3247
             }
           },
-          "ip" : "5.254.192.10"
+          "ip": "5.254.192.10"
         },
-        "url" : {
-          "path" : "admin/login.php",
-          "scheme" : "https",
-          "domain" : "host-systems.net",
-          "full" : "https://host-systems.net/admin/login.php"
+        "url": {
+          "path": "admin/login.php",
+          "scheme": "https",
+          "domain": "host-systems.net",
+          "full": "https://host-systems.net/admin/login.php"
         },
-        "http.request.bytes" : "220",
-        "event.action" : "authenticate",
-        "@timestamp" : "2021-03-13T13:10:24.000Z",
-        "http.request.method" : "POST",
-        "http.response.bytes" : "10",
-        "http.response.status_code" : "403",
-        "event.kind" : "request",
-        "event.dataset" : "weblogs",
-        "user_agent" : {
-          "original" : "Mozilla/5.0 (X11; U; Linux i686; de; rv:1.8.0.5) Gecko/20060731 Ubuntu/dapper-security Firefox/1.5.0.5",
-          "os" : {
-            "name" : "Ubuntu"
+        "http.request.bytes": "220",
+        "event.action": "authenticate",
+        "@timestamp": "2021-03-13T13:10:24.000Z",
+        "http.request.method": "POST",
+        "http.response.bytes": "10",
+        "http.response.status_code": "403",
+        "event.kind": "request",
+        "event.dataset": "weblogs",
+        "user_agent": {
+          "original": "Mozilla/5.0 (X11; U; Linux i686; de; rv:1.8.0.5) Gecko/20060731 Ubuntu/dapper-security Firefox/1.5.0.5",
+          "os": {
+            "name": "Ubuntu"
           },
-          "name" : "Firefox",
-          "device" : {
-            "name" : "Other"
+          "name": "Firefox",
+          "device": {
+            "name": "Other"
           },
-          "version" : "1.5.0"
-        },
-        "ml" : {
-          "inference" : {
-            "prediction" : true,
-            "probabilities" : [
-              {
-                "class_name" : true,
-                "class_probability" : 0.9816143914173593,
-                "class_score" : 0.9816143914173593
-              },
-              {
-                "class_name" : false,
-                "class_probability" : 0.01838560858264071,
-                "class_score" : 0.011407246904616626
-              }
-            ],
-            "prediction_probability" : 0.9816143914173593,
-            "prediction_score" : 0.9816143914173593,
-            "model_id" : "classification-request-payloads-1615680927179"
-          }
+          "version": "1.5.0"
         }
       }
     },
     {
-      "_index" : "webapp",
-      "_type" : "_doc",
-      "_id" : "XueIMngBVgrfkQdcKWEM",
-      "_score" : 1.0,
-      "_source" : {
-        "user.name" : "administrator",
-        "source" : {
-          "geo" : {
-            "continent_name" : "Europe",
-            "country_iso_code" : "SE",
-            "country_name" : "Sweden",
-            "location" : {
-              "lon" : 18.056,
-              "lat" : 59.3247
+      "_index": "webapp",
+      "_type": "_doc",
+      "_id": "XueIMngBVgrfkQdcKWEM",
+      "_score": 1,
+      "_source": {
+        "user.name": "administrator",
+        "source": {
+          "geo": {
+            "continent_name": "Europe",
+            "country_iso_code": "SE",
+            "country_name": "Sweden",
+            "location": {
+              "lon": 18.056,
+              "lat": 59.3247
             }
           },
-          "ip" : "5.254.192.11"
+          "ip": "5.254.192.11"
         },
-        "url" : {
-          "path" : "admin/login.php",
-          "scheme" : "https",
-          "domain" : "host-systems.net",
-          "full" : "https://host-systems.net/admin/login.php"
+        "url": {
+          "path": "admin/login.php",
+          "scheme": "https",
+          "domain": "host-systems.net",
+          "full": "https://host-systems.net/admin/login.php"
         },
-        "http.request.bytes" : "204",
-        "event.action" : "authenticate",
-        "@timestamp" : "2021-03-13T13:10:39.000Z",
-        "http.request.method" : "POST",
-        "http.response.bytes" : "10",
-        "http.response.status_code" : "403",
-        "event.kind" : "request",
-        "event.dataset" : "weblogs",
-        "user_agent" : {
-          "original" : "Mozilla/5.0 (X11; U; Linux i686; de; rv:1.8.0.5) Gecko/20060731 Ubuntu/dapper-security Firefox/1.5.0.5",
-          "os" : {
-            "name" : "Ubuntu"
+        "http.request.bytes": "204",
+        "event.action": "authenticate",
+        "@timestamp": "2021-03-13T13:10:39.000Z",
+        "http.request.method": "POST",
+        "http.response.bytes": "10",
+        "http.response.status_code": "403",
+        "event.kind": "request",
+        "event.dataset": "weblogs",
+        "user_agent": {
+          "original": "Mozilla/5.0 (X11; U; Linux i686; de; rv:1.8.0.5) Gecko/20060731 Ubuntu/dapper-security Firefox/1.5.0.5",
+          "os": {
+            "name": "Ubuntu"
           },
-          "name" : "Firefox",
-          "device" : {
-            "name" : "Other"
+          "name": "Firefox",
+          "device": {
+            "name": "Other"
           },
-          "version" : "1.5.0"
-        },
-        "ml" : {
-          "inference" : {
-            "prediction" : true,
-            "probabilities" : [
-              {
-                "class_name" : true,
-                "class_probability" : 0.9816143914173593,
-                "class_score" : 0.9816143914173593
-              },
-              {
-                "class_name" : false,
-                "class_probability" : 0.01838560858264071,
-                "class_score" : 0.011407246904616626
-              }
-            ],
-            "prediction_probability" : 0.9816143914173593,
-            "prediction_score" : 0.9816143914173593,
-            "model_id" : "classification-request-payloads-1615680927179"
-          }
+          "version": "1.5.0"
         }
       }
     },
     {
-      "_index" : "webapp",
-      "_type" : "_doc",
-      "_id" : "X-eIMngBVgrfkQdcKWEM",
-      "_score" : 1.0,
-      "_source" : {
-        "user.name" : "administrator",
-        "source" : {
-          "geo" : {
-            "continent_name" : "Europe",
-            "country_iso_code" : "SE",
-            "country_name" : "Sweden",
-            "location" : {
-              "lon" : 18.056,
-              "lat" : 59.3247
+      "_index": "webapp",
+      "_type": "_doc",
+      "_id": "X-eIMngBVgrfkQdcKWEM",
+      "_score": 1,
+      "_source": {
+        "user.name": "administrator",
+        "source": {
+          "geo": {
+            "continent_name": "Europe",
+            "country_iso_code": "SE",
+            "country_name": "Sweden",
+            "location": {
+              "lon": 18.056,
+              "lat": 59.3247
             }
           },
-          "ip" : "5.254.192.10"
+          "ip": "5.254.192.10"
         },
-        "url" : {
-          "path" : "admin/login.php",
-          "scheme" : "https",
-          "domain" : "host-systems.net",
-          "full" : "https://host-systems.net/admin/login.php"
+        "url": {
+          "path": "admin/login.php",
+          "scheme": "https",
+          "domain": "host-systems.net",
+          "full": "https://host-systems.net/admin/login.php"
         },
-        "http.request.bytes" : "200",
-        "event.action" : "authenticate",
-        "@timestamp" : "2021-03-13T13:10:54.000Z",
-        "http.request.method" : "POST",
-        "http.response.bytes" : "10",
-        "http.response.status_code" : "403",
-        "event.kind" : "request",
-        "event.dataset" : "weblogs",
-        "user_agent" : {
-          "original" : "Mozilla/5.0 (X11; U; Linux i686; de; rv:1.8.0.5) Gecko/20060731 Ubuntu/dapper-security Firefox/1.5.0.5",
-          "os" : {
-            "name" : "Ubuntu"
+        "http.request.bytes": "200",
+        "event.action": "authenticate",
+        "@timestamp": "2021-03-13T13:10:54.000Z",
+        "http.request.method": "POST",
+        "http.response.bytes": "10",
+        "http.response.status_code": "403",
+        "event.kind": "request",
+        "event.dataset": "weblogs",
+        "user_agent": {
+          "original": "Mozilla/5.0 (X11; U; Linux i686; de; rv:1.8.0.5) Gecko/20060731 Ubuntu/dapper-security Firefox/1.5.0.5",
+          "os": {
+            "name": "Ubuntu"
           },
-          "name" : "Firefox",
-          "device" : {
-            "name" : "Other"
+          "name": "Firefox",
+          "device": {
+            "name": "Other"
           },
-          "version" : "1.5.0"
-        },
-        "ml" : {
-          "inference" : {
-            "prediction" : true,
-            "probabilities" : [
-              {
-                "class_name" : true,
-                "class_probability" : 0.9816143914173593,
-                "class_score" : 0.9816143914173593
-              },
-              {
-                "class_name" : false,
-                "class_probability" : 0.01838560858264071,
-                "class_score" : 0.011407246904616626
-              }
-            ],
-            "prediction_probability" : 0.9816143914173593,
-            "prediction_score" : 0.9816143914173593,
-            "model_id" : "classification-request-payloads-1615680927179"
-          }
+          "version": "1.5.0"
         }
       }
     },
     {
-      "_index" : "webapp",
-      "_type" : "_doc",
-      "_id" : "YOeIMngBVgrfkQdcKWEN",
-      "_score" : 1.0,
-      "_source" : {
-        "user.name" : "administrator",
-        "source" : {
-          "geo" : {
-            "continent_name" : "Europe",
-            "country_iso_code" : "SE",
-            "country_name" : "Sweden",
-            "location" : {
-              "lon" : 18.056,
-              "lat" : 59.3247
+      "_index": "webapp",
+      "_type": "_doc",
+      "_id": "YOeIMngBVgrfkQdcKWEN",
+      "_score": 1,
+      "_source": {
+        "user.name": "administrator",
+        "source": {
+          "geo": {
+            "continent_name": "Europe",
+            "country_iso_code": "SE",
+            "country_name": "Sweden",
+            "location": {
+              "lon": 18.056,
+              "lat": 59.3247
             }
           },
-          "ip" : "5.254.192.11"
+          "ip": "5.254.192.11"
         },
-        "url" : {
-          "path" : "admin/login.php",
-          "scheme" : "https",
-          "domain" : "host-systems.net",
-          "full" : "https://host-systems.net/admin/login.php"
+        "url": {
+          "path": "admin/login.php",
+          "scheme": "https",
+          "domain": "host-systems.net",
+          "full": "https://host-systems.net/admin/login.php"
         },
-        "http.request.bytes" : "210",
-        "event.action" : "authenticate",
-        "@timestamp" : "2021-03-13T13:10:23.000Z",
-        "http.request.method" : "POST",
-        "http.response.bytes" : "10",
-        "http.response.status_code" : "403",
-        "event.kind" : "request",
-        "event.dataset" : "weblogs",
-        "user_agent" : {
-          "original" : "Mozilla/5.0 (X11; U; Linux i686; de; rv:1.8.0.5) Gecko/20060731 Ubuntu/dapper-security Firefox/1.5.0.5",
-          "os" : {
-            "name" : "Ubuntu"
+        "http.request.bytes": "210",
+        "event.action": "authenticate",
+        "@timestamp": "2021-03-13T13:10:23.000Z",
+        "http.request.method": "POST",
+        "http.response.bytes": "10",
+        "http.response.status_code": "403",
+        "event.kind": "request",
+        "event.dataset": "weblogs",
+        "user_agent": {
+          "original": "Mozilla/5.0 (X11; U; Linux i686; de; rv:1.8.0.5) Gecko/20060731 Ubuntu/dapper-security Firefox/1.5.0.5",
+          "os": {
+            "name": "Ubuntu"
           },
-          "name" : "Firefox",
-          "device" : {
-            "name" : "Other"
+          "name": "Firefox",
+          "device": {
+            "name": "Other"
           },
-          "version" : "1.5.0"
-        },
-        "ml" : {
-          "inference" : {
-            "prediction" : true,
-            "probabilities" : [
-              {
-                "class_name" : true,
-                "class_probability" : 0.9816143914173593,
-                "class_score" : 0.9816143914173593
-              },
-              {
-                "class_name" : false,
-                "class_probability" : 0.01838560858264071,
-                "class_score" : 0.011407246904616626
-              }
-            ],
-            "prediction_probability" : 0.9816143914173593,
-            "prediction_score" : 0.9816143914173593,
-            "model_id" : "classification-request-payloads-1615680927179"
-          }
+          "version": "1.5.0"
         }
       }
     },
     {
-      "_index" : "webapp",
-      "_type" : "_doc",
-      "_id" : "YeeIMngBVgrfkQdcKWEN",
-      "_score" : 1.0,
-      "_source" : {
-        "user.name" : "administrator",
-        "source" : {
-          "geo" : {
-            "continent_name" : "Europe",
-            "country_iso_code" : "SE",
-            "country_name" : "Sweden",
-            "location" : {
-              "lon" : 18.056,
-              "lat" : 59.3247
+      "_index": "webapp",
+      "_type": "_doc",
+      "_id": "YeeIMngBVgrfkQdcKWEN",
+      "_score": 1,
+      "_source": {
+        "user.name": "administrator",
+        "source": {
+          "geo": {
+            "continent_name": "Europe",
+            "country_iso_code": "SE",
+            "country_name": "Sweden",
+            "location": {
+              "lon": 18.056,
+              "lat": 59.3247
             }
           },
-          "ip" : "5.254.192.10"
+          "ip": "5.254.192.10"
         },
-        "url" : {
-          "path" : "admin/login.php",
-          "scheme" : "https",
-          "domain" : "host-systems.net",
-          "full" : "https://host-systems.net/admin/login.php"
+        "url": {
+          "path": "admin/login.php",
+          "scheme": "https",
+          "domain": "host-systems.net",
+          "full": "https://host-systems.net/admin/login.php"
         },
-        "http.request.bytes" : "201",
-        "event.action" : "authenticate",
-        "@timestamp" : "2021-03-13T13:10:38.000Z",
-        "http.request.method" : "POST",
-        "http.response.bytes" : "10",
-        "http.response.status_code" : "403",
-        "event.kind" : "request",
-        "event.dataset" : "weblogs",
-        "user_agent" : {
-          "original" : "Mozilla/5.0 (X11; U; Linux i686; de; rv:1.8.0.5) Gecko/20060731 Ubuntu/dapper-security Firefox/1.5.0.5",
-          "os" : {
-            "name" : "Ubuntu"
+        "http.request.bytes": "201",
+        "event.action": "authenticate",
+        "@timestamp": "2021-03-13T13:10:38.000Z",
+        "http.request.method": "POST",
+        "http.response.bytes": "10",
+        "http.response.status_code": "403",
+        "event.kind": "request",
+        "event.dataset": "weblogs",
+        "user_agent": {
+          "original": "Mozilla/5.0 (X11; U; Linux i686; de; rv:1.8.0.5) Gecko/20060731 Ubuntu/dapper-security Firefox/1.5.0.5",
+          "os": {
+            "name": "Ubuntu"
           },
-          "name" : "Firefox",
-          "device" : {
-            "name" : "Other"
+          "name": "Firefox",
+          "device": {
+            "name": "Other"
           },
-          "version" : "1.5.0"
-        },
-        "ml" : {
-          "inference" : {
-            "prediction" : true,
-            "probabilities" : [
-              {
-                "class_name" : true,
-                "class_probability" : 0.9816143914173593,
-                "class_score" : 0.9816143914173593
-              },
-              {
-                "class_name" : false,
-                "class_probability" : 0.01838560858264071,
-                "class_score" : 0.011407246904616626
-              }
-            ],
-            "prediction_probability" : 0.9816143914173593,
-            "prediction_score" : 0.9816143914173593,
-            "model_id" : "classification-request-payloads-1615680927179"
-          }
+          "version": "1.5.0"
         }
       }
     },
     {
-      "_index" : "webapp",
-      "_type" : "_doc",
-      "_id" : "YueIMngBVgrfkQdcKWEN",
-      "_score" : 1.0,
-      "_source" : {
-        "user.name" : "administrator",
-        "source" : {
-          "geo" : {
-            "continent_name" : "Europe",
-            "country_iso_code" : "SE",
-            "country_name" : "Sweden",
-            "location" : {
-              "lon" : 18.056,
-              "lat" : 59.3247
+      "_index": "webapp",
+      "_type": "_doc",
+      "_id": "YueIMngBVgrfkQdcKWEN",
+      "_score": 1,
+      "_source": {
+        "user.name": "administrator",
+        "source": {
+          "geo": {
+            "continent_name": "Europe",
+            "country_iso_code": "SE",
+            "country_name": "Sweden",
+            "location": {
+              "lon": 18.056,
+              "lat": 59.3247
             }
           },
-          "ip" : "5.254.192.11"
+          "ip": "5.254.192.11"
         },
-        "url" : {
-          "path" : "admin/login.php",
-          "scheme" : "https",
-          "domain" : "host-systems.net",
-          "full" : "https://host-systems.net/admin/login.php"
+        "url": {
+          "path": "admin/login.php",
+          "scheme": "https",
+          "domain": "host-systems.net",
+          "full": "https://host-systems.net/admin/login.php"
         },
-        "http.request.bytes" : "214",
-        "event.action" : "authenticate",
-        "@timestamp" : "2021-03-13T13:10:53.000Z",
-        "http.request.method" : "POST",
-        "http.response.bytes" : "10",
-        "http.response.status_code" : "403",
-        "event.kind" : "request",
-        "event.dataset" : "weblogs",
-        "user_agent" : {
-          "original" : "Mozilla/5.0 (X11; U; Linux i686; de; rv:1.8.0.5) Gecko/20060731 Ubuntu/dapper-security Firefox/1.5.0.5",
-          "os" : {
-            "name" : "Ubuntu"
+        "http.request.bytes": "214",
+        "event.action": "authenticate",
+        "@timestamp": "2021-03-13T13:10:53.000Z",
+        "http.request.method": "POST",
+        "http.response.bytes": "10",
+        "http.response.status_code": "403",
+        "event.kind": "request",
+        "event.dataset": "weblogs",
+        "user_agent": {
+          "original": "Mozilla/5.0 (X11; U; Linux i686; de; rv:1.8.0.5) Gecko/20060731 Ubuntu/dapper-security Firefox/1.5.0.5",
+          "os": {
+            "name": "Ubuntu"
           },
-          "name" : "Firefox",
-          "device" : {
-            "name" : "Other"
+          "name": "Firefox",
+          "device": {
+            "name": "Other"
           },
-          "version" : "1.5.0"
-        },
-        "ml" : {
-          "inference" : {
-            "prediction" : true,
-            "probabilities" : [
-              {
-                "class_name" : true,
-                "class_probability" : 0.9816143914173593,
-                "class_score" : 0.9816143914173593
-              },
-              {
-                "class_name" : false,
-                "class_probability" : 0.01838560858264071,
-                "class_score" : 0.011407246904616626
-              }
-            ],
-            "prediction_probability" : 0.9816143914173593,
-            "prediction_score" : 0.9816143914173593,
-            "model_id" : "classification-request-payloads-1615680927179"
-          }
+          "version": "1.5.0"
         }
       }
     },
     {
-      "_index" : "webapp",
-      "_type" : "_doc",
-      "_id" : "Y-eIMngBVgrfkQdcKWEd",
-      "_score" : 1.0,
-      "_source" : {
-        "user.name" : "administrator",
-        "source" : {
-          "geo" : {
-            "continent_name" : "Europe",
-            "country_iso_code" : "SE",
-            "country_name" : "Sweden",
-            "location" : {
-              "lon" : 18.056,
-              "lat" : 59.3247
+      "_index": "webapp",
+      "_type": "_doc",
+      "_id": "Y-eIMngBVgrfkQdcKWEd",
+      "_score": 1,
+      "_source": {
+        "user.name": "administrator",
+        "source": {
+          "geo": {
+            "continent_name": "Europe",
+            "country_iso_code": "SE",
+            "country_name": "Sweden",
+            "location": {
+              "lon": 18.056,
+              "lat": 59.3247
             }
           },
-          "ip" : "5.254.192.10"
+          "ip": "5.254.192.10"
         },
-        "url" : {
-          "path" : "admin/login.php",
-          "scheme" : "https",
-          "domain" : "host-systems.net",
-          "full" : "https://host-systems.net/admin/login.php"
+        "url": {
+          "path": "admin/login.php",
+          "scheme": "https",
+          "domain": "host-systems.net",
+          "full": "https://host-systems.net/admin/login.php"
         },
-        "http.request.bytes" : "218",
-        "event.action" : "authenticate",
-        "@timestamp" : "2021-03-13T13:10:14.000Z",
-        "http.request.method" : "POST",
-        "http.response.bytes" : "10",
-        "http.response.status_code" : "403",
-        "event.kind" : "request",
-        "event.dataset" : "weblogs",
-        "user_agent" : {
-          "original" : "Mozilla/5.0 (X11; U; Linux i686; de; rv:1.8.0.5) Gecko/20060731 Ubuntu/dapper-security Firefox/1.5.0.5",
-          "os" : {
-            "name" : "Ubuntu"
+        "http.request.bytes": "218",
+        "event.action": "authenticate",
+        "@timestamp": "2021-03-13T13:10:14.000Z",
+        "http.request.method": "POST",
+        "http.response.bytes": "10",
+        "http.response.status_code": "403",
+        "event.kind": "request",
+        "event.dataset": "weblogs",
+        "user_agent": {
+          "original": "Mozilla/5.0 (X11; U; Linux i686; de; rv:1.8.0.5) Gecko/20060731 Ubuntu/dapper-security Firefox/1.5.0.5",
+          "os": {
+            "name": "Ubuntu"
           },
-          "name" : "Firefox",
-          "device" : {
-            "name" : "Other"
+          "name": "Firefox",
+          "device": {
+            "name": "Other"
           },
-          "version" : "1.5.0"
-        },
-        "ml" : {
-          "inference" : {
-            "prediction" : true,
-            "probabilities" : [
-              {
-                "class_name" : true,
-                "class_probability" : 0.9816143914173593,
-                "class_score" : 0.9816143914173593
-              },
-              {
-                "class_name" : false,
-                "class_probability" : 0.01838560858264071,
-                "class_score" : 0.011407246904616626
-              }
-            ],
-            "prediction_probability" : 0.9816143914173593,
-            "prediction_score" : 0.9816143914173593,
-            "model_id" : "classification-request-payloads-1615680927179"
-          }
+          "version": "1.5.0"
         }
       }
     },
     {
-      "_index" : "webapp",
-      "_type" : "_doc",
-      "_id" : "ZOeIMngBVgrfkQdcKWEd",
-      "_score" : 1.0,
-      "_source" : {
-        "user.name" : "administrator",
-        "source" : {
-          "geo" : {
-            "continent_name" : "Europe",
-            "country_iso_code" : "SE",
-            "country_name" : "Sweden",
-            "location" : {
-              "lon" : 18.056,
-              "lat" : 59.3247
+      "_index": "webapp",
+      "_type": "_doc",
+      "_id": "ZOeIMngBVgrfkQdcKWEd",
+      "_score": 1,
+      "_source": {
+        "user.name": "administrator",
+        "source": {
+          "geo": {
+            "continent_name": "Europe",
+            "country_iso_code": "SE",
+            "country_name": "Sweden",
+            "location": {
+              "lon": 18.056,
+              "lat": 59.3247
             }
           },
-          "ip" : "5.254.192.11"
+          "ip": "5.254.192.11"
         },
-        "url" : {
-          "path" : "admin/login.php",
-          "scheme" : "https",
-          "domain" : "host-systems.net",
-          "full" : "https://host-systems.net/admin/login.php"
+        "url": {
+          "path": "admin/login.php",
+          "scheme": "https",
+          "domain": "host-systems.net",
+          "full": "https://host-systems.net/admin/login.php"
         },
-        "http.request.bytes" : "217",
-        "event.action" : "authenticate",
-        "@timestamp" : "2021-03-13T13:10:29.000Z",
-        "http.request.method" : "POST",
-        "http.response.bytes" : "10",
-        "http.response.status_code" : "403",
-        "event.kind" : "request",
-        "event.dataset" : "weblogs",
-        "user_agent" : {
-          "original" : "Mozilla/5.0 (X11; U; Linux i686; de; rv:1.8.0.5) Gecko/20060731 Ubuntu/dapper-security Firefox/1.5.0.5",
-          "os" : {
-            "name" : "Ubuntu"
+        "http.request.bytes": "217",
+        "event.action": "authenticate",
+        "@timestamp": "2021-03-13T13:10:29.000Z",
+        "http.request.method": "POST",
+        "http.response.bytes": "10",
+        "http.response.status_code": "403",
+        "event.kind": "request",
+        "event.dataset": "weblogs",
+        "user_agent": {
+          "original": "Mozilla/5.0 (X11; U; Linux i686; de; rv:1.8.0.5) Gecko/20060731 Ubuntu/dapper-security Firefox/1.5.0.5",
+          "os": {
+            "name": "Ubuntu"
           },
-          "name" : "Firefox",
-          "device" : {
-            "name" : "Other"
+          "name": "Firefox",
+          "device": {
+            "name": "Other"
           },
-          "version" : "1.5.0"
-        },
-        "ml" : {
-          "inference" : {
-            "prediction" : true,
-            "probabilities" : [
-              {
-                "class_name" : true,
-                "class_probability" : 0.9816143914173593,
-                "class_score" : 0.9816143914173593
-              },
-              {
-                "class_name" : false,
-                "class_probability" : 0.01838560858264071,
-                "class_score" : 0.011407246904616626
-              }
-            ],
-            "prediction_probability" : 0.9816143914173593,
-            "prediction_score" : 0.9816143914173593,
-            "model_id" : "classification-request-payloads-1615680927179"
-          }
+          "version": "1.5.0"
         }
       }
     },
     {
-      "_index" : "webapp",
-      "_type" : "_doc",
-      "_id" : "ZeeIMngBVgrfkQdcKWEd",
-      "_score" : 1.0,
-      "_source" : {
-        "user.name" : "administrator",
-        "source" : {
-          "geo" : {
-            "continent_name" : "Europe",
-            "country_iso_code" : "SE",
-            "country_name" : "Sweden",
-            "location" : {
-              "lon" : 18.056,
-              "lat" : 59.3247
+      "_index": "webapp",
+      "_type": "_doc",
+      "_id": "ZeeIMngBVgrfkQdcKWEd",
+      "_score": 1,
+      "_source": {
+        "user.name": "administrator",
+        "source": {
+          "geo": {
+            "continent_name": "Europe",
+            "country_iso_code": "SE",
+            "country_name": "Sweden",
+            "location": {
+              "lon": 18.056,
+              "lat": 59.3247
             }
           },
-          "ip" : "5.254.192.10"
+          "ip": "5.254.192.10"
         },
-        "url" : {
-          "path" : "admin/login.php",
-          "scheme" : "https",
-          "domain" : "host-systems.net",
-          "full" : "https://host-systems.net/admin/login.php"
+        "url": {
+          "path": "admin/login.php",
+          "scheme": "https",
+          "domain": "host-systems.net",
+          "full": "https://host-systems.net/admin/login.php"
         },
-        "http.request.bytes" : "211",
-        "event.action" : "authenticate",
-        "@timestamp" : "2021-03-13T13:10:44.000Z",
-        "http.request.method" : "POST",
-        "http.response.bytes" : "10",
-        "http.response.status_code" : "403",
-        "event.kind" : "request",
-        "event.dataset" : "weblogs",
-        "user_agent" : {
-          "original" : "Mozilla/5.0 (X11; U; Linux i686; de; rv:1.8.0.5) Gecko/20060731 Ubuntu/dapper-security Firefox/1.5.0.5",
-          "os" : {
-            "name" : "Ubuntu"
+        "http.request.bytes": "211",
+        "event.action": "authenticate",
+        "@timestamp": "2021-03-13T13:10:44.000Z",
+        "http.request.method": "POST",
+        "http.response.bytes": "10",
+        "http.response.status_code": "403",
+        "event.kind": "request",
+        "event.dataset": "weblogs",
+        "user_agent": {
+          "original": "Mozilla/5.0 (X11; U; Linux i686; de; rv:1.8.0.5) Gecko/20060731 Ubuntu/dapper-security Firefox/1.5.0.5",
+          "os": {
+            "name": "Ubuntu"
           },
-          "name" : "Firefox",
-          "device" : {
-            "name" : "Other"
+          "name": "Firefox",
+          "device": {
+            "name": "Other"
           },
-          "version" : "1.5.0"
-        },
-        "ml" : {
-          "inference" : {
-            "prediction" : true,
-            "probabilities" : [
-              {
-                "class_name" : true,
-                "class_probability" : 0.9816143914173593,
-                "class_score" : 0.9816143914173593
-              },
-              {
-                "class_name" : false,
-                "class_probability" : 0.01838560858264071,
-                "class_score" : 0.011407246904616626
-              }
-            ],
-            "prediction_probability" : 0.9816143914173593,
-            "prediction_score" : 0.9816143914173593,
-            "model_id" : "classification-request-payloads-1615680927179"
-          }
+          "version": "1.5.0"
         }
       }
     },
     {
-      "_index" : "webapp",
-      "_type" : "_doc",
-      "_id" : "ZueIMngBVgrfkQdcKWEd",
-      "_score" : 1.0,
-      "_source" : {
-        "user.name" : "administrator",
-        "source" : {
-          "geo" : {
-            "continent_name" : "Europe",
-            "country_iso_code" : "SE",
-            "country_name" : "Sweden",
-            "location" : {
-              "lon" : 18.056,
-              "lat" : 59.3247
+      "_index": "webapp",
+      "_type": "_doc",
+      "_id": "ZueIMngBVgrfkQdcKWEd",
+      "_score": 1,
+      "_source": {
+        "user.name": "administrator",
+        "source": {
+          "geo": {
+            "continent_name": "Europe",
+            "country_iso_code": "SE",
+            "country_name": "Sweden",
+            "location": {
+              "lon": 18.056,
+              "lat": 59.3247
             }
           },
-          "ip" : "5.254.192.11"
+          "ip": "5.254.192.11"
         },
-        "url" : {
-          "path" : "admin/login.php",
-          "scheme" : "https",
-          "domain" : "host-systems.net",
-          "full" : "https://host-systems.net/admin/login.php"
+        "url": {
+          "path": "admin/login.php",
+          "scheme": "https",
+          "domain": "host-systems.net",
+          "full": "https://host-systems.net/admin/login.php"
         },
-        "http.request.bytes" : "211",
-        "event.action" : "authenticate",
-        "@timestamp" : "2021-03-13T13:10:59.000Z",
-        "http.request.method" : "POST",
-        "http.response.bytes" : "10",
-        "http.response.status_code" : "403",
-        "event.kind" : "request",
-        "event.dataset" : "weblogs",
-        "user_agent" : {
-          "original" : "Mozilla/5.0 (X11; U; Linux i686; de; rv:1.8.0.5) Gecko/20060731 Ubuntu/dapper-security Firefox/1.5.0.5",
-          "os" : {
-            "name" : "Ubuntu"
+        "http.request.bytes": "211",
+        "event.action": "authenticate",
+        "@timestamp": "2021-03-13T13:10:59.000Z",
+        "http.request.method": "POST",
+        "http.response.bytes": "10",
+        "http.response.status_code": "403",
+        "event.kind": "request",
+        "event.dataset": "weblogs",
+        "user_agent": {
+          "original": "Mozilla/5.0 (X11; U; Linux i686; de; rv:1.8.0.5) Gecko/20060731 Ubuntu/dapper-security Firefox/1.5.0.5",
+          "os": {
+            "name": "Ubuntu"
           },
-          "name" : "Firefox",
-          "device" : {
-            "name" : "Other"
+          "name": "Firefox",
+          "device": {
+            "name": "Other"
           },
-          "version" : "1.5.0"
-        },
-        "ml" : {
-          "inference" : {
-            "prediction" : true,
-            "probabilities" : [
-              {
-                "class_name" : true,
-                "class_probability" : 0.9816143914173593,
-                "class_score" : 0.9816143914173593
-              },
-              {
-                "class_name" : false,
-                "class_probability" : 0.01838560858264071,
-                "class_score" : 0.011407246904616626
-              }
-            ],
-            "prediction_probability" : 0.9816143914173593,
-            "prediction_score" : 0.9816143914173593,
-            "model_id" : "classification-request-payloads-1615680927179"
-          }
+          "version": "1.5.0"
         }
       }
     },
     {
-      "_index" : "webapp",
-      "_type" : "_doc",
-      "_id" : "Z-eIMngBVgrfkQdcKWEj",
-      "_score" : 1.0,
-      "_source" : {
-        "user.name" : "administrator",
-        "source" : {
-          "geo" : {
-            "continent_name" : "Europe",
-            "country_iso_code" : "SE",
-            "country_name" : "Sweden",
-            "location" : {
-              "lon" : 18.056,
-              "lat" : 59.3247
+      "_index": "webapp",
+      "_type": "_doc",
+      "_id": "Z-eIMngBVgrfkQdcKWEj",
+      "_score": 1,
+      "_source": {
+        "user.name": "administrator",
+        "source": {
+          "geo": {
+            "continent_name": "Europe",
+            "country_iso_code": "SE",
+            "country_name": "Sweden",
+            "location": {
+              "lon": 18.056,
+              "lat": 59.3247
             }
           },
-          "ip" : "5.254.192.11"
+          "ip": "5.254.192.11"
         },
-        "url" : {
-          "path" : "admin/login.php",
-          "scheme" : "https",
-          "domain" : "host-systems.net",
-          "full" : "https://host-systems.net/admin/login.php"
+        "url": {
+          "path": "admin/login.php",
+          "scheme": "https",
+          "domain": "host-systems.net",
+          "full": "https://host-systems.net/admin/login.php"
         },
-        "http.request.bytes" : "217",
-        "event.action" : "authenticate",
-        "@timestamp" : "2021-03-13T13:10:25.000Z",
-        "http.request.method" : "POST",
-        "http.response.bytes" : "10",
-        "http.response.status_code" : "403",
-        "event.kind" : "request",
-        "event.dataset" : "weblogs",
-        "user_agent" : {
-          "original" : "Mozilla/5.0 (X11; U; Linux i686; de; rv:1.8.0.5) Gecko/20060731 Ubuntu/dapper-security Firefox/1.5.0.5",
-          "os" : {
-            "name" : "Ubuntu"
+        "http.request.bytes": "217",
+        "event.action": "authenticate",
+        "@timestamp": "2021-03-13T13:10:25.000Z",
+        "http.request.method": "POST",
+        "http.response.bytes": "10",
+        "http.response.status_code": "403",
+        "event.kind": "request",
+        "event.dataset": "weblogs",
+        "user_agent": {
+          "original": "Mozilla/5.0 (X11; U; Linux i686; de; rv:1.8.0.5) Gecko/20060731 Ubuntu/dapper-security Firefox/1.5.0.5",
+          "os": {
+            "name": "Ubuntu"
           },
-          "name" : "Firefox",
-          "device" : {
-            "name" : "Other"
+          "name": "Firefox",
+          "device": {
+            "name": "Other"
           },
-          "version" : "1.5.0"
-        },
-        "ml" : {
-          "inference" : {
-            "prediction" : true,
-            "probabilities" : [
-              {
-                "class_name" : true,
-                "class_probability" : 0.9816143914173593,
-                "class_score" : 0.9816143914173593
-              },
-              {
-                "class_name" : false,
-                "class_probability" : 0.01838560858264071,
-                "class_score" : 0.011407246904616626
-              }
-            ],
-            "prediction_probability" : 0.9816143914173593,
-            "prediction_score" : 0.9816143914173593,
-            "model_id" : "classification-request-payloads-1615680927179"
-          }
+          "version": "1.5.0"
         }
       }
     },
     {
-      "_index" : "webapp",
-      "_type" : "_doc",
-      "_id" : "aOeIMngBVgrfkQdcKWEj",
-      "_score" : 1.0,
-      "_source" : {
-        "user.name" : "administrator",
-        "source" : {
-          "geo" : {
-            "continent_name" : "Europe",
-            "country_iso_code" : "SE",
-            "country_name" : "Sweden",
-            "location" : {
-              "lon" : 18.056,
-              "lat" : 59.3247
+      "_index": "webapp",
+      "_type": "_doc",
+      "_id": "aOeIMngBVgrfkQdcKWEj",
+      "_score": 1,
+      "_source": {
+        "user.name": "administrator",
+        "source": {
+          "geo": {
+            "continent_name": "Europe",
+            "country_iso_code": "SE",
+            "country_name": "Sweden",
+            "location": {
+              "lon": 18.056,
+              "lat": 59.3247
             }
           },
-          "ip" : "5.254.192.10"
+          "ip": "5.254.192.10"
         },
-        "url" : {
-          "path" : "admin/login.php",
-          "scheme" : "https",
-          "domain" : "host-systems.net",
-          "full" : "https://host-systems.net/admin/login.php"
+        "url": {
+          "path": "admin/login.php",
+          "scheme": "https",
+          "domain": "host-systems.net",
+          "full": "https://host-systems.net/admin/login.php"
         },
-        "http.request.bytes" : "206",
-        "event.action" : "authenticate",
-        "@timestamp" : "2021-03-13T13:10:40.000Z",
-        "http.request.method" : "POST",
-        "http.response.bytes" : "10",
-        "http.response.status_code" : "403",
-        "event.kind" : "request",
-        "event.dataset" : "weblogs",
-        "user_agent" : {
-          "original" : "Mozilla/5.0 (X11; U; Linux i686; de; rv:1.8.0.5) Gecko/20060731 Ubuntu/dapper-security Firefox/1.5.0.5",
-          "os" : {
-            "name" : "Ubuntu"
+        "http.request.bytes": "206",
+        "event.action": "authenticate",
+        "@timestamp": "2021-03-13T13:10:40.000Z",
+        "http.request.method": "POST",
+        "http.response.bytes": "10",
+        "http.response.status_code": "403",
+        "event.kind": "request",
+        "event.dataset": "weblogs",
+        "user_agent": {
+          "original": "Mozilla/5.0 (X11; U; Linux i686; de; rv:1.8.0.5) Gecko/20060731 Ubuntu/dapper-security Firefox/1.5.0.5",
+          "os": {
+            "name": "Ubuntu"
           },
-          "name" : "Firefox",
-          "device" : {
-            "name" : "Other"
+          "name": "Firefox",
+          "device": {
+            "name": "Other"
           },
-          "version" : "1.5.0"
-        },
-        "ml" : {
-          "inference" : {
-            "prediction" : true,
-            "probabilities" : [
-              {
-                "class_name" : true,
-                "class_probability" : 0.9816143914173593,
-                "class_score" : 0.9816143914173593
-              },
-              {
-                "class_name" : false,
-                "class_probability" : 0.01838560858264071,
-                "class_score" : 0.011407246904616626
-              }
-            ],
-            "prediction_probability" : 0.9816143914173593,
-            "prediction_score" : 0.9816143914173593,
-            "model_id" : "classification-request-payloads-1615680927179"
-          }
+          "version": "1.5.0"
         }
       }
     },
     {
-      "_index" : "webapp",
-      "_type" : "_doc",
-      "_id" : "aeeIMngBVgrfkQdcKWEj",
-      "_score" : 1.0,
-      "_source" : {
-        "user.name" : "administrator",
-        "source" : {
-          "geo" : {
-            "continent_name" : "Europe",
-            "country_iso_code" : "SE",
-            "country_name" : "Sweden",
-            "location" : {
-              "lon" : 18.056,
-              "lat" : 59.3247
+      "_index": "webapp",
+      "_type": "_doc",
+      "_id": "aeeIMngBVgrfkQdcKWEj",
+      "_score": 1,
+      "_source": {
+        "user.name": "administrator",
+        "source": {
+          "geo": {
+            "continent_name": "Europe",
+            "country_iso_code": "SE",
+            "country_name": "Sweden",
+            "location": {
+              "lon": 18.056,
+              "lat": 59.3247
             }
           },
-          "ip" : "5.254.192.11"
+          "ip": "5.254.192.11"
         },
-        "url" : {
-          "path" : "admin/login.php",
-          "scheme" : "https",
-          "domain" : "host-systems.net",
-          "full" : "https://host-systems.net/admin/login.php"
+        "url": {
+          "path": "admin/login.php",
+          "scheme": "https",
+          "domain": "host-systems.net",
+          "full": "https://host-systems.net/admin/login.php"
         },
-        "http.request.bytes" : "216",
-        "event.action" : "authenticate",
-        "@timestamp" : "2021-03-13T13:10:55.000Z",
-        "http.request.method" : "POST",
-        "http.response.bytes" : "10",
-        "http.response.status_code" : "403",
-        "event.kind" : "request",
-        "event.dataset" : "weblogs",
-        "user_agent" : {
-          "original" : "Mozilla/5.0 (X11; U; Linux i686; de; rv:1.8.0.5) Gecko/20060731 Ubuntu/dapper-security Firefox/1.5.0.5",
-          "os" : {
-            "name" : "Ubuntu"
+        "http.request.bytes": "216",
+        "event.action": "authenticate",
+        "@timestamp": "2021-03-13T13:10:55.000Z",
+        "http.request.method": "POST",
+        "http.response.bytes": "10",
+        "http.response.status_code": "403",
+        "event.kind": "request",
+        "event.dataset": "weblogs",
+        "user_agent": {
+          "original": "Mozilla/5.0 (X11; U; Linux i686; de; rv:1.8.0.5) Gecko/20060731 Ubuntu/dapper-security Firefox/1.5.0.5",
+          "os": {
+            "name": "Ubuntu"
           },
-          "name" : "Firefox",
-          "device" : {
-            "name" : "Other"
+          "name": "Firefox",
+          "device": {
+            "name": "Other"
           },
-          "version" : "1.5.0"
-        },
-        "ml" : {
-          "inference" : {
-            "prediction" : true,
-            "probabilities" : [
-              {
-                "class_name" : true,
-                "class_probability" : 0.9816143914173593,
-                "class_score" : 0.9816143914173593
-              },
-              {
-                "class_name" : false,
-                "class_probability" : 0.01838560858264071,
-                "class_score" : 0.011407246904616626
-              }
-            ],
-            "prediction_probability" : 0.9816143914173593,
-            "prediction_score" : 0.9816143914173593,
-            "model_id" : "classification-request-payloads-1615680927179"
-          }
+          "version": "1.5.0"
         }
       }
     },
     {
-      "_index" : "webapp",
-      "_type" : "_doc",
-      "_id" : "aueIMngBVgrfkQdcKWEx",
-      "_score" : 1.0,
-      "_source" : {
-        "user.name" : "administrator",
-        "source" : {
-          "geo" : {
-            "continent_name" : "Europe",
-            "country_iso_code" : "SE",
-            "country_name" : "Sweden",
-            "location" : {
-              "lon" : 18.056,
-              "lat" : 59.3247
+      "_index": "webapp",
+      "_type": "_doc",
+      "_id": "aueIMngBVgrfkQdcKWEx",
+      "_score": 1,
+      "_source": {
+        "user.name": "administrator",
+        "source": {
+          "geo": {
+            "continent_name": "Europe",
+            "country_iso_code": "SE",
+            "country_name": "Sweden",
+            "location": {
+              "lon": 18.056,
+              "lat": 59.3247
             }
           },
-          "ip" : "5.254.192.11"
+          "ip": "5.254.192.11"
         },
-        "url" : {
-          "path" : "admin/login.php",
-          "scheme" : "https",
-          "domain" : "host-systems.net",
-          "full" : "https://host-systems.net/admin/login.php"
+        "url": {
+          "path": "admin/login.php",
+          "scheme": "https",
+          "domain": "host-systems.net",
+          "full": "https://host-systems.net/admin/login.php"
         },
-        "http.request.bytes" : "205",
-        "event.action" : "authenticate",
-        "@timestamp" : "2021-03-13T13:10:17.000Z",
-        "http.request.method" : "POST",
-        "http.response.bytes" : "10",
-        "http.response.status_code" : "403",
-        "event.kind" : "request",
-        "event.dataset" : "weblogs",
-        "user_agent" : {
-          "original" : "Mozilla/5.0 (X11; U; Linux i686; de; rv:1.8.0.5) Gecko/20060731 Ubuntu/dapper-security Firefox/1.5.0.5",
-          "os" : {
-            "name" : "Ubuntu"
+        "http.request.bytes": "205",
+        "event.action": "authenticate",
+        "@timestamp": "2021-03-13T13:10:17.000Z",
+        "http.request.method": "POST",
+        "http.response.bytes": "10",
+        "http.response.status_code": "403",
+        "event.kind": "request",
+        "event.dataset": "weblogs",
+        "user_agent": {
+          "original": "Mozilla/5.0 (X11; U; Linux i686; de; rv:1.8.0.5) Gecko/20060731 Ubuntu/dapper-security Firefox/1.5.0.5",
+          "os": {
+            "name": "Ubuntu"
           },
-          "name" : "Firefox",
-          "device" : {
-            "name" : "Other"
+          "name": "Firefox",
+          "device": {
+            "name": "Other"
           },
-          "version" : "1.5.0"
-        },
-        "ml" : {
-          "inference" : {
-            "prediction" : true,
-            "probabilities" : [
-              {
-                "class_name" : true,
-                "class_probability" : 0.9816143914173593,
-                "class_score" : 0.9816143914173593
-              },
-              {
-                "class_name" : false,
-                "class_probability" : 0.01838560858264071,
-                "class_score" : 0.011407246904616626
-              }
-            ],
-            "prediction_probability" : 0.9816143914173593,
-            "prediction_score" : 0.9816143914173593,
-            "model_id" : "classification-request-payloads-1615680927179"
-          }
+          "version": "1.5.0"
         }
       }
     },
     {
-      "_index" : "webapp",
-      "_type" : "_doc",
-      "_id" : "a-eIMngBVgrfkQdcKWEx",
-      "_score" : 1.0,
-      "_source" : {
-        "user.name" : "administrator",
-        "source" : {
-          "geo" : {
-            "continent_name" : "Europe",
-            "country_iso_code" : "SE",
-            "country_name" : "Sweden",
-            "location" : {
-              "lon" : 18.056,
-              "lat" : 59.3247
+      "_index": "webapp",
+      "_type": "_doc",
+      "_id": "a-eIMngBVgrfkQdcKWEx",
+      "_score": 1,
+      "_source": {
+        "user.name": "administrator",
+        "source": {
+          "geo": {
+            "continent_name": "Europe",
+            "country_iso_code": "SE",
+            "country_name": "Sweden",
+            "location": {
+              "lon": 18.056,
+              "lat": 59.3247
             }
           },
-          "ip" : "5.254.192.10"
+          "ip": "5.254.192.10"
         },
-        "url" : {
-          "path" : "admin/login.php",
-          "scheme" : "https",
-          "domain" : "host-systems.net",
-          "full" : "https://host-systems.net/admin/login.php"
+        "url": {
+          "path": "admin/login.php",
+          "scheme": "https",
+          "domain": "host-systems.net",
+          "full": "https://host-systems.net/admin/login.php"
         },
-        "http.request.bytes" : "220",
-        "event.action" : "authenticate",
-        "@timestamp" : "2021-03-13T13:10:32.000Z",
-        "http.request.method" : "POST",
-        "http.response.bytes" : "10",
-        "http.response.status_code" : "403",
-        "event.kind" : "request",
-        "event.dataset" : "weblogs",
-        "user_agent" : {
-          "original" : "Mozilla/5.0 (X11; U; Linux i686; de; rv:1.8.0.5) Gecko/20060731 Ubuntu/dapper-security Firefox/1.5.0.5",
-          "os" : {
-            "name" : "Ubuntu"
+        "http.request.bytes": "220",
+        "event.action": "authenticate",
+        "@timestamp": "2021-03-13T13:10:32.000Z",
+        "http.request.method": "POST",
+        "http.response.bytes": "10",
+        "http.response.status_code": "403",
+        "event.kind": "request",
+        "event.dataset": "weblogs",
+        "user_agent": {
+          "original": "Mozilla/5.0 (X11; U; Linux i686; de; rv:1.8.0.5) Gecko/20060731 Ubuntu/dapper-security Firefox/1.5.0.5",
+          "os": {
+            "name": "Ubuntu"
           },
-          "name" : "Firefox",
-          "device" : {
-            "name" : "Other"
+          "name": "Firefox",
+          "device": {
+            "name": "Other"
           },
-          "version" : "1.5.0"
-        },
-        "ml" : {
-          "inference" : {
-            "prediction" : true,
-            "probabilities" : [
-              {
-                "class_name" : true,
-                "class_probability" : 0.9816143914173593,
-                "class_score" : 0.9816143914173593
-              },
-              {
-                "class_name" : false,
-                "class_probability" : 0.01838560858264071,
-                "class_score" : 0.011407246904616626
-              }
-            ],
-            "prediction_probability" : 0.9816143914173593,
-            "prediction_score" : 0.9816143914173593,
-            "model_id" : "classification-request-payloads-1615680927179"
-          }
+          "version": "1.5.0"
         }
       }
     },
     {
-      "_index" : "webapp",
-      "_type" : "_doc",
-      "_id" : "bOeIMngBVgrfkQdcKWEx",
-      "_score" : 1.0,
-      "_source" : {
-        "user.name" : "administrator",
-        "source" : {
-          "geo" : {
-            "continent_name" : "Europe",
-            "country_iso_code" : "SE",
-            "country_name" : "Sweden",
-            "location" : {
-              "lon" : 18.056,
-              "lat" : 59.3247
+      "_index": "webapp",
+      "_type": "_doc",
+      "_id": "bOeIMngBVgrfkQdcKWEx",
+      "_score": 1,
+      "_source": {
+        "user.name": "administrator",
+        "source": {
+          "geo": {
+            "continent_name": "Europe",
+            "country_iso_code": "SE",
+            "country_name": "Sweden",
+            "location": {
+              "lon": 18.056,
+              "lat": 59.3247
             }
           },
-          "ip" : "5.254.192.11"
+          "ip": "5.254.192.11"
         },
-        "url" : {
-          "path" : "admin/login.php",
-          "scheme" : "https",
-          "domain" : "host-systems.net",
-          "full" : "https://host-systems.net/admin/login.php"
+        "url": {
+          "path": "admin/login.php",
+          "scheme": "https",
+          "domain": "host-systems.net",
+          "full": "https://host-systems.net/admin/login.php"
         },
-        "http.request.bytes" : "220",
-        "event.action" : "authenticate",
-        "@timestamp" : "2021-03-13T13:10:47.000Z",
-        "http.request.method" : "POST",
-        "http.response.bytes" : "10",
-        "http.response.status_code" : "403",
-        "event.kind" : "request",
-        "event.dataset" : "weblogs",
-        "user_agent" : {
-          "original" : "Mozilla/5.0 (X11; U; Linux i686; de; rv:1.8.0.5) Gecko/20060731 Ubuntu/dapper-security Firefox/1.5.0.5",
-          "os" : {
-            "name" : "Ubuntu"
+        "http.request.bytes": "220",
+        "event.action": "authenticate",
+        "@timestamp": "2021-03-13T13:10:47.000Z",
+        "http.request.method": "POST",
+        "http.response.bytes": "10",
+        "http.response.status_code": "403",
+        "event.kind": "request",
+        "event.dataset": "weblogs",
+        "user_agent": {
+          "original": "Mozilla/5.0 (X11; U; Linux i686; de; rv:1.8.0.5) Gecko/20060731 Ubuntu/dapper-security Firefox/1.5.0.5",
+          "os": {
+            "name": "Ubuntu"
           },
-          "name" : "Firefox",
-          "device" : {
-            "name" : "Other"
+          "name": "Firefox",
+          "device": {
+            "name": "Other"
           },
-          "version" : "1.5.0"
-        },
-        "ml" : {
-          "inference" : {
-            "prediction" : true,
-            "probabilities" : [
-              {
-                "class_name" : true,
-                "class_probability" : 0.9816143914173593,
-                "class_score" : 0.9816143914173593
-              },
-              {
-                "class_name" : false,
-                "class_probability" : 0.01838560858264071,
-                "class_score" : 0.011407246904616626
-              }
-            ],
-            "prediction_probability" : 0.9816143914173593,
-            "prediction_score" : 0.9816143914173593,
-            "model_id" : "classification-request-payloads-1615680927179"
-          }
+          "version": "1.5.0"
         }
       }
     },
     {
-      "_index" : "webapp",
-      "_type" : "_doc",
-      "_id" : "beeIMngBVgrfkQdcKWE7",
-      "_score" : 1.0,
-      "_source" : {
-        "user.name" : "administrator",
-        "source" : {
-          "geo" : {
-            "continent_name" : "Europe",
-            "country_iso_code" : "SE",
-            "country_name" : "Sweden",
-            "location" : {
-              "lon" : 18.056,
-              "lat" : 59.3247
+      "_index": "webapp",
+      "_type": "_doc",
+      "_id": "beeIMngBVgrfkQdcKWE7",
+      "_score": 1,
+      "_source": {
+        "user.name": "administrator",
+        "source": {
+          "geo": {
+            "continent_name": "Europe",
+            "country_iso_code": "SE",
+            "country_name": "Sweden",
+            "location": {
+              "lon": 18.056,
+              "lat": 59.3247
             }
           },
-          "ip" : "5.254.192.11"
+          "ip": "5.254.192.11"
         },
-        "url" : {
-          "path" : "admin/login.php",
-          "scheme" : "https",
-          "domain" : "host-systems.net",
-          "full" : "https://host-systems.net/admin/login.php"
+        "url": {
+          "path": "admin/login.php",
+          "scheme": "https",
+          "domain": "host-systems.net",
+          "full": "https://host-systems.net/admin/login.php"
         },
-        "http.request.bytes" : "204",
-        "event.action" : "authenticate",
-        "@timestamp" : "2021-03-13T13:10:19.000Z",
-        "http.request.method" : "POST",
-        "http.response.bytes" : "10",
-        "http.response.status_code" : "403",
-        "event.kind" : "request",
-        "event.dataset" : "weblogs",
-        "user_agent" : {
-          "original" : "Mozilla/5.0 (X11; U; Linux i686; de; rv:1.8.0.5) Gecko/20060731 Ubuntu/dapper-security Firefox/1.5.0.5",
-          "os" : {
-            "name" : "Ubuntu"
+        "http.request.bytes": "204",
+        "event.action": "authenticate",
+        "@timestamp": "2021-03-13T13:10:19.000Z",
+        "http.request.method": "POST",
+        "http.response.bytes": "10",
+        "http.response.status_code": "403",
+        "event.kind": "request",
+        "event.dataset": "weblogs",
+        "user_agent": {
+          "original": "Mozilla/5.0 (X11; U; Linux i686; de; rv:1.8.0.5) Gecko/20060731 Ubuntu/dapper-security Firefox/1.5.0.5",
+          "os": {
+            "name": "Ubuntu"
           },
-          "name" : "Firefox",
-          "device" : {
-            "name" : "Other"
+          "name": "Firefox",
+          "device": {
+            "name": "Other"
           },
-          "version" : "1.5.0"
-        },
-        "ml" : {
-          "inference" : {
-            "prediction" : true,
-            "probabilities" : [
-              {
-                "class_name" : true,
-                "class_probability" : 0.9816143914173593,
-                "class_score" : 0.9816143914173593
-              },
-              {
-                "class_name" : false,
-                "class_probability" : 0.01838560858264071,
-                "class_score" : 0.011407246904616626
-              }
-            ],
-            "prediction_probability" : 0.9816143914173593,
-            "prediction_score" : 0.9816143914173593,
-            "model_id" : "classification-request-payloads-1615680927179"
-          }
+          "version": "1.5.0"
         }
       }
     },
     {
-      "_index" : "webapp",
-      "_type" : "_doc",
-      "_id" : "bueIMngBVgrfkQdcKWE7",
-      "_score" : 1.0,
-      "_source" : {
-        "user.name" : "administrator",
-        "source" : {
-          "geo" : {
-            "continent_name" : "Europe",
-            "country_iso_code" : "SE",
-            "country_name" : "Sweden",
-            "location" : {
-              "lon" : 18.056,
-              "lat" : 59.3247
+      "_index": "webapp",
+      "_type": "_doc",
+      "_id": "bueIMngBVgrfkQdcKWE7",
+      "_score": 1,
+      "_source": {
+        "user.name": "administrator",
+        "source": {
+          "geo": {
+            "continent_name": "Europe",
+            "country_iso_code": "SE",
+            "country_name": "Sweden",
+            "location": {
+              "lon": 18.056,
+              "lat": 59.3247
             }
           },
-          "ip" : "5.254.192.10"
+          "ip": "5.254.192.10"
         },
-        "url" : {
-          "path" : "admin/login.php",
-          "scheme" : "https",
-          "domain" : "host-systems.net",
-          "full" : "https://host-systems.net/admin/login.php"
+        "url": {
+          "path": "admin/login.php",
+          "scheme": "https",
+          "domain": "host-systems.net",
+          "full": "https://host-systems.net/admin/login.php"
         },
-        "http.request.bytes" : "208",
-        "event.action" : "authenticate",
-        "@timestamp" : "2021-03-13T13:10:34.000Z",
-        "http.request.method" : "POST",
-        "http.response.bytes" : "10",
-        "http.response.status_code" : "403",
-        "event.kind" : "request",
-        "event.dataset" : "weblogs",
-        "user_agent" : {
-          "original" : "Mozilla/5.0 (X11; U; Linux i686; de; rv:1.8.0.5) Gecko/20060731 Ubuntu/dapper-security Firefox/1.5.0.5",
-          "os" : {
-            "name" : "Ubuntu"
+        "http.request.bytes": "208",
+        "event.action": "authenticate",
+        "@timestamp": "2021-03-13T13:10:34.000Z",
+        "http.request.method": "POST",
+        "http.response.bytes": "10",
+        "http.response.status_code": "403",
+        "event.kind": "request",
+        "event.dataset": "weblogs",
+        "user_agent": {
+          "original": "Mozilla/5.0 (X11; U; Linux i686; de; rv:1.8.0.5) Gecko/20060731 Ubuntu/dapper-security Firefox/1.5.0.5",
+          "os": {
+            "name": "Ubuntu"
           },
-          "name" : "Firefox",
-          "device" : {
-            "name" : "Other"
+          "name": "Firefox",
+          "device": {
+            "name": "Other"
           },
-          "version" : "1.5.0"
-        },
-        "ml" : {
-          "inference" : {
-            "prediction" : true,
-            "probabilities" : [
-              {
-                "class_name" : true,
-                "class_probability" : 0.9816143914173593,
-                "class_score" : 0.9816143914173593
-              },
-              {
-                "class_name" : false,
-                "class_probability" : 0.01838560858264071,
-                "class_score" : 0.011407246904616626
-              }
-            ],
-            "prediction_probability" : 0.9816143914173593,
-            "prediction_score" : 0.9816143914173593,
-            "model_id" : "classification-request-payloads-1615680927179"
-          }
+          "version": "1.5.0"
         }
       }
     },
     {
-      "_index" : "webapp",
-      "_type" : "_doc",
-      "_id" : "b-eIMngBVgrfkQdcKWE7",
-      "_score" : 1.0,
-      "_source" : {
-        "user.name" : "administrator",
-        "source" : {
-          "geo" : {
-            "continent_name" : "Europe",
-            "country_iso_code" : "SE",
-            "country_name" : "Sweden",
-            "location" : {
-              "lon" : 18.056,
-              "lat" : 59.3247
+      "_index": "webapp",
+      "_type": "_doc",
+      "_id": "b-eIMngBVgrfkQdcKWE7",
+      "_score": 1,
+      "_source": {
+        "user.name": "administrator",
+        "source": {
+          "geo": {
+            "continent_name": "Europe",
+            "country_iso_code": "SE",
+            "country_name": "Sweden",
+            "location": {
+              "lon": 18.056,
+              "lat": 59.3247
             }
           },
-          "ip" : "5.254.192.11"
+          "ip": "5.254.192.11"
         },
-        "url" : {
-          "path" : "admin/login.php",
-          "scheme" : "https",
-          "domain" : "host-systems.net",
-          "full" : "https://host-systems.net/admin/login.php"
+        "url": {
+          "path": "admin/login.php",
+          "scheme": "https",
+          "domain": "host-systems.net",
+          "full": "https://host-systems.net/admin/login.php"
         },
-        "http.request.bytes" : "213",
-        "event.action" : "authenticate",
-        "@timestamp" : "2021-03-13T13:10:49.000Z",
-        "http.request.method" : "POST",
-        "http.response.bytes" : "10",
-        "http.response.status_code" : "403",
-        "event.kind" : "request",
-        "event.dataset" : "weblogs",
-        "user_agent" : {
-          "original" : "Mozilla/5.0 (X11; U; Linux i686; de; rv:1.8.0.5) Gecko/20060731 Ubuntu/dapper-security Firefox/1.5.0.5",
-          "os" : {
-            "name" : "Ubuntu"
+        "http.request.bytes": "213",
+        "event.action": "authenticate",
+        "@timestamp": "2021-03-13T13:10:49.000Z",
+        "http.request.method": "POST",
+        "http.response.bytes": "10",
+        "http.response.status_code": "403",
+        "event.kind": "request",
+        "event.dataset": "weblogs",
+        "user_agent": {
+          "original": "Mozilla/5.0 (X11; U; Linux i686; de; rv:1.8.0.5) Gecko/20060731 Ubuntu/dapper-security Firefox/1.5.0.5",
+          "os": {
+            "name": "Ubuntu"
           },
-          "name" : "Firefox",
-          "device" : {
-            "name" : "Other"
+          "name": "Firefox",
+          "device": {
+            "name": "Other"
           },
-          "version" : "1.5.0"
-        },
-        "ml" : {
-          "inference" : {
-            "prediction" : true,
-            "probabilities" : [
-              {
-                "class_name" : true,
-                "class_probability" : 0.9816143914173593,
-                "class_score" : 0.9816143914173593
-              },
-              {
-                "class_name" : false,
-                "class_probability" : 0.01838560858264071,
-                "class_score" : 0.011407246904616626
-              }
-            ],
-            "prediction_probability" : 0.9816143914173593,
-            "prediction_score" : 0.9816143914173593,
-            "model_id" : "classification-request-payloads-1615680927179"
-          }
+          "version": "1.5.0"
         }
       }
     },
     {
-      "_index" : "webapp",
-      "_type" : "_doc",
-      "_id" : "cOeIMngBVgrfkQdcKWFM",
-      "_score" : 1.0,
-      "_source" : {
-        "user.name" : "administrator",
-        "source" : {
-          "geo" : {
-            "continent_name" : "Europe",
-            "country_iso_code" : "SE",
-            "country_name" : "Sweden",
-            "location" : {
-              "lon" : 18.056,
-              "lat" : 59.3247
+      "_index": "webapp",
+      "_type": "_doc",
+      "_id": "cOeIMngBVgrfkQdcKWFM",
+      "_score": 1,
+      "_source": {
+        "user.name": "administrator",
+        "source": {
+          "geo": {
+            "continent_name": "Europe",
+            "country_iso_code": "SE",
+            "country_name": "Sweden",
+            "location": {
+              "lon": 18.056,
+              "lat": 59.3247
             }
           },
-          "ip" : "5.254.192.11"
+          "ip": "5.254.192.11"
         },
-        "url" : {
-          "path" : "admin/login.php",
-          "scheme" : "https",
-          "domain" : "host-systems.net",
-          "full" : "https://host-systems.net/admin/login.php"
+        "url": {
+          "path": "admin/login.php",
+          "scheme": "https",
+          "domain": "host-systems.net",
+          "full": "https://host-systems.net/admin/login.php"
         },
-        "http.request.bytes" : "210",
-        "event.action" : "authenticate",
-        "@timestamp" : "2021-03-13T13:10:27.000Z",
-        "http.request.method" : "POST",
-        "http.response.bytes" : "10",
-        "http.response.status_code" : "403",
-        "event.kind" : "request",
-        "event.dataset" : "weblogs",
-        "user_agent" : {
-          "original" : "Mozilla/5.0 (X11; U; Linux i686; de; rv:1.8.0.5) Gecko/20060731 Ubuntu/dapper-security Firefox/1.5.0.5",
-          "os" : {
-            "name" : "Ubuntu"
+        "http.request.bytes": "210",
+        "event.action": "authenticate",
+        "@timestamp": "2021-03-13T13:10:27.000Z",
+        "http.request.method": "POST",
+        "http.response.bytes": "10",
+        "http.response.status_code": "403",
+        "event.kind": "request",
+        "event.dataset": "weblogs",
+        "user_agent": {
+          "original": "Mozilla/5.0 (X11; U; Linux i686; de; rv:1.8.0.5) Gecko/20060731 Ubuntu/dapper-security Firefox/1.5.0.5",
+          "os": {
+            "name": "Ubuntu"
           },
-          "name" : "Firefox",
-          "device" : {
-            "name" : "Other"
+          "name": "Firefox",
+          "device": {
+            "name": "Other"
           },
-          "version" : "1.5.0"
-        },
-        "ml" : {
-          "inference" : {
-            "prediction" : true,
-            "probabilities" : [
-              {
-                "class_name" : true,
-                "class_probability" : 0.9816143914173593,
-                "class_score" : 0.9816143914173593
-              },
-              {
-                "class_name" : false,
-                "class_probability" : 0.01838560858264071,
-                "class_score" : 0.011407246904616626
-              }
-            ],
-            "prediction_probability" : 0.9816143914173593,
-            "prediction_score" : 0.9816143914173593,
-            "model_id" : "classification-request-payloads-1615680927179"
-          }
+          "version": "1.5.0"
         }
       }
     },
     {
-      "_index" : "webapp",
-      "_type" : "_doc",
-      "_id" : "ceeIMngBVgrfkQdcKWFM",
-      "_score" : 1.0,
-      "_source" : {
-        "user.name" : "administrator",
-        "source" : {
-          "geo" : {
-            "continent_name" : "Europe",
-            "country_iso_code" : "SE",
-            "country_name" : "Sweden",
-            "location" : {
-              "lon" : 18.056,
-              "lat" : 59.3247
+      "_index": "webapp",
+      "_type": "_doc",
+      "_id": "ceeIMngBVgrfkQdcKWFM",
+      "_score": 1,
+      "_source": {
+        "user.name": "administrator",
+        "source": {
+          "geo": {
+            "continent_name": "Europe",
+            "country_iso_code": "SE",
+            "country_name": "Sweden",
+            "location": {
+              "lon": 18.056,
+              "lat": 59.3247
             }
           },
-          "ip" : "5.254.192.10"
+          "ip": "5.254.192.10"
         },
-        "url" : {
-          "path" : "admin/login.php",
-          "scheme" : "https",
-          "domain" : "host-systems.net",
-          "full" : "https://host-systems.net/admin/login.php"
+        "url": {
+          "path": "admin/login.php",
+          "scheme": "https",
+          "domain": "host-systems.net",
+          "full": "https://host-systems.net/admin/login.php"
         },
-        "http.request.bytes" : "218",
-        "event.action" : "authenticate",
-        "@timestamp" : "2021-03-13T13:10:42.000Z",
-        "http.request.method" : "POST",
-        "http.response.bytes" : "10",
-        "http.response.status_code" : "403",
-        "event.kind" : "request",
-        "event.dataset" : "weblogs",
-        "user_agent" : {
-          "original" : "Mozilla/5.0 (X11; U; Linux i686; de; rv:1.8.0.5) Gecko/20060731 Ubuntu/dapper-security Firefox/1.5.0.5",
-          "os" : {
-            "name" : "Ubuntu"
+        "http.request.bytes": "218",
+        "event.action": "authenticate",
+        "@timestamp": "2021-03-13T13:10:42.000Z",
+        "http.request.method": "POST",
+        "http.response.bytes": "10",
+        "http.response.status_code": "403",
+        "event.kind": "request",
+        "event.dataset": "weblogs",
+        "user_agent": {
+          "original": "Mozilla/5.0 (X11; U; Linux i686; de; rv:1.8.0.5) Gecko/20060731 Ubuntu/dapper-security Firefox/1.5.0.5",
+          "os": {
+            "name": "Ubuntu"
           },
-          "name" : "Firefox",
-          "device" : {
-            "name" : "Other"
+          "name": "Firefox",
+          "device": {
+            "name": "Other"
           },
-          "version" : "1.5.0"
-        },
-        "ml" : {
-          "inference" : {
-            "prediction" : true,
-            "probabilities" : [
-              {
-                "class_name" : true,
-                "class_probability" : 0.9816143914173593,
-                "class_score" : 0.9816143914173593
-              },
-              {
-                "class_name" : false,
-                "class_probability" : 0.01838560858264071,
-                "class_score" : 0.011407246904616626
-              }
-            ],
-            "prediction_probability" : 0.9816143914173593,
-            "prediction_score" : 0.9816143914173593,
-            "model_id" : "classification-request-payloads-1615680927179"
-          }
+          "version": "1.5.0"
         }
       }
     },
     {
-      "_index" : "webapp",
-      "_type" : "_doc",
-      "_id" : "cueIMngBVgrfkQdcKWFM",
-      "_score" : 1.0,
-      "_source" : {
-        "user.name" : "administrator",
-        "source" : {
-          "geo" : {
-            "continent_name" : "Europe",
-            "country_iso_code" : "SE",
-            "country_name" : "Sweden",
-            "location" : {
-              "lon" : 18.056,
-              "lat" : 59.3247
+      "_index": "webapp",
+      "_type": "_doc",
+      "_id": "cueIMngBVgrfkQdcKWFM",
+      "_score": 1,
+      "_source": {
+        "user.name": "administrator",
+        "source": {
+          "geo": {
+            "continent_name": "Europe",
+            "country_iso_code": "SE",
+            "country_name": "Sweden",
+            "location": {
+              "lon": 18.056,
+              "lat": 59.3247
             }
           },
-          "ip" : "5.254.192.11"
+          "ip": "5.254.192.11"
         },
-        "url" : {
-          "path" : "admin/login.php",
-          "scheme" : "https",
-          "domain" : "host-systems.net",
-          "full" : "https://host-systems.net/admin/login.php"
+        "url": {
+          "path": "admin/login.php",
+          "scheme": "https",
+          "domain": "host-systems.net",
+          "full": "https://host-systems.net/admin/login.php"
         },
-        "http.request.bytes" : "206",
-        "event.action" : "authenticate",
-        "@timestamp" : "2021-03-13T13:10:57.000Z",
-        "http.request.method" : "POST",
-        "http.response.bytes" : "10",
-        "http.response.status_code" : "403",
-        "event.kind" : "request",
-        "event.dataset" : "weblogs",
-        "user_agent" : {
-          "original" : "Mozilla/5.0 (X11; U; Linux i686; de; rv:1.8.0.5) Gecko/20060731 Ubuntu/dapper-security Firefox/1.5.0.5",
-          "os" : {
-            "name" : "Ubuntu"
+        "http.request.bytes": "206",
+        "event.action": "authenticate",
+        "@timestamp": "2021-03-13T13:10:57.000Z",
+        "http.request.method": "POST",
+        "http.response.bytes": "10",
+        "http.response.status_code": "403",
+        "event.kind": "request",
+        "event.dataset": "weblogs",
+        "user_agent": {
+          "original": "Mozilla/5.0 (X11; U; Linux i686; de; rv:1.8.0.5) Gecko/20060731 Ubuntu/dapper-security Firefox/1.5.0.5",
+          "os": {
+            "name": "Ubuntu"
           },
-          "name" : "Firefox",
-          "device" : {
-            "name" : "Other"
+          "name": "Firefox",
+          "device": {
+            "name": "Other"
           },
-          "version" : "1.5.0"
-        },
-        "ml" : {
-          "inference" : {
-            "prediction" : true,
-            "probabilities" : [
-              {
-                "class_name" : true,
-                "class_probability" : 0.9816143914173593,
-                "class_score" : 0.9816143914173593
-              },
-              {
-                "class_name" : false,
-                "class_probability" : 0.01838560858264071,
-                "class_score" : 0.011407246904616626
-              }
-            ],
-            "prediction_probability" : 0.9816143914173593,
-            "prediction_score" : 0.9816143914173593,
-            "model_id" : "classification-request-payloads-1615680927179"
-          }
+          "version": "1.5.0"
         }
       }
     },
     {
-      "_index" : "webapp",
-      "_type" : "_doc",
-      "_id" : "c-eIMngBVgrfkQdcKWGe",
-      "_score" : 1.0,
-      "_source" : {
-        "user.name" : "administrator",
-        "source" : {
-          "geo" : {
-            "continent_name" : "Europe",
-            "country_iso_code" : "SE",
-            "country_name" : "Sweden",
-            "location" : {
-              "lon" : 18.056,
-              "lat" : 59.3247
+      "_index": "webapp",
+      "_type": "_doc",
+      "_id": "c-eIMngBVgrfkQdcKWGe",
+      "_score": 1,
+      "_source": {
+        "user.name": "administrator",
+        "source": {
+          "geo": {
+            "continent_name": "Europe",
+            "country_iso_code": "SE",
+            "country_name": "Sweden",
+            "location": {
+              "lon": 18.056,
+              "lat": 59.3247
             }
           },
-          "ip" : "5.254.192.10"
+          "ip": "5.254.192.10"
         },
-        "url" : {
-          "path" : "admin/login.php",
-          "scheme" : "https",
-          "domain" : "host-systems.net",
-          "full" : "https://host-systems.net/admin/login.php"
+        "url": {
+          "path": "admin/login.php",
+          "scheme": "https",
+          "domain": "host-systems.net",
+          "full": "https://host-systems.net/admin/login.php"
         },
-        "http.request.bytes" : "208",
-        "event.action" : "authenticate",
-        "@timestamp" : "2021-03-13T13:10:26.000Z",
-        "http.request.method" : "POST",
-        "http.response.bytes" : "10",
-        "http.response.status_code" : "403",
-        "event.kind" : "request",
-        "event.dataset" : "weblogs",
-        "user_agent" : {
-          "original" : "Mozilla/5.0 (X11; U; Linux i686; de; rv:1.8.0.5) Gecko/20060731 Ubuntu/dapper-security Firefox/1.5.0.5",
-          "os" : {
-            "name" : "Ubuntu"
+        "http.request.bytes": "208",
+        "event.action": "authenticate",
+        "@timestamp": "2021-03-13T13:10:26.000Z",
+        "http.request.method": "POST",
+        "http.response.bytes": "10",
+        "http.response.status_code": "403",
+        "event.kind": "request",
+        "event.dataset": "weblogs",
+        "user_agent": {
+          "original": "Mozilla/5.0 (X11; U; Linux i686; de; rv:1.8.0.5) Gecko/20060731 Ubuntu/dapper-security Firefox/1.5.0.5",
+          "os": {
+            "name": "Ubuntu"
           },
-          "name" : "Firefox",
-          "device" : {
-            "name" : "Other"
+          "name": "Firefox",
+          "device": {
+            "name": "Other"
           },
-          "version" : "1.5.0"
-        },
-        "ml" : {
-          "inference" : {
-            "prediction" : true,
-            "probabilities" : [
-              {
-                "class_name" : true,
-                "class_probability" : 0.9816143914173593,
-                "class_score" : 0.9816143914173593
-              },
-              {
-                "class_name" : false,
-                "class_probability" : 0.01838560858264071,
-                "class_score" : 0.011407246904616626
-              }
-            ],
-            "prediction_probability" : 0.9816143914173593,
-            "prediction_score" : 0.9816143914173593,
-            "model_id" : "classification-request-payloads-1615680927179"
-          }
+          "version": "1.5.0"
         }
       }
     },
     {
-      "_index" : "webapp",
-      "_type" : "_doc",
-      "_id" : "dOeIMngBVgrfkQdcKWGe",
-      "_score" : 1.0,
-      "_source" : {
-        "user.name" : "administrator",
-        "source" : {
-          "geo" : {
-            "continent_name" : "Europe",
-            "country_iso_code" : "SE",
-            "country_name" : "Sweden",
-            "location" : {
-              "lon" : 18.056,
-              "lat" : 59.3247
+      "_index": "webapp",
+      "_type": "_doc",
+      "_id": "dOeIMngBVgrfkQdcKWGe",
+      "_score": 1,
+      "_source": {
+        "user.name": "administrator",
+        "source": {
+          "geo": {
+            "continent_name": "Europe",
+            "country_iso_code": "SE",
+            "country_name": "Sweden",
+            "location": {
+              "lon": 18.056,
+              "lat": 59.3247
             }
           },
-          "ip" : "5.254.192.11"
+          "ip": "5.254.192.11"
         },
-        "url" : {
-          "path" : "admin/login.php",
-          "scheme" : "https",
-          "domain" : "host-systems.net",
-          "full" : "https://host-systems.net/admin/login.php"
+        "url": {
+          "path": "admin/login.php",
+          "scheme": "https",
+          "domain": "host-systems.net",
+          "full": "https://host-systems.net/admin/login.php"
         },
-        "http.request.bytes" : "206",
-        "event.action" : "authenticate",
-        "@timestamp" : "2021-03-13T13:10:41.000Z",
-        "http.request.method" : "POST",
-        "http.response.bytes" : "10",
-        "http.response.status_code" : "403",
-        "event.kind" : "request",
-        "event.dataset" : "weblogs",
-        "user_agent" : {
-          "original" : "Mozilla/5.0 (X11; U; Linux i686; de; rv:1.8.0.5) Gecko/20060731 Ubuntu/dapper-security Firefox/1.5.0.5",
-          "os" : {
-            "name" : "Ubuntu"
+        "http.request.bytes": "206",
+        "event.action": "authenticate",
+        "@timestamp": "2021-03-13T13:10:41.000Z",
+        "http.request.method": "POST",
+        "http.response.bytes": "10",
+        "http.response.status_code": "403",
+        "event.kind": "request",
+        "event.dataset": "weblogs",
+        "user_agent": {
+          "original": "Mozilla/5.0 (X11; U; Linux i686; de; rv:1.8.0.5) Gecko/20060731 Ubuntu/dapper-security Firefox/1.5.0.5",
+          "os": {
+            "name": "Ubuntu"
           },
-          "name" : "Firefox",
-          "device" : {
-            "name" : "Other"
+          "name": "Firefox",
+          "device": {
+            "name": "Other"
           },
-          "version" : "1.5.0"
-        },
-        "ml" : {
-          "inference" : {
-            "prediction" : true,
-            "probabilities" : [
-              {
-                "class_name" : true,
-                "class_probability" : 0.9816143914173593,
-                "class_score" : 0.9816143914173593
-              },
-              {
-                "class_name" : false,
-                "class_probability" : 0.01838560858264071,
-                "class_score" : 0.011407246904616626
-              }
-            ],
-            "prediction_probability" : 0.9816143914173593,
-            "prediction_score" : 0.9816143914173593,
-            "model_id" : "classification-request-payloads-1615680927179"
-          }
+          "version": "1.5.0"
         }
       }
     },
     {
-      "_index" : "webapp",
-      "_type" : "_doc",
-      "_id" : "deeIMngBVgrfkQdcKWGe",
-      "_score" : 1.0,
-      "_source" : {
-        "user.name" : "administrator",
-        "source" : {
-          "geo" : {
-            "continent_name" : "Europe",
-            "country_iso_code" : "SE",
-            "country_name" : "Sweden",
-            "location" : {
-              "lon" : 18.056,
-              "lat" : 59.3247
+      "_index": "webapp",
+      "_type": "_doc",
+      "_id": "deeIMngBVgrfkQdcKWGe",
+      "_score": 1,
+      "_source": {
+        "user.name": "administrator",
+        "source": {
+          "geo": {
+            "continent_name": "Europe",
+            "country_iso_code": "SE",
+            "country_name": "Sweden",
+            "location": {
+              "lon": 18.056,
+              "lat": 59.3247
             }
           },
-          "ip" : "5.254.192.10"
+          "ip": "5.254.192.10"
         },
-        "url" : {
-          "path" : "admin/login.php",
-          "scheme" : "https",
-          "domain" : "host-systems.net",
-          "full" : "https://host-systems.net/admin/login.php"
+        "url": {
+          "path": "admin/login.php",
+          "scheme": "https",
+          "domain": "host-systems.net",
+          "full": "https://host-systems.net/admin/login.php"
         },
-        "http.request.bytes" : "219",
-        "event.action" : "authenticate",
-        "@timestamp" : "2021-03-13T13:10:56.000Z",
-        "http.request.method" : "POST",
-        "http.response.bytes" : "10",
-        "http.response.status_code" : "403",
-        "event.kind" : "request",
-        "event.dataset" : "weblogs",
-        "user_agent" : {
-          "original" : "Mozilla/5.0 (X11; U; Linux i686; de; rv:1.8.0.5) Gecko/20060731 Ubuntu/dapper-security Firefox/1.5.0.5",
-          "os" : {
-            "name" : "Ubuntu"
+        "http.request.bytes": "219",
+        "event.action": "authenticate",
+        "@timestamp": "2021-03-13T13:10:56.000Z",
+        "http.request.method": "POST",
+        "http.response.bytes": "10",
+        "http.response.status_code": "403",
+        "event.kind": "request",
+        "event.dataset": "weblogs",
+        "user_agent": {
+          "original": "Mozilla/5.0 (X11; U; Linux i686; de; rv:1.8.0.5) Gecko/20060731 Ubuntu/dapper-security Firefox/1.5.0.5",
+          "os": {
+            "name": "Ubuntu"
           },
-          "name" : "Firefox",
-          "device" : {
-            "name" : "Other"
+          "name": "Firefox",
+          "device": {
+            "name": "Other"
           },
-          "version" : "1.5.0"
-        },
-        "ml" : {
-          "inference" : {
-            "prediction" : true,
-            "probabilities" : [
-              {
-                "class_name" : true,
-                "class_probability" : 0.9816143914173593,
-                "class_score" : 0.9816143914173593
-              },
-              {
-                "class_name" : false,
-                "class_probability" : 0.01838560858264071,
-                "class_score" : 0.011407246904616626
-              }
-            ],
-            "prediction_probability" : 0.9816143914173593,
-            "prediction_score" : 0.9816143914173593,
-            "model_id" : "classification-request-payloads-1615680927179"
-          }
+          "version": "1.5.0"
         }
       }
     }
   ]
+  

@@ -1,0 +1,189 @@
+POST _ingest/pipeline/ml-malicious-request/_simulate
+{
+  "docs": [
+    {
+      "_index": "webapp",
+      "_type": "_doc",
+      "_id": "SeeIMngBVgrfkQdcKGHW",
+      "_score": 1,
+      "_source": {
+        "user.name": "administrator",
+        "source": {
+          "geo": {
+            "continent_name": "Europe",
+            "country_iso_code": "SE",
+            "country_name": "Sweden",
+            "location": {
+              "lon": 18.056,
+              "lat": 59.3247
+            }
+          },
+          "ip": "5.254.192.11"
+        },
+        "url": {
+          "path": "admin/login.php",
+          "scheme": "https",
+          "domain": "host-systems.net",
+          "full": "https://host-systems.net/admin/login.php"
+        },
+        "http.request.bytes": "208",
+        "event.action": "authenticate",
+        "@timestamp": "2021-03-13T13:10:15.000Z",
+        "http.request.method": "POST",
+        "http.response.bytes": "10",
+        "http.response.status_code": "403",
+        "event.kind": "request",
+        "event.dataset": "weblogs",
+        "user_agent": {
+          "original": "Mozilla/5.0 (X11; U; Linux i686; de; rv:1.8.0.5) Gecko/20060731 Ubuntu/dapper-security Firefox/1.5.0.5",
+          "os": {
+            "name": "Ubuntu"
+          },
+          "name": "Firefox",
+          "device": {
+            "name": "Other"
+          },
+          "version": "1.5.0"
+        }
+      }
+    },
+    {
+      "_index": "webapp",
+      "_type": "_doc",
+      "_id": "SueIMngBVgrfkQdcKGHW",
+      "_score": 1,
+      "_source": {
+        "user.name": "administrator",
+        "source": {
+          "geo": {
+            "continent_name": "Europe",
+            "country_iso_code": "SE",
+            "country_name": "Sweden",
+            "location": {
+              "lon": 18.056,
+              "lat": 59.3247
+            }
+          },
+          "ip": "5.254.192.10"
+        },
+        "url": {
+          "path": "admin/login.php",
+          "scheme": "https",
+          "domain": "host-systems.net",
+          "full": "https://host-systems.net/admin/login.php"
+        },
+        "http.request.bytes": "210",
+        "event.action": "authenticate",
+        "@timestamp": "2021-03-13T13:10:30.000Z",
+        "http.request.method": "POST",
+        "http.response.bytes": "10",
+        "http.response.status_code": "403",
+        "event.kind": "request",
+        "event.dataset": "weblogs",
+        "user_agent": {
+          "original": "Mozilla/5.0 (X11; U; Linux i686; de; rv:1.8.0.5) Gecko/20060731 Ubuntu/dapper-security Firefox/1.5.0.5",
+          "os": {
+            "name": "Ubuntu"
+          },
+          "name": "Firefox",
+          "device": {
+            "name": "Other"
+          },
+          "version": "1.5.0"
+        }
+      }
+    },
+    {
+      "_index": "webapp",
+      "_type": "_doc",
+      "_id": "SOeIMngBVgrfkQdcKGHV",
+      "_score": 1,
+      "_source": {
+        "user.name": "administrator",
+        "source": {
+          "geo": {
+            "continent_name": "Europe",
+            "country_iso_code": "SE",
+            "country_name": "Sweden",
+            "location": {
+              "lon": 18.056,
+              "lat": 59.3247
+            }
+          },
+          "ip": "5.254.192.10"
+        },
+        "url": {
+          "path": "admin/login.php",
+          "scheme": "https",
+          "domain": "host-systems.net",
+          "full": "https://host-systems.net/admin/login.php"
+        },
+        "http.request.bytes": "209",
+        "event.action": "authenticate",
+        "@timestamp": "2021-03-13T13:10:48.000Z",
+        "http.request.method": "POST",
+        "http.response.bytes": "10",
+        "http.response.status_code": "403",
+        "event.kind": "request",
+        "event.dataset": "weblogs",
+        "user_agent": {
+          "original": "Mozilla/5.0 (X11; U; Linux i686; de; rv:1.8.0.5) Gecko/20060731 Ubuntu/dapper-security Firefox/1.5.0.5",
+          "os": {
+            "name": "Ubuntu"
+          },
+          "name": "Firefox",
+          "device": {
+            "name": "Other"
+          },
+          "version": "1.5.0"
+        }
+      }
+    },
+    {
+      "_index": "webapp",
+      "_type": "_doc",
+      "_id": "RueIMngBVgrfkQdcKGHV",
+      "_score": 1,
+      "_source": {
+        "user.name": "administrator",
+        "source": {
+          "geo": {
+            "continent_name": "Europe",
+            "country_iso_code": "SE",
+            "country_name": "Sweden",
+            "location": {
+              "lon": 18.056,
+              "lat": 59.3247
+            }
+          },
+          "ip": "5.254.192.10"
+        },
+        "url": {
+          "path": "admin/login.php",
+          "scheme": "https",
+          "domain": "host-systems.net",
+          "full": "https://host-systems.net/admin/login.php"
+        },
+        "http.request.bytes": "207",
+        "event.action": "authenticate",
+        "@timestamp": "2021-03-13T13:10:18.000Z",
+        "http.request.method": "POST",
+        "http.response.bytes": "10",
+        "http.response.status_code": "403",
+        "event.kind": "request",
+        "event.dataset": "weblogs",
+        "user_agent": {
+          "original": "Mozilla/5.0 (X11; U; Linux i686; de; rv:1.8.0.5) Gecko/20060731 Ubuntu/dapper-security Firefox/1.5.0.5",
+          "os": {
+            "name": "Ubuntu"
+          },
+          "name": "Firefox",
+          "device": {
+            "name": "Other"
+          },
+          "version": "1.5.0"
+        }
+      }
+    }
+  ]
+}

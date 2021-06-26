@@ -1,0 +1,155 @@
+POST _ingest/pipeline/ml-malicious-request/_simulate
+{
+  "docs": [
+    {
+      "_index": "webapp",
+      "_type": "_doc",
+      "_id": "Yed0MngBVgrfkQdcHl3S",
+      "_score": 1,
+      "_source": {
+        "user.name": "u110191",
+        "source": {
+          "geo": {
+            "continent_name": "North America",
+            "country_iso_code": "US",
+            "country_name": "United States",
+            "location": {
+              "lon": -97.822,
+              "lat": 37.751
+            }
+          },
+          "ip": "64.213.79.243"
+        },
+        "url": {
+          "path": "user/manage.php",
+          "scheme": "https",
+          "domain": "host-systems.net",
+          "full": "https://host-systems.net/user/manage.php"
+        },
+        "http.request.bytes": "132",
+        "event.action": "view",
+        "@timestamp": "2021-03-15T10:20:00.000Z",
+        "http.request.method": "POST",
+        "http.response.bytes": "1417",
+        "event.kind": "request",
+        "http.response.status_code": "200",
+        "event.dataset": "weblogs",
+        "user_agent": {
+          "original": "Mozilla/5.0 (X11; CrOS x86_64 13597.94.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.186 Safari/537.185",
+          "os": {
+            "name": "Chrome OS",
+            "version": "13597.94.0",
+            "full": "Chrome OS 13597.94.0"
+          },
+          "name": "Chrome",
+          "device": {
+            "name": "Other"
+          },
+          "version": "88.0.4324.186"
+        }
+      }
+    },
+    {
+      "_index": "webapp",
+      "_type": "_doc",
+      "_id": "Yud0MngBVgrfkQdcHl3S",
+      "_score": 1,
+      "_source": {
+        "user.name": "u110999",
+        "source": {
+          "geo": {
+            "continent_name": "Oceania",
+            "region_iso_code": "AU-VIC",
+            "city_name": "Dandenong North",
+            "country_iso_code": "AU",
+            "country_name": "Australia",
+            "region_name": "Victoria",
+            "location": {
+              "lon": 145.2111,
+              "lat": -37.9566
+            }
+          },
+          "ip": "101.161.219.38"
+        },
+        "url": {
+          "path": "user/customer.php",
+          "scheme": "https",
+          "domain": "host-systems.net",
+          "full": "https://host-systems.net/user/customer.php"
+        },
+        "http.request.bytes": "126",
+        "event.action": "view",
+        "@timestamp": "2021-03-15T10:50:00.000Z",
+        "http.request.method": "POST",
+        "http.response.bytes": "1097",
+        "event.kind": "request",
+        "http.response.status_code": "200",
+        "event.dataset": "weblogs",
+        "user_agent": {
+          "original": "Mozilla/5.0 (X11; CrOS x86_64 13597.94.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.186 Safari/537.200",
+          "os": {
+            "name": "Chrome OS",
+            "version": "13597.94.0",
+            "full": "Chrome OS 13597.94.0"
+          },
+          "name": "Chrome",
+          "device": {
+            "name": "Other"
+          },
+          "version": "88.0.4324.186"
+        }
+      }
+    },
+    {
+      "_index": "webapp",
+      "_type": "_doc",
+      "_id": "Y-d0MngBVgrfkQdcHl3S",
+      "_score": 1,
+      "_source": {
+        "user.name": "u110003",
+        "source": {
+          "geo": {
+            "continent_name": "Oceania",
+            "region_iso_code": "AU-VIC",
+            "city_name": "Dandenong North",
+            "country_iso_code": "AU",
+            "country_name": "Australia",
+            "region_name": "Victoria",
+            "location": {
+              "lon": 145.2111,
+              "lat": -37.9566
+            }
+          },
+          "ip": "101.161.219.38"
+        },
+        "url": {
+          "path": "user/stats.php",
+          "scheme": "https",
+          "domain": "host-systems.net",
+          "full": "https://host-systems.net/user/stats.php"
+        },
+        "http.request.bytes": "15",
+        "event.action": "view",
+        "@timestamp": "2021-03-15T11:20:00.000Z",
+        "http.request.method": "GET",
+        "http.response.bytes": "534",
+        "event.kind": "request",
+        "http.response.status_code": "200",
+        "event.dataset": "weblogs",
+        "user_agent": {
+          "original": "Mozilla/5.0 (X11; CrOS x86_64 13597.94.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.186 Safari/537.215",
+          "os": {
+            "name": "Chrome OS",
+            "version": "13597.94.0",
+            "full": "Chrome OS 13597.94.0"
+          },
+          "name": "Chrome",
+          "device": {
+            "name": "Other"
+          },
+          "version": "88.0.4324.186"
+        }
+      }
+    }
+  ]
+}
