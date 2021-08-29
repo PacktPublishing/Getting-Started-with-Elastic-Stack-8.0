@@ -1,0 +1,102 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Recipe Search Service</title>
+    <meta name="description" content="This page implements high speed search, right in the browser, for all your search needs.">
+    <meta name="author" content="Asjad Athick">
+
+    <!--   google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <!-- External Stylesheet.  -->
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    </link>
+    <!--   font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+
+</head>
+
+<body>
+
+    <body id="body" onload="generateImage()">
+        <p id="test"></p>
+        <h1>Recipe Search Service</h1>
+        <p id="intro">Welcome to Recipe Search Service.<br>Search through millions of tried and test culinary classics, right here in your browser. <br> Recipe Search Service is powered by <span>Elasticsearch</span>.
+        </p>
+        <h2 id="recipe-banner"></h2>
+        <div id="recipe-search-box">
+            <input id="recipesearch" type="text" placeholder="Search for 'Burrito' here...">
+            <div id="autocomplete" class="hidden">
+                <ul id="autocomplete-list">
+                </ul>
+            </div>
+        </div>
+        <div id="advanced-search-controls" class="result-mode" onclick="toggleControlsBoxVisibility()">
+            <p>Advanced search</p>
+        </div>
+        <div id="controls" class="hidden">
+            <p>Use the controls to tweak your search results:</p>
+            <div id="controls-row-1" class="row">
+                <div id="author-control" class="column, control">
+                    <p class="label">Filter by authors</p>
+                    <select id="select-author" multiple onchange="handleSpecifiedAuthors()">
+                        <option value="">Loading...</option>
+                    </select>
+                </div>
+
+                <div id="results-page-control" class="column, control">
+                    <p class="label">Results per page</p>
+                    <select id="select-results-per-page" onchange="handleResultsPerPage()">
+                        <option value="10">10</option>
+                        <option value="20">20</option>
+                        <option value="30">30</option>
+                        <option value="40">40</option>
+                        <option value="50">50</option>
+                        <option value="100">100</option>
+                    </select>
+                </div>
+
+                <div id="rating-control" class="column, control">
+                    <p class="label">Minimum rating</p>
+                    <input id="min-rating" type="range" min="1" max="4" value="3" onchange="handleMinRating()">
+                </div>
+
+                <div id="sort-control" class="column, control">
+                    <p class="label">Sort by</p>
+                    <select id="select-sort" onchange="handleSortBy()">
+                        <option value="relevance">Relevance</option>
+                        <option value="rating">Rating</option>
+                        <option value="ascending">Ascending</option>
+                        <option value="descending">Descending</option>
+                    </select>
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+        <div id='results'>
+            <p id="result-heading"></p>
+            <ul id="results-list">
+
+            </ul>
+
+
+        </div>
+        <div id="pagination" class="result-mode">
+            <p class="btn" onclick="paginate(-1)">Previous</p>
+            <p class="btn" onclick="paginate(1)">Next</p>
+        </div>
+    </body>
+    <script src="js/scripts.js"></script>
+    <script src="js/elasticsearch.js"></script>
+</body>
+
+</html>
