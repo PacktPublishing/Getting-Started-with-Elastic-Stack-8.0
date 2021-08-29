@@ -225,13 +225,13 @@ function search() {
 async function getAutoCompleteOptions(input) {
     requestBody = {
         "_source": [
-            "title_suggestion"
+            "title.suggestion"
         ],
         "suggest": {
             "recipe_suggest": {
                 "prefix": input,
                 "completion": {
-                    "field": "title_suggestion",
+                    "field": "title.suggestion",
                     "size": 5,
                     "skip_duplicates": true,
                     "fuzzy": {
