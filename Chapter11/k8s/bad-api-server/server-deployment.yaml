@@ -1,0 +1,105 @@
+---
+apiVersion: v1
+kind: Secret
+metadata:
+  name: badapiserver-secrets
+type: Opaque
+data:
+  apm_server_url: "<B64 encoded string>"
+  apm_server_password: "<B64 encoded string>"
+  apm_env: "<B64 encoded string>"
+  elastic_cluster_url: "<B64 encoded string>"
+  elastic_user: "<B64 encoded string>"
+  elastic_password: "<B64 encoded string>"
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: badapiserver-deployment
+  labels:
+    app: badapiserver
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: badapiserver
+  template:
+    metadata:
+      labels:
+        app: badapiserver
+    spec:
+      containers:
+        - name: badapiserver
+          livenessProbe:
+            httpGet:
+              path: /server_status
+              port: 8000
+          readinessProbe:
+            httpGet:
+              path: /server_status
+              port: 8000
+          image: asjadathick/recipe-search-service-bad-api-server:latest
+          ports:
+            - containerPort: 8000
+          env:
+            - name: apm_server_url
+              valueFrom:
+                secretKeyRef:
+                  name: badapiserver-secrets
+                  key: apm_server_url
+            - name: apm_server_password
+              valueFrom:
+                secretKeyRef:
+                  name: badapiserver-secrets
+                  key: apm_server_password
+            - name: apm_env
+              valueFrom:
+                secretKeyRef:
+                  name: badapiserver-secrets
+                  key: apm_env
+            - name: elastic_cluster_url
+              valueFrom:
+                secretKeyRef:
+                  name: badapiserver-secrets
+                  key: elastic_cluster_url
+            - name: elastic_user
+              valueFrom:
+                secretKeyRef:
+                  name: badapiserver-secrets
+                  key: elastic_user
+            - name: elastic_password
+              valueFrom:
+                secretKeyRef:
+                  name: badapiserver-secrets
+                  key: elastic_password
+            - name: ELASTIC_APM_SERVICE_VERSION
+              value: "BAD-apiserver-v1"
+            - name: ELASTIC_APM_SPAN_FRAMES_MIN_DURATION
+              value: "-1"
+
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: badapiserver-service
+spec:
+  ports:
+  - port: 8000
+    protocol: TCP
+    targetPort: 8000
+  selector:
+    app: badapiserver
+
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: api-ingress
+spec:
+  defaultBackend:
+    service:
+      name: badapiserver-service
+      port:
+        number: 8000

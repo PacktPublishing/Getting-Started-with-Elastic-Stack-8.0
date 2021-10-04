@@ -1,0 +1,103 @@
+{
+    "aliases": {},
+    "mappings": {
+      "properties": {
+        "author": {
+          "type": "keyword",
+          "eager_global_ordinals": true,
+          "fields": {
+            "text": {
+              "type": "text"
+            }
+          }
+        },
+        "date": {
+          "type": "date",
+          "format": "[MMMM yyyy]",
+          "fields": {
+            "keyword": {
+              "type": "keyword"
+            }
+          }
+        },
+        "description": {
+          "type": "text",
+          "analyzer": "english"
+        },
+        "ingredients": {
+          "type": "text",
+          "analyzer": "english"
+        },
+        "instructions": {
+          "type": "text",
+          "analyzer": "english"
+        },
+        "picture_link": {
+          "type": "keyword"
+        },
+        "rating": {
+          "properties": {
+            "bestRating": {
+              "type": "float"
+            },
+            "prepareAgainPct": {
+              "type": "float"
+            },
+            "ratingValue": {
+              "type": "float"
+            },
+            "worstRating": {
+              "type": "float"
+            }
+          }
+        },
+        "recipe_id": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "summary": {
+          "properties": {
+            "active-time": {
+              "type": "keyword"
+            },
+            "total-time": {
+              "type": "keyword"
+            },
+            "yield": {
+              "type": "keyword"
+            }
+          }
+        },
+        "title": {
+          "type": "text",
+          "analyzer": "english",
+          "fields": {
+            "keyword": {
+              "type": "keyword"
+            },
+            "suggestion": {
+              "type": "completion",
+              "analyzer": "english",
+              "preserve_separators": false,
+              "preserve_position_increments": false,
+              "max_input_length": 50
+            }
+          }
+        },
+        "url": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        }
+      }
+    }
+  }
