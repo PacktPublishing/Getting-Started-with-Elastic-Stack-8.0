@@ -46,7 +46,7 @@ With the following software and hardware list you can run all code files present
 
 | Chapter  | Software required                                                                    | OS required                        |
 | -------- | -------------------------------------------------------------------------------------| -----------------------------------|
-|  	1-14	   |   	Bash, Docker, Kuernetes and Ansible                            			  |  Linux Or macOS. Ubuntu 16.04 is used|
+|  	1-13	   |   	Bash, Docker, Kuernetes and Ansible                            			  |  Linux Or macOS. Ubuntu 16.04 is used|
 
 We also provide a PDF file that has color images of the screenshots/diagrams used in this book. [Click here to download it](https://static.packt-cdn.com/downloads/9781800569492_ColorImages.pdf ).
 
