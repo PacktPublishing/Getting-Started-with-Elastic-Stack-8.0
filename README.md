@@ -4,7 +4,7 @@
 
 This is the code repository for [Getting Started with Elastic Stack 8.0](https://www.packtpub.com/product/getting-started-with-elastic-stack-8-0/9781800569492), published by Packt.
 
-**Learn how to design and build cloud-based data transformation pipelines using AWS**
+**Run powerful and scalable data platforms to search, observe, and secure your organization**
 
 ## What is this book about?
 
@@ -22,7 +22,7 @@ This book covers the following exciting features:
 * Secure your organization and learn how the Elastic SIEM and Endpoint Security capabilities can help
 * Explore common architectural considerations for accommodating more complex requirements
 
-If you feel this book is for you, get your [copy](https://www.amazon.in/Getting-Started-Elastic-Stack-8-0-ebook/dp/B09BZVNY7Q/ref=sr_1_1?crid=1AT03XJG7XUA&keywords=Getting+Started+with+Elastic+Stack+8.0&qid=1646806864&sprefix=getting+started+with+elastic+stack+8.0%2Caps%2C319&sr=8-1) today!
+If you feel this book is for you, get your [copy](https://elasticstackbook.com/buy) today!
 
 <a href="https://static.packt-cdn.com/products/9781800569492/cover/smaller"><img src="https://raw.githubusercontent.com/PacktPublishing/GitHub/master/GitHub.png" alt="https://www.packtpub.com/" border="5" /></a>
 
