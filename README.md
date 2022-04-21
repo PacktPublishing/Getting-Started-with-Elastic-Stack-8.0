@@ -22,7 +22,7 @@ This book covers the following exciting features:
 * Secure your organization and learn how the Elastic SIEM and Endpoint Security capabilities can help
 * Explore common architectural considerations for accommodating more complex requirements
 
-If you feel this book is for you, get your [copy](https://elasticstackbook.com/buy) today!
+If you feel this book is for you, get your [copy](https://www.elasticstackbook.com/buy) today!
 
 <a href="https://static.packt-cdn.com/products/9781800569492/cover/smaller"><img src="https://raw.githubusercontent.com/PacktPublishing/GitHub/master/GitHub.png" alt="https://www.packtpub.com/" border="5" /></a>
 
