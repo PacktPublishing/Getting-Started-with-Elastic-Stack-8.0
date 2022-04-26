@@ -63,7 +63,7 @@ POST _ingest/pipeline/_simulate
         "enrich": {
           "policy_name": "sensors-lookup",
           "field": "sensor.id",
-          "target_field": "sensor"
+          "target_field": "sensor.meta"
         }
       }
     ]
