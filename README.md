@@ -57,3 +57,7 @@ We also provide a PDF file that has color images of the screenshots/diagrams use
   
 ## Get to Know the Author
 **Asjad Athick** is a security specialist at Elastic with demonstratable experience in architecting enterprise-scale solutions on the cloud. He believes in empowering people with the right tools to help them achieve their goals. At Elastic, he works with a broad range of customers across Australia and New Zealand to help them understand their environment; this allows them to build robust threat detection, prevention, and response capabilities. He previously worked in the telecommunications space to build a security capability to help analysts identify and contextualize unknown cyber threats. With a background in application development and technology consulting, he has worked with various small businesses and start-up organizations across Australia.
+### Download a free PDF
+
+ <i>If you have already purchased a print or Kindle version of this book, you can get a DRM-free PDF version at no cost.<br>Simply click on the link to claim your free PDF.</i>
+<p align="center"> <a href="https://packt.link/free-ebook/9781800569492">https://packt.link/free-ebook/9781800569492 </a> </p>
