@@ -9,14 +9,14 @@ read -s password
 echo
 
 # load index template
-if curl -f -XPUT "$url/_index_template/web-logs" -u $username:$password -H 'Content-Type: application/json' -d "@web-logs-template.json"
+if curl -f -k -XPUT "$url/_index_template/web-logs" -u $username:$password -H 'Content-Type: application/json' -d "@web-logs-template.json"
 then echo " - Loaded index template for web logs"
 else echo " Could not load index template"
 exit
 fi
 
 # load ingest pipeline
-if curl -f -XPUT "$url/_ingest/pipeline/web-logs" -u $username:$password -H 'Content-Type: application/json' -d "@web-logs-pipeline.json"
+if curl -f -k -XPUT "$url/_ingest/pipeline/web-logs" -u $username:$password -H 'Content-Type: application/json' -d "@web-logs-pipeline.json"
 then echo " - Loaded ingest pipeline for Apache"
 else echo " Could not load ingest pipeline for Apache"
 exit
